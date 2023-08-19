@@ -1,0 +1,41 @@
+module main #(SHIFT_BITS = 10, CNTDIV_BITS = 25) (clk, rst, qbits);
+	// inputs and outputs
+	input logic clk, rst;
+	output logic [SHIFT_BITS - 1: 0] qbits;
+   
+	// internal signals
+	logic internalClk;
+
+	// internal clock divider instance
+	cntdiv_n #(CNTDIV_BITS) cntDiv (clk, ~rst, internalClk);
+	// internal shift register instance
+	shift_led_v2 #(SHIFT_BITS) shifter (internalClk, ~rst, qbits);
+endmodule
+
+module tbMain ();
+	// local parameters
+	localparam SHIFT_BITS = 10;
+	localparam CNTDIV_BITS = 2;
+	localparam CLK_PERIOD = 20ns;
+
+	// internal signals
+	logic clk, rst;
+	logic [SHIFT_BITS - 1: 0] qbits;
+	
+	// Led shifter instance
+	main #(SHIFT_BITS, CNTDIV_BITS) mInst (clk, ~rst, qbits);
+	
+	// Simulation process
+	initial begin
+		clk = 0;
+		rst = 1;
+		#(CLK_PERIOD * 5);
+		rst = 0;
+		#(CLK_PERIOD * 100);
+
+		$stop;
+	end
+	
+	// Process to generate clock signal
+	always #(CLK_PERIOD / 2) clk = ~clk;	
+endmodule

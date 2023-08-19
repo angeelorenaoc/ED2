@@ -1,0 +1,90 @@
+# Reading pref.tcl
+# do firstExample_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Li# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/22.1std/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/oscar/Downloads/01-firstExample {C:/Users/oscar/Downloads/01-firstExample/cntdiv_n.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:53:47 on Aug 18,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Downloads/01-firstExample" C:/Users/oscar/Downloads/01-firstExample/cntdiv_n.sv 
+# -- Compiling module cntdiv_n
+# 
+# Top level modules:
+# 	cntdiv_n
+# End time: 15:53:47 on Aug 18,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/oscar/Downloads/01-firstExample {C:/Users/oscar/Downloads/01-firstExample/main.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:53:47 on Aug 18,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Downloads/01-firstExample" C:/Users/oscar/Downloads/01-firstExample/main.sv 
+# -- Compiling module main
+# -- Compiling module tbMain
+# 
+# Top level modules:
+# 	tbMain
+# End time: 15:53:47 on Aug 18,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/oscar/Downloads/01-firstExample {C:/Users/oscar/Downloads/01-firstExample/shift_led_v2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:53:47 on Aug 18,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Downloads/01-firstExample" C:/Users/oscar/Downloads/01-firstExample/shift_led_v2.sv 
+# -- Compiling module shift_led_v2
+# 
+# Top level modules:
+# 	shift_led_v2
+# End time: 15:53:47 on Aug 18,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.tbMain
+# vsim work.tbMain 
+# Start time: 15:57:46 on Aug 18,2023
+# Loading sv_std.std
+# Loading work.tbMain
+# Loading work.main
+# Loading work.cntdiv_n
+# Loading work.shift_led_v2
+add wave -position end  sim:/tbMain/clk
+add wave -position end  sim:/tbMain/rst
+add wave -position end  sim:/tbMain/qbits
+restart
+run -all
+# ** Note: $stop    : C:/Users/oscar/Downloads/01-firstExample/main.sv(36)
+#    Time: 2100 ns  Iteration: 0  Instance: /tbMain
+# Break in Module tbMain at C:/Users/oscar/Downloads/01-firstExample/main.sv line 36
+vlog -sv -work work +incdir+C:/Users/oscar/Downloads/01-firstExample C:/Users/oscar/Downloads/01-firstExample/main.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:08:44 on Aug 18,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Downloads/01-firstExample" C:/Users/oscar/Downloads/01-firstExample/main.sv 
+# -- Compiling module main
+# -- Compiling module tbMain
+# 
+# Top level modules:
+# 	tbMain
+# End time: 16:08:44 on Aug 18,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tbMain
+# End time: 16:09:35 on Aug 18,2023, Elapsed time: 0:11:49
+# Errors: 0, Warnings: 0
+# vsim work.tbMain 
+# Start time: 16:09:35 on Aug 18,2023
+# Loading sv_std.std
+# Loading work.tbMain
+# Loading work.main
+# Loading work.cntdiv_n
+# Loading work.shift_led_v2
+add wave -position end  sim:/tbMain/clk
+add wave -position end  sim:/tbMain/rst
+add wave -position end  sim:/tbMain/qbits
+run -all
+# ** Note: $stop    : C:/Users/oscar/Downloads/01-firstExample/main.sv(36)
+#    Time: 2100 ns  Iteration: 0  Instance: /tbMain
+# Break in Module tbMain at C:/Users/oscar/Downloads/01-firstExample/main.sv line 36
+# End time: 16:14:33 on Aug 18,2023, Elapsed time: 0:04:58
+# Errors: 0, Warnings: 0

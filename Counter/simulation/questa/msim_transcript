@@ -1,0 +1,96 @@
+# Reading pref.tcl
+# do counter_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/22.1std/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter {C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/cntdiv_n.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:17:39 on Aug 18,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter" C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/cntdiv_n.sv 
+# -- Compiling module cntdiv_n
+# 
+# Top level modules:
+# 	cntdiv_n
+# End time: 17:17:39 on Aug 18,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter {C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/contador.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:17:40 on Aug 18,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter" C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/contador.sv 
+# -- Compiling module contador
+# 
+# Top level modules:
+# 	contador
+# End time: 17:17:40 on Aug 18,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter {C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/deco7seg_hexa.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:17:40 on Aug 18,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter" C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/deco7seg_hexa.sv 
+# -- Compiling module deco7seg_hexa
+# 
+# Top level modules:
+# 	deco7seg_hexa
+# End time: 17:17:40 on Aug 18,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter {C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/main.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:17:40 on Aug 18,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter" C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/main.sv 
+# -- Compiling module main
+# -- Compiling module tb_main
+# 
+# Top level modules:
+# 	tb_main
+# End time: 17:17:40 on Aug 18,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.tb_main
+# vsim work.tb_main 
+# Start time: 17:17:49 on Aug 18,2023
+# Loading sv_std.std
+# Loading work.tb_main
+# Loading work.main
+# Loading work.cntdiv_n
+# Loading work.contador
+# Loading work.deco7seg_hexa
+add wave -position end  sim:/tb_main/CLK_PERIOD
+add wave -position end  sim:/tb_main/CLK
+add wave -position end  sim:/tb_main/RST
+add wave -position end  sim:/tb_main/EN
+add wave -position end  sim:/tb_main/S
+add wave -position end  sim:/tb_main/D
+add wave -position end  sim:/tb_main/SEG
+run -all
+# ** Note: $stop    : C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/main.sv(43)
+#    Time: 5280 ns  Iteration: 0  Instance: /tb_main
+# Break in Module tb_main at C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/main.sv line 43
+add wave -position end sim:/tb_main/main_u0/cntDiv/*
+add wave -position end sim:/tb_main/main_u0/cntDiv/*
+restart
+run -all
+# ** Note: $stop    : C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/main.sv(43)
+#    Time: 5280 ns  Iteration: 0  Instance: /tb_main
+# Break in Module tb_main at C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/main.sv line 43
+add wave -position end sim:/tb_main/main_u0/cntDiv/*
+add wave -position end  sim:/tb_main/main_u0/cntDiv/tick
+restart
+run -all
+# ** Note: $stop    : C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/main.sv(43)
+#    Time: 5280 ns  Iteration: 0  Instance: /tb_main
+# Break in Module tb_main at C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/main.sv line 43
+add wave -position end  sim:/tb_main/main_u0/contador0/k
+restart
+run -all
+# ** Note: $stop    : C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/main.sv(43)
+#    Time: 5280 ns  Iteration: 0  Instance: /tb_main
+# Break in Module tb_main at C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/main.sv line 43
+# End time: 17:48:15 on Aug 18,2023, Elapsed time: 0:30:26
+# Errors: 0, Warnings: 0

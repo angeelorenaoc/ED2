@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at shift_led_v2.sv(11): always construct contains both blocking and non-blocking assignments File: C:/Users/oscar/Downloads/01-firstExample/shift_led_v2.sv Line: 11

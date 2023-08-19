@@ -1,0 +1,141 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/simulation/questa
+vcntdiv_n
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1692397059
+!i10b 1
+!s100 T0Y3m?<WYo4Pa@zzdD^oO1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IK0LSFj_U0J?]7X_S`Y8Ld3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1692385266
+8C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/cntdiv_n.sv
+FC:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/cntdiv_n.sv
+!i122 0
+L0 1 18
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1692397059.000000
+!s107 C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/cntdiv_n.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter|C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/cntdiv_n.sv|
+!i113 1
+Z5 o-sv -work work
+Z6 !s92 -sv -work work +incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter
+Z7 tCvgOpt 0
+vcontador
+R1
+Z8 !s110 1692397060
+!i10b 1
+!s100 ;T5066Lg_97?7Do4>9B4I2
+R2
+IRdV9_C2Z5>8^[Q4RnK3a40
+R3
+S1
+R0
+w1692396147
+8C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/contador.sv
+FC:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/contador.sv
+!i122 1
+L0 1 23
+R4
+r1
+!s85 0
+31
+Z9 !s108 1692397060.000000
+!s107 C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/contador.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter|C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/contador.sv|
+!i113 1
+R5
+R6
+R7
+vdeco7seg_hexa
+R1
+R8
+!i10b 1
+!s100 kF2L]JCoiN6]RDZ25`H]@2
+R2
+I0>cP@6[=3Cg_L2>V?UQ2`0
+R3
+S1
+R0
+w1692396491
+8C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/deco7seg_hexa.sv
+FC:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/deco7seg_hexa.sv
+!i122 2
+L0 1 26
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/deco7seg_hexa.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter|C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/deco7seg_hexa.sv|
+!i113 1
+R5
+R6
+R7
+vmain
+R1
+R8
+!i10b 1
+!s100 P;`3D4^KHDYjd`E0T3ko92
+R2
+I4Vh;66`7`jib;n7Xjcb[91
+R3
+S1
+R0
+Z10 w1692396780
+Z11 8C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/main.sv
+Z12 FC:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/main.sv
+!i122 3
+L0 1 15
+R4
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/main.sv|
+Z13 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter|C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/main.sv|
+!i113 1
+R5
+R6
+R7
+vtb_main
+R1
+R8
+!i10b 1
+!s100 >Z8B=?O@2S2K:0hbFgZ742
+R2
+I69Agd]VR4G7Yz[Q;l9a2Q0
+R3
+S1
+R0
+R10
+R11
+R12
+!i122 3
+L0 17 30
+R4
+r1
+!s85 0
+31
+R9
+Z14 !s107 C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Counter/main.sv|
+R13
+!i113 1
+R5
+R6
+R7

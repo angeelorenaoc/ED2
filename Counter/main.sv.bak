@@ -1,0 +1,15 @@
+module main #(BITS = 25) ( 
+	input logic CLK, 
+	input logic RST, 
+	input logic EN, 
+	input logic [1:0] S, 
+	input logic [3:0] D, 
+	output logic [6:0] SEG); 
+
+	reg internalClk; 
+	logic [3:0] Q; 
+	
+	cntdiv_n #(BITS) cntDiv (CLK, ~RST, internalClk); 
+	contador contador0(~RST, EN, internalClk, D, S, Q); 
+	deco7seg_hexa deco0(Q, SEG); 
+endmodule
