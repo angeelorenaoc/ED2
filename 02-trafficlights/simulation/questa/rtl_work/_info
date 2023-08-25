@@ -1,0 +1,89 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/02-trafficlights/simulation/questa
+vcntdiv_n
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1692998136
+!i10b 1
+!s100 X`MHz1Bi6DcAB2^7YQ^N[3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IOBW@2OnZinCTWAC]ID;TW1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1692674808
+8C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/02-trafficlights/cntdiv_n.sv
+FC:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/02-trafficlights/cntdiv_n.sv
+!i122 0
+L0 1 26
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1692998136.000000
+!s107 C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/02-trafficlights/cntdiv_n.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/02-trafficlights|C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/02-trafficlights/cntdiv_n.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/02-trafficlights
+Z8 tCvgOpt 0
+vtestbench
+R1
+Z9 !s110 1692998137
+!i10b 1
+!s100 hcm?2^Ni_[>V6@6S93JjU2
+R2
+IlL>@oe<Hn0J97G]7Y:ia13
+R3
+S1
+R0
+Z10 w1692674980
+Z11 8C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/02-trafficlights/trafficlight.sv
+Z12 FC:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/02-trafficlights/trafficlight.sv
+!i122 1
+L0 109 23
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/02-trafficlights/trafficlight.sv|
+Z13 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/02-trafficlights|C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/02-trafficlights/trafficlight.sv|
+!i113 1
+R6
+R7
+R8
+vtrafficlight
+R1
+R9
+!i10b 1
+!s100 S_iIeYM34MC]WMXoznRIZ1
+R2
+I?WDD8Z>U8lE1k`1KQ2lB?0
+R3
+S1
+R0
+R10
+R11
+R12
+!i122 1
+L0 2 105
+R4
+r1
+!s85 0
+31
+R5
+Z14 !s107 C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/02-trafficlights/trafficlight.sv|
+R13
+!i113 1
+R6
+R7
+R8

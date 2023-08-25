@@ -1,0 +1,7 @@
+
+State Machine - |trafficlight|currentState
+Name currentState.Ssy currentState.Ssg currentState.Smy currentState.Smg 
+currentState.Smg 0 0 0 0 
+currentState.Smy 0 0 1 1 
+currentState.Ssg 0 1 0 1 
+currentState.Ssy 1 0 0 1 

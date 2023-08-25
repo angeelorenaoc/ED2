@@ -1,0 +1,58 @@
+# Reading pref.tcl
+# do trafficlight_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/22.1std/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/02-trafficlights {C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/02-trafficlights/cntdiv_n.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:36 on Aug 25,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/02-trafficlights" C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/02-trafficlights/cntdiv_n.sv 
+# -- Compiling module cntdiv_n
+# 
+# Top level modules:
+# 	cntdiv_n
+# End time: 16:15:36 on Aug 25,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/02-trafficlights {C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/02-trafficlights/trafficlight.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:15:36 on Aug 25,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/02-trafficlights" C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/02-trafficlights/trafficlight.sv 
+# -- Compiling module trafficlight
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 16:15:37 on Aug 25,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 16:16:31 on Aug 25,2023
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.trafficlight
+# Loading work.cntdiv_n
+add wave -position end  sim:/testbench/main_lights
+add wave -position end  sim:/testbench/sec_lights
+add wave -position 0  sim:/testbench/reset
+add wave -position 0  sim:/testbench/clk
+add wave -position 1  sim:/testbench/clk_seconds
+run -all
+# ** Note: $stop    : C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/02-trafficlights/trafficlight.sv(126)
+#    Time: 5780 ps  Iteration: 0  Instance: /testbench
+# Break in Module testbench at C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/02-trafficlights/trafficlight.sv line 126
+add wave -position 2  sim:/testbench/tl/cnt_seconds
+restart
+run -all
+# ** Note: $stop    : C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/02-trafficlights/trafficlight.sv(126)
+#    Time: 5780 ps  Iteration: 0  Instance: /testbench
+# Break in Module testbench at C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/02-trafficlights/trafficlight.sv line 126
+# End time: 16:34:48 on Aug 25,2023, Elapsed time: 0:18:17
+# Errors: 0, Warnings: 0
