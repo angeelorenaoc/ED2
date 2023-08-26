@@ -1,5 +1,5 @@
-module cntdiv_n #(TOPVALUE = 10) (clk, rst, clkdiv);
-	input logic clk, rst;
+module cntdiv_n #(TOPVALUE = 50_000_000) (clk, rst, clkdiv, timer);
+	input logic clk, rst,timer;
 	output logic clkdiv;
 	
 	// Bits for the counter
@@ -15,21 +15,25 @@ module cntdiv_n #(TOPVALUE = 10) (clk, rst, clkdiv);
 			rCounter <= 0;
 			clkdiv <= 0;
 		end 
-		
 		else begin
-			if (rCounter == (TOPVALUE - 1))
-				rCounter <= 0;
-			else
-				rCounter <= rCounter + 1;
-			// Guarantee a registered clock
-			clkdiv <= (rCounter >= (TOPVALUE/2)) ? 1'b1 : 1'b0;
+			if(timer)begin
+				if (rCounter == (TOPVALUE - 1))
+					rCounter <= 0;
+				else begin
+					rCounter <= rCounter + 1;
+					// Guarantee a registered clock
+					clkdiv <= (rCounter >= (TOPVALUE/2)) ? 1'b1 : 1'b0;
+				end
+			end 
+			else begin
+				if (rCounter == (TOPVALUE/2 - 1))
+					rCounter <= 0;
+				else begin
+					rCounter <= rCounter + 1;
+					// Guarantee a registered clock
+					clkdiv <= (rCounter >= (TOPVALUE/4)) ? 1'b1 : 1'b0;
+				end
+			end
 		end
 	end
 endmodule
-//PAra cambiar de reloj, debe ir arriba
-	always_comb (timer) begin
-		if (timer)
-			segs = 26;
-		else
-			segs = 25;
-	end

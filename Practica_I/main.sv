@@ -10,13 +10,12 @@ module main(
 
 
 	reg internalClk;
-	logic segs;
 	logic [3:0] value, tens, units;// número que se mostrará en el display sin su separación
 	logic [6:0] decenas, unidades;
 
 
 	
-cntdiv_ #(segs) clock (clk, rst, internalClk);
+cntdiv_n clock (clk, rst, internalClk, timer);
 
 fsm machine (internalClk, rst, up, value);
 
