@@ -1,0 +1,167 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/simulation/questa
+vcntdiv_n
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1693251923
+!i10b 1
+!s100 lD8zDBZlzA5e56kCkUP=n1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IIZbo;^lZMJ8C[4Q>oK]Tf1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z4 w1693060512
+8C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/cntdiv_n.sv
+FC:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/cntdiv_n.sv
+!i122 7
+L0 1 39
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1693251923.000000
+!s107 C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/cntdiv_n.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I|C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/cntdiv_n.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I
+Z8 tCvgOpt 0
+vconverter
+R1
+Z9 !s110 1693250428
+!i10b 1
+!s100 LX_iNOn6o9N;?_=PG?OV:3
+R2
+IgTR22X^<J>@SPfKk_Xo[:1
+R3
+S1
+R0
+R4
+8C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/converter.sv
+FC:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/converter.sv
+!i122 2
+L0 1 9
+R5
+r1
+!s85 0
+31
+Z10 !s108 1693250428.000000
+!s107 C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/converter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I|C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/converter.sv|
+!i113 1
+R6
+R7
+R8
+vdeco7seg
+R1
+R9
+!i10b 1
+!s100 ?jz`WF0LJ4=Pd4QNeCZil3
+R2
+IUo6K<Mn^GXG5SBoFA8kFK2
+R3
+S1
+R0
+R4
+8C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/deco7seg.sv
+FC:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/deco7seg.sv
+!i122 3
+L0 1 23
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/deco7seg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I|C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/deco7seg.sv|
+!i113 1
+R6
+R7
+R8
+vfsm
+R1
+R9
+!i10b 1
+!s100 h89eKk^?_?GJO;XnneUa20
+R2
+IFUb;:8mIF892ZkX:S7]C`0
+R3
+S1
+R0
+R4
+8C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/fsm.sv
+FC:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/fsm.sv
+!i122 1
+Z11 L0 1 27
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/fsm.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I|C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/fsm.sv|
+!i113 1
+R6
+R7
+R8
+vmain
+R1
+Z12 !s110 1693259016
+!i10b 1
+!s100 g;HOOOCDVfFmo6n0J4?:71
+R2
+I0GbCi^c`0c1ZUakEMIQ_B2
+R3
+S1
+R0
+Z13 w1693257178
+Z14 8C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/main.sv
+Z15 FC:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/main.sv
+!i122 24
+R11
+R5
+r1
+!s85 0
+31
+Z16 !s108 1693259016.000000
+!s107 C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/main.sv|
+Z17 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I|C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/main.sv|
+!i113 1
+R6
+R7
+R8
+vtbmain
+R1
+R12
+!i10b 1
+!s100 jDO^1?ngIcAI<@G;flDi=3
+R2
+IHc70B];z[^aE=3QN?TXJg0
+R3
+S1
+R0
+R13
+R14
+R15
+!i122 24
+L0 32 38
+R5
+r1
+!s85 0
+31
+R16
+Z18 !s107 C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/main.sv|
+R17
+!i113 1
+R6
+R7
+R8
