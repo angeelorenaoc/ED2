@@ -10,61 +10,61 @@
 # Copying C:/intelFPGA_lite/22.1std/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I {C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/cntdiv_n.sv}
+# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_I {C:/Users/oscar/Documents/ED/Practica_I/cntdiv_n.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:00:20 on Aug 28,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I" C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/cntdiv_n.sv 
+# Start time: 15:11:11 on Sep 01,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_I" C:/Users/oscar/Documents/ED/Practica_I/cntdiv_n.sv 
 # -- Compiling module cntdiv_n
 # 
 # Top level modules:
 # 	cntdiv_n
-# End time: 17:00:20 on Aug 28,2023, Elapsed time: 0:00:00
+# End time: 15:11:11 on Sep 01,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I {C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/fsm.sv}
+# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_I {C:/Users/oscar/Documents/ED/Practica_I/fsm.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:00:20 on Aug 28,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I" C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/fsm.sv 
+# Start time: 15:11:12 on Sep 01,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_I" C:/Users/oscar/Documents/ED/Practica_I/fsm.sv 
 # -- Compiling module fsm
 # 
 # Top level modules:
 # 	fsm
-# End time: 17:00:20 on Aug 28,2023, Elapsed time: 0:00:00
+# End time: 15:11:12 on Sep 01,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I {C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/converter.sv}
+# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_I {C:/Users/oscar/Documents/ED/Practica_I/converter.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:00:20 on Aug 28,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I" C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/converter.sv 
+# Start time: 15:11:12 on Sep 01,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_I" C:/Users/oscar/Documents/ED/Practica_I/converter.sv 
 # -- Compiling module converter
 # 
 # Top level modules:
 # 	converter
-# End time: 17:00:20 on Aug 28,2023, Elapsed time: 0:00:00
+# End time: 15:11:12 on Sep 01,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I {C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/deco7seg.sv}
+# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_I {C:/Users/oscar/Documents/ED/Practica_I/deco7seg.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:00:20 on Aug 28,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I" C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/deco7seg.sv 
+# Start time: 15:11:12 on Sep 01,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_I" C:/Users/oscar/Documents/ED/Practica_I/deco7seg.sv 
 # -- Compiling module deco7seg
 # 
 # Top level modules:
 # 	deco7seg
-# End time: 17:00:20 on Aug 28,2023, Elapsed time: 0:00:00
+# End time: 15:11:12 on Sep 01,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I {C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/main.sv}
+# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_I {C:/Users/oscar/Documents/ED/Practica_I/main.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:00:20 on Aug 28,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I" C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/main.sv 
+# Start time: 15:11:12 on Sep 01,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_I" C:/Users/oscar/Documents/ED/Practica_I/main.sv 
 # -- Compiling module main
 # -- Compiling module tbmain
 # 
 # Top level modules:
 # 	tbmain
-# End time: 17:00:20 on Aug 28,2023, Elapsed time: 0:00:00
+# End time: 15:11:12 on Sep 01,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vsim work.tbmain
 # vsim work.tbmain 
-# Start time: 17:00:36 on Aug 28,2023
+# Start time: 15:11:22 on Sep 01,2023
 # Loading sv_std.std
 # Loading work.tbmain
 # Loading work.main
@@ -78,251 +78,22 @@ add wave -position end  sim:/tbmain/clk
 add wave -position end  sim:/tbmain/timer
 add wave -position end  sim:/tbmain/decsegm
 add wave -position end  sim:/tbmain/unisegm
-add wave -position end  sim:/tbmain/main_u0/machine/position
+add wave -position 0  sim:/tbmain/fpga_freq
+add wave -position 5  sim:/tbmain/main_u0/value
+add wave -position 6  sim:/tbmain/main_u0/tens
+add wave -position 7  sim:/tbmain/main_u0/units
 run -all
-# ** Note: $stop    : C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/main.sv(64)
+# ** Note: $stop    : C:/Users/oscar/Documents/ED/Practica_I/main.sv(64)
 #    Time: 4820 ns  Iteration: 0  Instance: /tbmain
-# Break in Module tbmain at C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/main.sv line 64
-vsim work.tbmain
-# End time: 17:06:57 on Aug 28,2023, Elapsed time: 0:06:21
-# Errors: 0, Warnings: 0
-# vsim work.tbmain 
-# Start time: 17:06:57 on Aug 28,2023
-# Loading sv_std.std
-# Loading work.tbmain
-# Loading work.main
-# Loading work.cntdiv_n
-# Loading work.fsm
-# Loading work.converter
-# Loading work.deco7seg
-add wave -position end  sim:/tbmain/up
-add wave -position end  sim:/tbmain/rst
-add wave -position end  sim:/tbmain/clk
-add wave -position end  sim:/tbmain/timer
-add wave -position end  sim:/tbmain/decsegm
-add wave -position end  sim:/tbmain/unisegm
-add wave -position end  sim:/tbmain/main_u0/up
-add wave -position end  sim:/tbmain/main_u0/rst
-add wave -position end  sim:/tbmain/main_u0/clk
-add wave -position end  sim:/tbmain/main_u0/timer
-add wave -position end  sim:/tbmain/main_u0/value
-add wave -position end  sim:/tbmain/main_u0/decsegm
-add wave -position end  sim:/tbmain/main_u0/unisegm
-add wave -position end  sim:/tbmain/main_u0/tens
-add wave -position end  sim:/tbmain/main_u0/units
-add wave -position end  sim:/tbmain/main_u0/machine/position
-run -all
-# ** Note: $stop    : C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/main.sv(64)
-#    Time: 4820 ns  Iteration: 0  Instance: /tbmain
-# Break in Module tbmain at C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/main.sv line 64
-vlog -sv -work work +incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/cntdiv_n.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:10:16 on Aug 28,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I" C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/cntdiv_n.sv 
-# -- Compiling module cntdiv_n
-# 
-# Top level modules:
-# 	cntdiv_n
-# End time: 17:10:16 on Aug 28,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -sv -work work +incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/converter.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:10:16 on Aug 28,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I" C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/converter.sv 
-# -- Compiling module converter
-# 
-# Top level modules:
-# 	converter
-# End time: 17:10:16 on Aug 28,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -sv -work work +incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/deco7seg.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:10:16 on Aug 28,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I" C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/deco7seg.sv 
-# -- Compiling module deco7seg
-# 
-# Top level modules:
-# 	deco7seg
-# End time: 17:10:16 on Aug 28,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -sv -work work +incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/fsm.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:10:16 on Aug 28,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I" C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/fsm.sv 
-# -- Compiling module fsm
-# 
-# Top level modules:
-# 	fsm
-# End time: 17:10:16 on Aug 28,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -sv -work work +incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/main.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:10:16 on Aug 28,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I" C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/main.sv 
-# -- Compiling module main
-# -- Compiling module tbmain
-# 
-# Top level modules:
-# 	tbmain
-# End time: 17:10:16 on Aug 28,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -sv -work work +incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/main.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:10:16 on Aug 28,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I" C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/main.sv 
-# -- Compiling module main
-# -- Compiling module tbmain
-# 
-# Top level modules:
-# 	tbmain
-# End time: 17:10:16 on Aug 28,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -sv -work work +incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/cntdiv_n.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:10:37 on Aug 28,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I" C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/cntdiv_n.sv 
-# -- Compiling module cntdiv_n
-# 
-# Top level modules:
-# 	cntdiv_n
-# End time: 17:10:37 on Aug 28,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -sv -work work +incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/converter.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:10:37 on Aug 28,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I" C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/converter.sv 
-# -- Compiling module converter
-# 
-# Top level modules:
-# 	converter
-# End time: 17:10:37 on Aug 28,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -sv -work work +incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/deco7seg.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:10:37 on Aug 28,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I" C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/deco7seg.sv 
-# -- Compiling module deco7seg
-# 
-# Top level modules:
-# 	deco7seg
-# End time: 17:10:37 on Aug 28,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -sv -work work +incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/fsm.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:10:37 on Aug 28,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I" C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/fsm.sv 
-# -- Compiling module fsm
-# 
-# Top level modules:
-# 	fsm
-# End time: 17:10:37 on Aug 28,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -sv -work work +incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/main.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:10:37 on Aug 28,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I" C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/main.sv 
-# -- Compiling module main
-# -- Compiling module tbmain
-# 
-# Top level modules:
-# 	tbmain
-# End time: 17:10:37 on Aug 28,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -sv -work work +incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/main.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:10:37 on Aug 28,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I" C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/main.sv 
-# -- Compiling module main
-# -- Compiling module tbmain
-# 
-# Top level modules:
-# 	tbmain
-# End time: 17:10:37 on Aug 28,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
+# Break in Module tbmain at C:/Users/oscar/Documents/ED/Practica_I/main.sv line 64
+add wave -position 0  sim:/tbmain/CLK_PERIOD
 restart
-# Loading work.tbmain
-# Loading work.main
-# Loading work.cntdiv_n
-# Loading work.fsm
-# Loading work.converter
-# Loading work.deco7seg
 run -all
-# ** Note: $stop    : C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/main.sv(64)
+# GetModuleFileName: No se puede encontrar el módulo especificado.
+# 
+# 
+# ** Note: $stop    : C:/Users/oscar/Documents/ED/Practica_I/main.sv(64)
 #    Time: 4820 ns  Iteration: 0  Instance: /tbmain
-# Break in Module tbmain at C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/main.sv line 64
-vlog -sv -work work +incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/cntdiv_n.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:12:13 on Aug 28,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I" C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/cntdiv_n.sv 
-# -- Compiling module cntdiv_n
-# 
-# Top level modules:
-# 	cntdiv_n
-# End time: 17:12:14 on Aug 28,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vlog -sv -work work +incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/converter.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:12:14 on Aug 28,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I" C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/converter.sv 
-# -- Compiling module converter
-# 
-# Top level modules:
-# 	converter
-# End time: 17:12:14 on Aug 28,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -sv -work work +incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/deco7seg.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:12:14 on Aug 28,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I" C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/deco7seg.sv 
-# -- Compiling module deco7seg
-# 
-# Top level modules:
-# 	deco7seg
-# End time: 17:12:14 on Aug 28,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -sv -work work +incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/fsm.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:12:14 on Aug 28,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I" C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/fsm.sv 
-# -- Compiling module fsm
-# 
-# Top level modules:
-# 	fsm
-# End time: 17:12:14 on Aug 28,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -sv -work work +incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/main.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:12:14 on Aug 28,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I" C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/main.sv 
-# -- Compiling module main
-# -- Compiling module tbmain
-# 
-# Top level modules:
-# 	tbmain
-# End time: 17:12:14 on Aug 28,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -sv -work work +incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/main.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:12:14 on Aug 28,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I" C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/main.sv 
-# -- Compiling module main
-# -- Compiling module tbmain
-# 
-# Top level modules:
-# 	tbmain
-# End time: 17:12:14 on Aug 28,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-run
-restart
-# Loading work.tbmain
-# Loading work.main
-# Loading work.cntdiv_n
-# Loading work.fsm
-# Loading work.converter
-# Loading work.deco7seg
-run -all
-# ** Note: $stop    : C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/main.sv(64)
-#    Time: 4820 ns  Iteration: 0  Instance: /tbmain
-# Break in Module tbmain at C:/Users/oscar/OneDrive/Documentos/Trabajos/ED_2/Practica_I/main.sv line 64
-# End time: 17:12:59 on Aug 28,2023, Elapsed time: 0:06:02
+# Break in Module tbmain at C:/Users/oscar/Documents/ED/Practica_I/main.sv line 64
+# End time: 15:17:43 on Sep 01,2023, Elapsed time: 0:06:21
 # Errors: 0, Warnings: 0
