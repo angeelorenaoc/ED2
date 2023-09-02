@@ -1,13 +1,13 @@
-module deco7seg(
+module deco7segdec(
 
 		input logic [3:0] D,
 		output logic [6:0] SEG
 	
 );
-//Este es el decodificador para las unidades	
+	
 	always_comb begin
 		case(D)
-			4'b0000: SEG = 7'b1000000;
+			4'b0000: SEG = 7'b1111111;
 			4'b0001: SEG = 7'b1111001;
 			4'b0010: SEG = 7'b0100100;
 			4'b0011: SEG = 7'b0110000;

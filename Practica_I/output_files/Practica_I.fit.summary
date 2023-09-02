@@ -1,11 +1,11 @@
-Fitter Status : Successful - Fri Sep  1 15:08:47 2023
+Fitter Status : Successful - Fri Sep  1 16:36:22 2023
 Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 Revision Name : Practica_I
 Top-level Entity Name : main
 Family : MAX 10
 Device : 10M50DAF484C6GES
 Timing Models : Preliminary
-Total logic elements : 184 / 49,760 ( < 1 % )
+Total logic elements : 186 / 49,760 ( < 1 % )
     Total combinational functions : 182 / 49,760 ( < 1 % )
     Dedicated logic registers : 59 / 49,760 ( < 1 % )
 Total registers : 59

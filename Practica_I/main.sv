@@ -10,24 +10,23 @@ module main # (parameter fpga_freq = 50_000_000)
 
 
 	reg internalClk;
-	logic [3:0] value, tens, units;// número que se mostrará en el display sin su separación
+	logic [3:0] value, tens, units;// número que se mostrará en el display
 
 
-	
+	// Se conectan todos los modulos
 cntdiv_n #(fpga_freq) clock (clk, ~rst, internalClk, timer);
 
 fsm machine (internalClk, ~rst, up, value);
 
 converter conversor (value, tens, units);
 
-deco7seg deco1 (tens, decsegm);
+deco7segdec deco1 (tens, decsegm);
 
 deco7seg deco2 (units, unisegm);
 	
 endmodule
 
 
-//¿Cómo hacer test Bench?
 
 module tbmain ();
 

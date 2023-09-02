@@ -16,6 +16,7 @@ module cntdiv_n #(TOPVALUE = 50_000_000) (clk, rst, clkdiv, timer);
 			clkdiv <= 0;
 		end 
 		else begin
+			// Se determina el contador, dependiendo si es un segundo o 0.5
 			if(timer)begin
 				if (rCounter == (TOPVALUE - 1))
 					rCounter <= 0;

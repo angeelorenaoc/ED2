@@ -4,19 +4,11 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "decsegm[0]",
+					"name" : "decsegm[1]",
 					"strict" : false
 				},
 				{
-					"name" : "decsegm[3]",
-					"strict" : false
-				},
-				{
-					"name" : "decsegm[4]",
-					"strict" : false
-				},
-				{
-					"name" : "decsegm[5]",
+					"name" : "decsegm[2]",
 					"strict" : false
 				},
 				{

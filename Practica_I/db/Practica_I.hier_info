@@ -4,13 +4,13 @@ rst => _.IN1
 rst => _.IN1
 clk => clk.IN1
 timer => timer.IN1
-decsegm[0] <= deco7seg:deco1.port1
-decsegm[1] <= deco7seg:deco1.port1
-decsegm[2] <= deco7seg:deco1.port1
-decsegm[3] <= deco7seg:deco1.port1
-decsegm[4] <= deco7seg:deco1.port1
-decsegm[5] <= deco7seg:deco1.port1
-decsegm[6] <= deco7seg:deco1.port1
+decsegm[0] <= deco7segdec:deco1.port1
+decsegm[1] <= deco7segdec:deco1.port1
+decsegm[2] <= deco7segdec:deco1.port1
+decsegm[3] <= deco7segdec:deco1.port1
+decsegm[4] <= deco7segdec:deco1.port1
+decsegm[5] <= deco7segdec:deco1.port1
+decsegm[6] <= deco7segdec:deco1.port1
 unisegm[0] <= deco7seg:deco2.port1
 unisegm[1] <= deco7seg:deco2.port1
 unisegm[2] <= deco7seg:deco2.port1
@@ -227,7 +227,7 @@ unit[2] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
 unit[3] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|main|deco7seg:deco1
+|main|deco7segdec:deco1
 D[0] => Decoder0.IN3
 D[1] => Decoder0.IN2
 D[2] => Decoder0.IN1
