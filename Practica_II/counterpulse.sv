@@ -1,4 +1,4 @@
-module counterpulse (select, clk, nreset, disp);
+module counterpulse (select, clk, nreset, cnt);
 	input logic select, clk, nreset;
 	output logic [1:0] cnt;
 	

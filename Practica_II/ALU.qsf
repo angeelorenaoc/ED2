@@ -66,3 +66,4 @@ set_global_assignment -name SYSTEMVERILOG_FILE pulse.sv
 set_global_assignment -name SYSTEMVERILOG_FILE deco7seg.sv
 set_global_assignment -name SYSTEMVERILOG_FILE ALU.sv
 set_global_assignment -name SYSTEMVERILOG_FILE nbitAdder.sv
+set_global_assignment -name SYSTEMVERILOG_FILE main.sv
