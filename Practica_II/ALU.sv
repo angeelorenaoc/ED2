@@ -8,6 +8,7 @@ module ALU #(PARAMETER Bits=5)(InA,InB,Control,Result,Flags);
 	logic [ Bits-1 : 0 ] nB, Resultadder, Resultado;
 	logic cout, aux1, aux2, aux3, InO1, InO2, OverFlow;
 	
+	
 	nbitAdder sumador(parameter N = 5)(Control[0], InA, nB, cout, Resultadder);
 	
 	always_comb begin
@@ -24,7 +25,7 @@ module ALU #(PARAMETER Bits=5)(InA,InB,Control,Result,Flags);
 			
 			//Suma
 			2'b00:begin 
-				Resultado <= Resultadder;
+				Resultado <= signed(Resultadder);
 			end	
 			//Resta
 			2'b01: begin  
