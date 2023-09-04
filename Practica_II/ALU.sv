@@ -14,7 +14,7 @@ module ALU #(PARAMETER Bits=5)(InA,InB,Control,Result,Flags);
 	
 		//Mux que se usará para realizar la resta 
 		if(Control[0]) begin
-			nB = (~InB + 1 ); //Complemento a 2 de B ¿Es legal y lógico? xd
+			nB = ~InB; //Complemento a 2 de B ¿Es legal y lógico? xd
 		end else
 			nB = InB;
 	end
@@ -38,7 +38,7 @@ module ALU #(PARAMETER Bits=5)(InA,InB,Control,Result,Flags);
 			2'11:begin
 				Resultado <= InA or InB;
 			end
-			default: SEG = 7'b1111111;
+			default: Resultado = 0;
 		endcase
 	end
 	
