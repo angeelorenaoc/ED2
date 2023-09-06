@@ -59,7 +59,7 @@ module main #(parameter Bits = 5)
 	rst = 1;
 	
 	for ( int i = 0; i < 4 ;i++) begin
-		for ( int j = 0; j < 4 ;i++) begin
+		for ( int j = 0; j < 4 ;j++) begin
 			
 			#(CLK_PERIOD * 1);
 			vB = vB + 5'b00100;
@@ -71,10 +71,10 @@ module main #(parameter Bits = 5)
 		end
 		vA = vA + 5'b00100;
 	end
-	
-	$stop;
+		$stop;
 	end
 
+	
 always #(CLK_PERIOD / 2) clk = ~clk;
 	
 endmodule
