@@ -19,13 +19,13 @@ module main #(parameter Bits = 5)
 	
 	Alu #(Bits) alu(vA, vB, control, Result, ALUflags);
 	
-	converter #(Bits) convert(ALUflags[3],Result, ten, unit);
+	converter #(Bits) convert(ALUflags[3],Result, control,ten, unit);
 	
-	deco7seg decounit(unit, ten, ALUflags[3], 2, units);
+	deco7seg decounit(unit, ten, ALUflags[3], 2, control, units);
 	
-	deco7seg decodec(ten, ten, ALUflags[3], 1, tens);
+	deco7seg decodec(ten, ten, ALUflags[3], 1, control, tens);
 	
-	deco7seg decominus(0, ten, ALUflags[3], 0, minus);
+	deco7seg decominus(0, ten, ALUflags[3], 0, control, minus);
 	
 	
 	endmodule

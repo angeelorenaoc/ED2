@@ -1,17 +1,26 @@
 module deco7seg(
 	input  logic [3:0] D, tens,
 	input logic Flag, 
-	input int deco,
+	input int deco, 
+	input logic [1:0] oper,	
 	output logic [6:0] SEG
 );
  
 	always_comb begin
-		if ((tens==0 & Flag == 1 & deco == 1) | (tens!=0 & Flag == 1 & deco == 1)) begin
+		if ((tens==0 && Flag == 1 & deco == 1) || (tens!=0 & Flag == 1 & deco == 0 & oper != 2'b1?) || (tens!=0 & Flag == 1 & deco == 0 & oper != 2'b10)) begin
 			SEG = 7'b0111111;
 		end
-		else if ((tens==0 & Flag == 0 & deco == 1) | (tens==0 & Flag == 0 & deco == 0) | (tens==0 & Flag == 1 & deco == 0))begin
+		else if ((tens==0 & Flag == 0 & deco == 1) | (tens==0 & Flag == 0 & deco == 0) | (tens==0 & Flag == 1 & deco == 0) | (Flag == 0 & deco == 0) || ((oper == 2'b11 || oper == 2'b10) & deco == 0) | (Flag == 0 & tens != 0 & deco == 0))begin
 			SEG = 7'b1111111;
 		end
+		
+//		if ((tens==0 && Flag == 1 && deco == 1) || (tens!=0 && Flag == 1 && deco == 0 && (oper != 2'b10 || oper != 2'b11))) begin
+//			SEG = 7'b0111111;
+//		end
+//		else if ((tens==0 & Flag == 0 & deco == 1) || (tens==0 & Flag == 1 & deco == 0) || (Flag == 0 & deco == 0) || ((oper == 2'b11 || oper == 2'b10) && deco == 0))begin
+//			SEG = 7'b1111111;
+//		end
+		
 		else begin
 			case(D)
 									// gfedcba
