@@ -1,0 +1,221 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dU:/ED2/Laboratorio/Practica_II/simulation/questa
+vAlu
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1693951120
+!i10b 1
+!s100 [Of`goVZiJFfXlHYUTzcg1
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IK:;VCzlQ8IfQXTKDPnFj00
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1693950619
+8U:/ED2/Laboratorio/Practica_II/Alu.sv
+FU:/ED2/Laboratorio/Practica_II/Alu.sv
+!i122 7
+L0 1 51
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1693951120.000000
+!s107 U:/ED2/Laboratorio/Practica_II/Alu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_II|U:/ED2/Laboratorio/Practica_II/Alu.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+U:/ED2/Laboratorio/Practica_II
+Z9 tCvgOpt 0
+n@alu
+vconverter
+R1
+R2
+!i10b 1
+!s100 LVZjRVea@^E8e[EEh?40I0
+R3
+I1Q@FYj@ZDeUi]nC@i6H3c0
+R4
+S1
+R0
+w1693950231
+8U:/ED2/Laboratorio/Practica_II/converter.sv
+FU:/ED2/Laboratorio/Practica_II/converter.sv
+!i122 8
+L0 1 21
+R5
+r1
+!s85 0
+31
+R6
+!s107 U:/ED2/Laboratorio/Practica_II/converter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_II|U:/ED2/Laboratorio/Practica_II/converter.sv|
+!i113 1
+R7
+R8
+R9
+vcounterpulse
+R1
+R2
+!i10b 1
+!s100 S9c6^eTFe>0LKVFHiiclM1
+R3
+I0b43C0@[fW8@Om3EV^ROf3
+R4
+S1
+R0
+w1693950803
+8U:/ED2/Laboratorio/Practica_II/counterpulse.sv
+FU:/ED2/Laboratorio/Practica_II/counterpulse.sv
+!i122 9
+Z10 L0 1 31
+R5
+r1
+!s85 0
+31
+R6
+!s107 U:/ED2/Laboratorio/Practica_II/counterpulse.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_II|U:/ED2/Laboratorio/Practica_II/counterpulse.sv|
+!i113 1
+R7
+R8
+R9
+vdeco7seg
+R1
+R2
+!i10b 1
+!s100 l>KdezLn2JCm`8>Ei<=<G3
+R3
+I=QAoXP@E^0AB1b7AA9=iB3
+R4
+S1
+R0
+w1693948252
+8U:/ED2/Laboratorio/Practica_II/deco7seg.sv
+FU:/ED2/Laboratorio/Practica_II/deco7seg.sv
+!i122 10
+L0 1 32
+R5
+r1
+!s85 0
+31
+R6
+!s107 U:/ED2/Laboratorio/Practica_II/deco7seg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_II|U:/ED2/Laboratorio/Practica_II/deco7seg.sv|
+!i113 1
+R7
+R8
+R9
+vmain
+R1
+Z11 !s110 1693951425
+!i10b 1
+!s100 HI0gP[FzA:QXMTkUPUD@V0
+R3
+IcNA98KSOUeRaWcEA>P_4M2
+R4
+S1
+R0
+Z12 w1693951411
+Z13 8U:/ED2/Laboratorio/Practica_II/main.sv
+Z14 FU:/ED2/Laboratorio/Practica_II/main.sv
+!i122 15
+R10
+R5
+r1
+!s85 0
+31
+Z15 !s108 1693951425.000000
+!s107 U:/ED2/Laboratorio/Practica_II/main.sv|
+Z16 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_II|U:/ED2/Laboratorio/Practica_II/main.sv|
+!i113 1
+R7
+R8
+R9
+vnbitAdder
+R1
+R2
+!i10b 1
+!s100 Dn^hCkD_niBaA8L43nM2a2
+R3
+IeXbgjN?SdR;bOUaPfgF872
+R4
+S1
+R0
+w1693948001
+8U:/ED2/Laboratorio/Practica_II/nbitAdder.sv
+FU:/ED2/Laboratorio/Practica_II/nbitAdder.sv
+!i122 12
+L0 1 13
+R5
+r1
+!s85 0
+31
+R6
+!s107 U:/ED2/Laboratorio/Practica_II/nbitAdder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_II|U:/ED2/Laboratorio/Practica_II/nbitAdder.sv|
+!i113 1
+R7
+R8
+R9
+nnbit@adder
+vpulse
+R1
+R2
+!i10b 1
+!s100 j>z`]F4i;B3jQ9[V@gDAC1
+R3
+ILATcD6@nC<FhifAeJ[U<d3
+R4
+S1
+R0
+w1693849421
+8U:/ED2/Laboratorio/Practica_II/pulse.sv
+FU:/ED2/Laboratorio/Practica_II/pulse.sv
+!i122 13
+L0 1 19
+R5
+r1
+!s85 0
+31
+R6
+!s107 U:/ED2/Laboratorio/Practica_II/pulse.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_II|U:/ED2/Laboratorio/Practica_II/pulse.sv|
+!i113 1
+R7
+R8
+R9
+vtbmain
+R1
+R11
+!i10b 1
+!s100 jnQl;kYo0a?k6Bn5>iQSk3
+R3
+IelObA^C^VK[GEj>RM=KR82
+R4
+S1
+R0
+R12
+R13
+R14
+!i122 15
+L0 33 142
+R5
+r1
+!s85 0
+31
+R15
+Z17 !s107 U:/ED2/Laboratorio/Practica_II/main.sv|
+R16
+!i113 1
+R7
+R8
+R9

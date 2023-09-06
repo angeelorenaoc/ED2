@@ -1,4 +1,4 @@
-module deco7seg_hexa(
+module deco7seg(
 	input  logic [3:0] D, tens,
 	input logic Flag, 
 	input int deco,
@@ -6,10 +6,10 @@ module deco7seg_hexa(
 );
  
 	always_comb begin
-		if ((tens==0 & Flag == 1 & deco == 1) or (tens!=0 & Flag == 1 & deco == 1)) begin
+		if ((tens==0 & Flag == 1 & deco == 1) | (tens!=0 & Flag == 1 & deco == 1)) begin
 			SEG = 7'b0111111;
 		end
-		else if ((tens==0 & Flag == 0 & deco == 1) or (tens==0 & Flag == 0 & deco == 0) OR (tens==0 & Flag == 1 & deco == 0))begin
+		else if ((tens==0 & Flag == 0 & deco == 1) | (tens==0 & Flag == 0 & deco == 0) | (tens==0 & Flag == 1 & deco == 0))begin
 			SEG = 7'b1111111;
 		end
 		else begin

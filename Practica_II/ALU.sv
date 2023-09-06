@@ -1,4 +1,4 @@
-module ALU #(PARAMETER Bits=5)(InA,InB,Control,Result,Flags);
+module Alu #(parameter Bits=5)(InA,InB,Control,Result,Flags);
 	
 	input logic [ Bits-1 : 0 ] InA,InB;
 	input logic [1:0] Control;
@@ -9,7 +9,7 @@ module ALU #(PARAMETER Bits=5)(InA,InB,Control,Result,Flags);
 	logic cout, aux1, aux2, aux3, InO1, InO2, OverFlow;
 	
 	
-	nbitAdder sumador(parameter N = 5)(Control[0], InA, nB, cout, Resultadder);
+	nbitAdder #(Bits) sumador(Control[0], InA, nB, cout, Resultadder);
 	
 	always_comb begin
 	
@@ -21,41 +21,31 @@ module ALU #(PARAMETER Bits=5)(InA,InB,Control,Result,Flags);
 	end
 	
 	always_comb begin
-		case(Control)
-			
+		casez(Control)
 			//Suma
-			2'b00:begin 
-				Resultado <= signed(Resultadder);
-			end	
 			//Resta
-			2'b01: begin  
-				Resultado <= Resultadder;
-			end
+			2'b0?: Resultado = Resultadder;
 			//And
-			2'b10: begin
-				Resultado <= InA and InB;
-			end
+			2'b10: Resultado = InA & InB;
 			//Or
-			2'11:begin
-				Resultado <= InA or InB;
-			end
+			2'b11: Resultado = InA | InB;
 			default: Resultado = 0;
 		endcase
 	end
 	
 	//Proceso para obtener la Bandera Overflow
-	aux1 = Resultadder[ Bits-1];
-	aux2 = InA[ Bits-1];
-	aux3 = InB[ Bits-1];
-	InO1 = aux1 XOR aux2;
-	InO2 = ~(aux1 XOR aux2);
+	assign aux1 = Resultadder[ Bits-1];
+	assign aux2 = InA[ Bits-1];
+	assign aux3 = InB[ Bits-1];
+	assign InO1 = aux1 ^ aux2;
+	assign InO2 = ~(Control[0] ^ aux2 ^ aux3);
 	
 	
 	//Asignación de las salidas, Bnaderas y resultado de la ALU
 	assign Result = Resultado;
-	assign Flags[2] = (~Resultado) and (~Resultado);
+	assign Flags[2] = (Resultado == 0) ? 1:0;
 	assign Flags[3] = Resultado[Bits-1];
-	assign Flags[1] = Control[1] and cout;
-	assign Flags[0] = InO1 and InO1 and ~(Coltrol[1]);
+	assign Flags[1] = ~Control[1] & cout;
+	assign Flags[0] = InO1 & InO2 & ~(Control[1]);
 	
 endmodule

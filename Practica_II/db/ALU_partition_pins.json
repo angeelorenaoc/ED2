@@ -1,0 +1,169 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "minus[0]",
+					"strict" : false
+				},
+				{
+					"name" : "minus[1]",
+					"strict" : false
+				},
+				{
+					"name" : "minus[2]",
+					"strict" : false
+				},
+				{
+					"name" : "minus[3]",
+					"strict" : false
+				},
+				{
+					"name" : "minus[4]",
+					"strict" : false
+				},
+				{
+					"name" : "minus[5]",
+					"strict" : false
+				},
+				{
+					"name" : "tens[0]",
+					"strict" : false
+				},
+				{
+					"name" : "tens[1]",
+					"strict" : false
+				},
+				{
+					"name" : "tens[2]",
+					"strict" : false
+				},
+				{
+					"name" : "tens[3]",
+					"strict" : false
+				},
+				{
+					"name" : "tens[4]",
+					"strict" : false
+				},
+				{
+					"name" : "tens[6]",
+					"strict" : false
+				},
+				{
+					"name" : "units[0]",
+					"strict" : false
+				},
+				{
+					"name" : "units[1]",
+					"strict" : false
+				},
+				{
+					"name" : "units[2]",
+					"strict" : false
+				},
+				{
+					"name" : "units[3]",
+					"strict" : false
+				},
+				{
+					"name" : "units[4]",
+					"strict" : false
+				},
+				{
+					"name" : "units[5]",
+					"strict" : false
+				},
+				{
+					"name" : "units[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUflags[0]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUflags[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUflags[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ALUflags[3]",
+					"strict" : false
+				},
+				{
+					"name" : "operation[0]",
+					"strict" : false
+				},
+				{
+					"name" : "operation[1]",
+					"strict" : false
+				},
+				{
+					"name" : "operation[2]",
+					"strict" : false
+				},
+				{
+					"name" : "operation[3]",
+					"strict" : false
+				},
+				{
+					"name" : "vB[4]",
+					"strict" : false
+				},
+				{
+					"name" : "vA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "vB[3]",
+					"strict" : false
+				},
+				{
+					"name" : "vA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "vB[2]",
+					"strict" : false
+				},
+				{
+					"name" : "vA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "vB[1]",
+					"strict" : false
+				},
+				{
+					"name" : "vA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "vB[0]",
+					"strict" : false
+				},
+				{
+					"name" : "vA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "nrst",
+					"strict" : false
+				},
+				{
+					"name" : "nOpersel",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

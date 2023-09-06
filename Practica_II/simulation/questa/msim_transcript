@@ -1,0 +1,328 @@
+# Reading pref.tcl
+# do ALU_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/22.1std/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_II {U:/ED2/Laboratorio/Practica_II/Alu.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:31:14 on Sep 05,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_II" U:/ED2/Laboratorio/Practica_II/Alu.sv 
+# -- Compiling module Alu
+# 
+# Top level modules:
+# 	Alu
+# End time: 16:31:14 on Sep 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_II {U:/ED2/Laboratorio/Practica_II/converter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:31:14 on Sep 05,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_II" U:/ED2/Laboratorio/Practica_II/converter.sv 
+# -- Compiling module converter
+# 
+# Top level modules:
+# 	converter
+# End time: 16:31:14 on Sep 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_II {U:/ED2/Laboratorio/Practica_II/counterpulse.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:31:14 on Sep 05,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_II" U:/ED2/Laboratorio/Practica_II/counterpulse.sv 
+# -- Compiling module counterpulse
+# 
+# Top level modules:
+# 	counterpulse
+# End time: 16:31:15 on Sep 05,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_II {U:/ED2/Laboratorio/Practica_II/pulse.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:31:15 on Sep 05,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_II" U:/ED2/Laboratorio/Practica_II/pulse.sv 
+# -- Compiling module pulse
+# 
+# Top level modules:
+# 	pulse
+# End time: 16:31:15 on Sep 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_II {U:/ED2/Laboratorio/Practica_II/deco7seg.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:31:15 on Sep 05,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_II" U:/ED2/Laboratorio/Practica_II/deco7seg.sv 
+# -- Compiling module deco7seg
+# 
+# Top level modules:
+# 	deco7seg
+# End time: 16:31:15 on Sep 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_II {U:/ED2/Laboratorio/Practica_II/nbitAdder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:31:15 on Sep 05,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_II" U:/ED2/Laboratorio/Practica_II/nbitAdder.sv 
+# -- Compiling module nbitAdder
+# 
+# Top level modules:
+# 	nbitAdder
+# End time: 16:31:15 on Sep 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_II {U:/ED2/Laboratorio/Practica_II/main.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:31:15 on Sep 05,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_II" U:/ED2/Laboratorio/Practica_II/main.sv 
+# -- Compiling module main
+# -- Compiling module tbmain
+# 
+# Top level modules:
+# 	tbmain
+# End time: 16:31:15 on Sep 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.tbmain
+# vsim work.tbmain 
+# Start time: 16:31:21 on Sep 05,2023
+# Loading sv_std.std
+# Loading work.tbmain
+# Loading work.main
+# Loading work.counterpulse
+# Loading work.pulse
+# Loading work.Alu
+# Loading work.nbitAdder
+# Loading work.converter
+# Loading work.deco7seg
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'cnt'. The port definition is at: U:/ED2/Laboratorio/Practica_II/counterpulse.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /tbmain/main_u0/oper File: U:/ED2/Laboratorio/Practica_II/main.sv Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'Control'. The port definition is at: U:/ED2/Laboratorio/Practica_II/Alu.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /tbmain/main_u0/alu File: U:/ED2/Laboratorio/Practica_II/main.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Result'. The port definition is at: U:/ED2/Laboratorio/Practica_II/Alu.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /tbmain/main_u0/alu File: U:/ED2/Laboratorio/Practica_II/main.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'value'. The port definition is at: U:/ED2/Laboratorio/Practica_II/converter.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /tbmain/main_u0/convert File: U:/ED2/Laboratorio/Practica_II/main.sv Line: 17
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'D'. The port definition is at: U:/ED2/Laboratorio/Practica_II/deco7seg.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tbmain/main_u0/decominus File: U:/ED2/Laboratorio/Practica_II/main.sv Line: 23
+add wave -position end  sim:/tbmain/Bits
+add wave -position end  sim:/tbmain/clk
+add wave -position end  sim:/tbmain/rst
+add wave -position end  sim:/tbmain/Opersel
+add wave -position end  sim:/tbmain/vA
+add wave -position end  sim:/tbmain/vB
+add wave -position end  sim:/tbmain/minus
+add wave -position end  sim:/tbmain/tens
+add wave -position end  sim:/tbmain/units
+add wave -position end  sim:/tbmain/ALUflags
+add wave -position end  sim:/tbmain/operation
+run -all
+# ** Note: $stop    : U:/ED2/Laboratorio/Practica_II/main.sv(164)
+#    Time: 16660 ns  Iteration: 0  Instance: /tbmain
+# Break in Module tbmain at U:/ED2/Laboratorio/Practica_II/main.sv line 164
+add wave -position end  sim:/tbmain/main_u0/oper/operation
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'cnt'. The port definition is at: U:/ED2/Laboratorio/Practica_II/counterpulse.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /tbmain/main_u0/oper File: U:/ED2/Laboratorio/Practica_II/main.sv Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'Control'. The port definition is at: U:/ED2/Laboratorio/Practica_II/Alu.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /tbmain/main_u0/alu File: U:/ED2/Laboratorio/Practica_II/main.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Result'. The port definition is at: U:/ED2/Laboratorio/Practica_II/Alu.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /tbmain/main_u0/alu File: U:/ED2/Laboratorio/Practica_II/main.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'value'. The port definition is at: U:/ED2/Laboratorio/Practica_II/converter.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /tbmain/main_u0/convert File: U:/ED2/Laboratorio/Practica_II/main.sv Line: 17
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'D'. The port definition is at: U:/ED2/Laboratorio/Practica_II/deco7seg.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tbmain/main_u0/decominus File: U:/ED2/Laboratorio/Practica_II/main.sv Line: 23
+run -all
+# ** Note: $stop    : U:/ED2/Laboratorio/Practica_II/main.sv(164)
+#    Time: 16660 ns  Iteration: 0  Instance: /tbmain
+# Break in Module tbmain at U:/ED2/Laboratorio/Practica_II/main.sv line 164
+add wave -position end  sim:/tbmain/main_u0/oper/cnt
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'cnt'. The port definition is at: U:/ED2/Laboratorio/Practica_II/counterpulse.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /tbmain/main_u0/oper File: U:/ED2/Laboratorio/Practica_II/main.sv Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'Control'. The port definition is at: U:/ED2/Laboratorio/Practica_II/Alu.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /tbmain/main_u0/alu File: U:/ED2/Laboratorio/Practica_II/main.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Result'. The port definition is at: U:/ED2/Laboratorio/Practica_II/Alu.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /tbmain/main_u0/alu File: U:/ED2/Laboratorio/Practica_II/main.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'value'. The port definition is at: U:/ED2/Laboratorio/Practica_II/converter.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /tbmain/main_u0/convert File: U:/ED2/Laboratorio/Practica_II/main.sv Line: 17
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'D'. The port definition is at: U:/ED2/Laboratorio/Practica_II/deco7seg.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tbmain/main_u0/decominus File: U:/ED2/Laboratorio/Practica_II/main.sv Line: 23
+run -all
+# ** Note: $stop    : U:/ED2/Laboratorio/Practica_II/main.sv(164)
+#    Time: 16660 ns  Iteration: 0  Instance: /tbmain
+# Break in Module tbmain at U:/ED2/Laboratorio/Practica_II/main.sv line 164
+add wave -position end  sim:/tbmain/main_u0/oper/p0/pulse
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'cnt'. The port definition is at: U:/ED2/Laboratorio/Practica_II/counterpulse.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /tbmain/main_u0/oper File: U:/ED2/Laboratorio/Practica_II/main.sv Line: 13
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (1) for port 'Control'. The port definition is at: U:/ED2/Laboratorio/Practica_II/Alu.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /tbmain/main_u0/alu File: U:/ED2/Laboratorio/Practica_II/main.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'Result'. The port definition is at: U:/ED2/Laboratorio/Practica_II/Alu.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /tbmain/main_u0/alu File: U:/ED2/Laboratorio/Practica_II/main.sv Line: 15
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (1) for port 'value'. The port definition is at: U:/ED2/Laboratorio/Practica_II/converter.sv(1).
+#    Time: 0 ps  Iteration: 0  Instance: /tbmain/main_u0/convert File: U:/ED2/Laboratorio/Practica_II/main.sv Line: 17
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'D'. The port definition is at: U:/ED2/Laboratorio/Practica_II/deco7seg.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tbmain/main_u0/decominus File: U:/ED2/Laboratorio/Practica_II/main.sv Line: 23
+run -all
+# ** Note: $stop    : U:/ED2/Laboratorio/Practica_II/main.sv(164)
+#    Time: 16660 ns  Iteration: 0  Instance: /tbmain
+# Break in Module tbmain at U:/ED2/Laboratorio/Practica_II/main.sv line 164
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_II U:/ED2/Laboratorio/Practica_II/Alu.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:58:40 on Sep 05,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_II" U:/ED2/Laboratorio/Practica_II/Alu.sv 
+# -- Compiling module Alu
+# 
+# Top level modules:
+# 	Alu
+# End time: 16:58:40 on Sep 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_II U:/ED2/Laboratorio/Practica_II/converter.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:58:40 on Sep 05,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_II" U:/ED2/Laboratorio/Practica_II/converter.sv 
+# -- Compiling module converter
+# 
+# Top level modules:
+# 	converter
+# End time: 16:58:40 on Sep 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_II U:/ED2/Laboratorio/Practica_II/counterpulse.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:58:40 on Sep 05,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_II" U:/ED2/Laboratorio/Practica_II/counterpulse.sv 
+# -- Compiling module counterpulse
+# 
+# Top level modules:
+# 	counterpulse
+# End time: 16:58:40 on Sep 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_II U:/ED2/Laboratorio/Practica_II/deco7seg.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:58:40 on Sep 05,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_II" U:/ED2/Laboratorio/Practica_II/deco7seg.sv 
+# -- Compiling module deco7seg
+# 
+# Top level modules:
+# 	deco7seg
+# End time: 16:58:40 on Sep 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_II U:/ED2/Laboratorio/Practica_II/main.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:58:40 on Sep 05,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_II" U:/ED2/Laboratorio/Practica_II/main.sv 
+# -- Compiling module main
+# -- Compiling module tbmain
+# 
+# Top level modules:
+# 	tbmain
+# End time: 16:58:40 on Sep 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_II U:/ED2/Laboratorio/Practica_II/nbitAdder.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:58:40 on Sep 05,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_II" U:/ED2/Laboratorio/Practica_II/nbitAdder.sv 
+# -- Compiling module nbitAdder
+# 
+# Top level modules:
+# 	nbitAdder
+# End time: 16:58:40 on Sep 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_II U:/ED2/Laboratorio/Practica_II/pulse.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:58:40 on Sep 05,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_II" U:/ED2/Laboratorio/Practica_II/pulse.sv 
+# -- Compiling module pulse
+# 
+# Top level modules:
+# 	pulse
+# End time: 16:58:40 on Sep 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_II U:/ED2/Laboratorio/Practica_II/main.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:58:40 on Sep 05,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_II" U:/ED2/Laboratorio/Practica_II/main.sv 
+# -- Compiling module main
+# -- Compiling module tbmain
+# 
+# Top level modules:
+# 	tbmain
+# End time: 16:58:40 on Sep 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+vsim work.tbmain
+# End time: 16:59:11 on Sep 05,2023, Elapsed time: 0:27:50
+# Errors: 0, Warnings: 5
+# vsim work.tbmain 
+# Start time: 16:59:11 on Sep 05,2023
+# Loading sv_std.std
+# Loading work.tbmain
+# Loading work.main
+# Loading work.counterpulse
+# Loading work.pulse
+# Loading work.Alu
+# Loading work.nbitAdder
+# Loading work.converter
+# Loading work.deco7seg
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'D'. The port definition is at: U:/ED2/Laboratorio/Practica_II/deco7seg.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tbmain/main_u0/decominus File: U:/ED2/Laboratorio/Practica_II/main.sv Line: 28
+add wave -position end  sim:/tbmain/clk
+add wave -position end  sim:/tbmain/rst
+add wave -position end  sim:/tbmain/Opersel
+add wave -position end  sim:/tbmain/vA
+add wave -position end  sim:/tbmain/vB
+add wave -position end  sim:/tbmain/minus
+add wave -position end  sim:/tbmain/tens
+add wave -position end  sim:/tbmain/units
+add wave -position end  sim:/tbmain/ALUflags
+add wave -position end  sim:/tbmain/operation
+run -all
+# ** Note: $stop    : U:/ED2/Laboratorio/Practica_II/main.sv(169)
+#    Time: 16660 ns  Iteration: 0  Instance: /tbmain
+# Break in Module tbmain at U:/ED2/Laboratorio/Practica_II/main.sv line 169
+add wave -position end  sim:/tbmain/main_u0/oper/p0/pulse
+add wave -position end  sim:/tbmain/main_u0/oper/p0/d
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'D'. The port definition is at: U:/ED2/Laboratorio/Practica_II/deco7seg.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tbmain/main_u0/decominus File: U:/ED2/Laboratorio/Practica_II/main.sv Line: 28
+run -all
+# ** Note: $stop    : U:/ED2/Laboratorio/Practica_II/main.sv(169)
+#    Time: 16660 ns  Iteration: 0  Instance: /tbmain
+# Break in Module tbmain at U:/ED2/Laboratorio/Practica_II/main.sv line 169
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_II U:/ED2/Laboratorio/Practica_II/main.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:03:45 on Sep 05,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_II" U:/ED2/Laboratorio/Practica_II/main.sv 
+# -- Compiling module main
+# -- Compiling module tbmain
+# 
+# Top level modules:
+# 	tbmain
+# End time: 17:03:45 on Sep 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tbmain
+# Loading work.main
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'D'. The port definition is at: U:/ED2/Laboratorio/Practica_II/deco7seg.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tbmain/main_u0/decominus File: U:/ED2/Laboratorio/Practica_II/main.sv Line: 28
+run -all
+# ** Note: $stop    : U:/ED2/Laboratorio/Practica_II/main.sv(169)
+#    Time: 16660 ns  Iteration: 0  Instance: /tbmain
+# Break in Module tbmain at U:/ED2/Laboratorio/Practica_II/main.sv line 169
+add wave -position end  sim:/tbmain/main_u0/ten
+add wave -position end  sim:/tbmain/main_u0/unit
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (32) for port 'D'. The port definition is at: U:/ED2/Laboratorio/Practica_II/deco7seg.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tbmain/main_u0/decominus File: U:/ED2/Laboratorio/Practica_II/main.sv Line: 28
+run -all
+# ** Note: $stop    : U:/ED2/Laboratorio/Practica_II/main.sv(169)
+#    Time: 16660 ns  Iteration: 0  Instance: /tbmain
+# Break in Module tbmain at U:/ED2/Laboratorio/Practica_II/main.sv line 169
+# End time: 19:25:59 on Sep 05,2023, Elapsed time: 2:26:48
+# Errors: 0, Warnings: 1

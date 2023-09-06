@@ -1,30 +1,31 @@
-module main #(PARAMETER Bits = 5)
+module main #(parameter Bits = 5)
 
 	(
-	input logic clk, rst, Opersel,
+	input logic clk, nrst, nOpersel,
 	input logic [Bits-1:0] vA, vB,
 	output logic [6:0] minus, tens, units,
 	output logic [3:0] ALUflags, operation
 	);
 	
-	logic control, Result;
-	logic [3:0] ten, unit
+	logic rst, Opersel;
+	logic [1:0] control;
+	logic [Bits-1: 0] Result;
+	logic [3:0] ten, unit;
 	
-	counterpulse oper(~Opersel, clk, rst control);
+	assign rst = ~nrst;
+	assign Opersel = ~nOpersel;
 	
-	ALU (Bits) alu(vA, vB,control,Result,ALUflags);
+	counterpulse oper(Opersel, clk, rst, control, operation);
 	
-	converter #(Bits)(ALUflags[3],Result, ten, unit)
+	Alu #(Bits) alu(vA, vB, control, Result, ALUflags);
 	
-		input  logic [3:0] D, tens,
-	input logic Flag, deco,
-	output logic [6:0] SEG
+	converter #(Bits) convert(ALUflags[3],Result, ten, unit);
 	
-	deco7segs decounit(unit, ten, ALUflags[3], 2, units)
+	deco7seg decounit(unit, ten, ALUflags[3], 2, units);
 	
-	deco7segs decodec(ten, ten, ALUflags[3], 1, tens)
+	deco7seg decodec(ten, ten, ALUflags[3], 1, tens);
 	
-	deco7segs decominus(0, ten, ALUflags[3], 0, minusv)
+	deco7seg decominus(0, ten, ALUflags[3], 0, minus);
 	
 	
 	endmodule
@@ -33,31 +34,47 @@ module main #(PARAMETER Bits = 5)
 	
 	localparam CLK_PERIOD = 20ns;
 	localparam Bits = 5;
-	local clk;
-	local rst;
-	local Opersel;
-	local [Bits-1:0] vA;
-	local [Bits-1:0] vB;
-	local [6:0] minus;
-	local [6:0] tens;
-	local [6:0] units;
-	local [3:0] ALUflags;
-	local [3:0] operation;
+	logic clk;
+	logic rst;
+	logic Opersel;
+	logic [Bits-1:0] vA;
+	logic [Bits-1:0] vB;
+	logic [6:0] minus;
+	logic [6:0] tens;
+	logic [6:0] units;
+	logic [3:0] ALUflags;
+	logic [3:0] operation;
 	
-	main (5)(clk,rst, Opersel, vA, vB, minus, tens, units, ALUflags, operation);
+	main #(5) main_u0 (clk,rst, Opersel, vA, vB, minus, tens, units, ALUflags, operation);
 	
 	initial begin
 	
 	clk = 0;
-	rst = 1;
-	vA = 5'b01001;
-	vB = 5'b11010;
+	rst = 0;
+	vA = 5'b00000;
+	vB = 5'b00000;
 	Opersel = 0;
 	
-	for (int i = 0, i<4, i++) begin
-		for (int j = 0, j<4, j++) begin
-			Opersel=1;
+	#(CLK_PERIOD * 1);
+	rst = 1;
+	
+	for ( int i = 0; i < 4 ;i++) begin
+		for ( int j = 0; j < 4 ;i++) begin
+			
+			#(CLK_PERIOD * 1);
+			vB = vB + 5'b00100;
+			Opersel = 1;
+			
+			#(CLK_PERIOD * 4);
+			Opersel = 0;
+		
 		end
+		vA = vA + 5'b00100;
 	end
 	
-	endmodule
+	$stop;
+	end
+
+always #(CLK_PERIOD / 2) clk = ~clk;
+	
+endmodule

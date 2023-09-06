@@ -1,4 +1,4 @@
-module converter #(PARAMETER Bits=5)(FlagNeg,value, tens, unit);
+module converter #(parameter Bits=5)(FlagNeg,value, tens, unit);
 	input logic [Bits-1:0] value;
 	input logic FlagNeg;
 	output logic [3:0] tens, unit;
@@ -8,7 +8,7 @@ module converter #(PARAMETER Bits=5)(FlagNeg,value, tens, unit);
 	always_comb begin 
 
 		if (FlagNeg)begin 
-			valuediv = (~value + 1) ;
+			valuediv = (~value + 1'b1) ;
 
 		end
 		else begin
