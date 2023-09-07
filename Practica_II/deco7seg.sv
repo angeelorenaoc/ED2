@@ -6,22 +6,26 @@ module deco7seg(
 	output logic [6:0] SEG
 );
  
+	logic minus;
+	
+	assign minus = ~oper[1] & Flag;
+	
 	always_comb begin
-		if ((tens==0 && Flag == 1 & deco == 1) || (tens!=0 & Flag == 1 & deco == 0 & oper != 2'b1?) || (tens!=0 & Flag == 1 & deco == 0 & oper != 2'b10)) begin
-			SEG = 7'b0111111;
-		end
-		else if ((tens==0 & Flag == 0 & deco == 1) | (tens==0 & Flag == 0 & deco == 0) | (tens==0 & Flag == 1 & deco == 0) | (Flag == 0 & deco == 0) || ((oper == 2'b11 || oper == 2'b10) & deco == 0) | (Flag == 0 & tens != 0 & deco == 0))begin
-			SEG = 7'b1111111;
-		end
-		
-//		if ((tens==0 && Flag == 1 && deco == 1) || (tens!=0 && Flag == 1 && deco == 0 && (oper != 2'b10 || oper != 2'b11))) begin
+//		if ((tens==0 && Flag == 1 & deco == 1) || (tens!=0 & Flag == 1 & deco == 0 & oper != 2'b1?) || (tens!=0 & Flag == 1 & deco == 0 & oper != 2'b10)) begin
 //			SEG = 7'b0111111;
 //		end
-//		else if ((tens==0 & Flag == 0 & deco == 1) || (tens==0 & Flag == 1 & deco == 0) || (Flag == 0 & deco == 0) || ((oper == 2'b11 || oper == 2'b10) && deco == 0))begin
+//		else if ((tens==0 & Flag == 0 & deco == 1) | (tens==0 & Flag == 0 & deco == 0) | (tens==0 & Flag == 1 & deco == 0) | (Flag == 0 & deco == 0) || ((oper == 2'b11 || oper == 2'b10) & deco == 0) | (Flag == 0 & tens != 0 & deco == 0))begin
 //			SEG = 7'b1111111;
 //		end
 		
+//		else begin
+	
+		if ((minus == 0 && tens == 0 && deco != 2) || (minus == 0 && deco == 0 && tens != 0) || (minus == 1 && deco == 0 && tens == 0))
+			SEG = 7'b1111111;
+		else if ((minus == 1 && tens == 0 && deco == 1) || (minus == 1 && tens != 0 && deco == 0) )
+			SEG = 7'b0111111;
 		else begin
+		
 			case(D)
 									// gfedcba
 				4'b0000: SEG = 7'b1000000;
@@ -38,4 +42,5 @@ module deco7seg(
 			endcase
 		end
 	end
+	
 endmodule
