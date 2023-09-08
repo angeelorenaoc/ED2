@@ -6,7 +6,7 @@ module counterpulse (select, clk, reset, cnt,operation);
 	// Internal signals
 	logic intPulse;
 	
-	// Parallel circuits
+	// Instanciación del módulo que genera el pulso
 
 	pulse p0 (select, clk, reset, intPulse);
 	
@@ -18,6 +18,7 @@ module counterpulse (select, clk, reset, cnt,operation);
 			cnt <= cnt + 2'b1;
 	end
 	
+	//Asiganción del led que debe encender de acuerdo a la operación realizada
 	always_comb begin
 		case(cnt)
 			2'b00: operation = 4'b0001;

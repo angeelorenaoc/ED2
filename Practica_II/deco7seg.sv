@@ -5,20 +5,15 @@ module deco7seg(
 	input logic [1:0] oper,	
 	output logic [6:0] SEG
 );
+	//Módulo encargado de realizar la codificación del valor ingresado para que este sea enviado en el formato correcto al display de 7 segmentos,
+	//aquí, también se evalúa, si el número es negativo para mostrar el signo en el display, 
+	//además, determina es el display que debe estar encendido
  
 	logic minus;
 	
 	assign minus = ~oper[1] & Flag;
 	
 	always_comb begin
-//		if ((tens==0 && Flag == 1 & deco == 1) || (tens!=0 & Flag == 1 & deco == 0 & oper != 2'b1?) || (tens!=0 & Flag == 1 & deco == 0 & oper != 2'b10)) begin
-//			SEG = 7'b0111111;
-//		end
-//		else if ((tens==0 & Flag == 0 & deco == 1) | (tens==0 & Flag == 0 & deco == 0) | (tens==0 & Flag == 1 & deco == 0) | (Flag == 0 & deco == 0) || ((oper == 2'b11 || oper == 2'b10) & deco == 0) | (Flag == 0 & tens != 0 & deco == 0))begin
-//			SEG = 7'b1111111;
-//		end
-		
-//		else begin
 	
 		if ((minus == 0 && tens == 0 && deco != 2) || (minus == 0 && deco == 0 && tens != 0) || (minus == 1 && deco == 0 && tens == 0))
 			SEG = 7'b1111111;
@@ -41,6 +36,7 @@ module deco7seg(
 				default: SEG = 7'b1111111;
 			endcase
 		end
+		
 	end
 	
 endmodule

@@ -7,14 +7,18 @@ module main #(parameter Bits = 5)
 	output logic [3:0] ALUflags, operation
 	);
 	
+	//Definición de señales
 	logic rst, Opersel;
 	logic [1:0] control;
 	logic [Bits-1: 0] Result;
 	logic [3:0] ten, unit;
 	
+	
+	//Negación de las señales reset y opersel, ya que estas son activas en bajo
 	assign rst = ~nrst;
 	assign Opersel = ~nOpersel;
 	
+	//Instanciación de los módulos necesarios para el diseño requerido
 	counterpulse oper(Opersel, clk, rst, control, operation);
 	
 	Alu #(Bits) alu(vA, vB, control, Result, ALUflags);
@@ -32,6 +36,7 @@ module main #(parameter Bits = 5)
 	
 	module tbmain ();
 	
+	//Definición de las señales para la simulación
 	localparam CLK_PERIOD = 20ns;
 	localparam Bits = 5;
 	logic clk;
@@ -58,6 +63,7 @@ module main #(parameter Bits = 5)
 	#(CLK_PERIOD * 1);
 	rst = 1;
 	
+	//Los siguientes ciclos son utilizados para la variación de las entradas, y el cambio de operación.
 	for ( int i = 0; i < 4 ;i++) begin
 		for ( int j = 0; j < 4 ;j++) begin
 			

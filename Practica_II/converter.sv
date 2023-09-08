@@ -5,11 +5,11 @@ module converter #(parameter Bits=5)(FlagNeg,value, oper, tens, unit);
 	output logic [3:0] tens, unit;
 
 	logic [Bits-1:0] valuediv;
-
+	//Este es el módulo que se encarga de separar las decenas y unidades del número ingresado, 
+	//teniendo en cuenta si este es positivo o negativo
 	always_comb begin 
-					// No le dió la gana de tomarlo así oper == 2'b0? >:c
 		if (FlagNeg == 1 && (oper == 2'b00 || oper == 2'b01))begin 
-			valuediv = (~value + 1'b1) ;
+			valuediv = (~value + 1'b1) ;//Complemento a2
 
 		end
 		else begin

@@ -5,25 +5,25 @@ module Alu #(parameter Bits=5)(InA,InB,Control,Result,Flags);
 	output logic [ Bits-1 : 0 ] Result;
 	output logic [ 3 : 0 ] Flags;
 	
+	//Señales
 	logic [ Bits-1 : 0 ] nB, Resultadder, Resultado;
 	logic cout, aux1, aux2, aux3, InO1, InO2, OverFlow;
 	
-	
+	//Instanciación del sumador de n bits
 	nbitAdder #(Bits) sumador(Control[0], InA, nB, cout, Resultadder);
 	
 	always_comb begin
 	
 		//Mux que se usará para realizar la resta 
 		if(Control[0]) begin
-			nB = ~InB; //Complemento a 2 de B ¿Es legal y lógico? xd
+			nB = ~InB; //Complemento a 2 de B
 		end else
 			nB = InB;
 	end
 	
 	always_comb begin
 		casez(Control)
-			//Suma
-			//Resta
+			//Suma Y Resta
 			2'b0?: Resultado = Resultadder;
 			//And
 			2'b10: Resultado = InA & InB;
@@ -41,11 +41,11 @@ module Alu #(parameter Bits=5)(InA,InB,Control,Result,Flags);
 	assign InO2 = ~(Control[0] ^ aux2 ^ aux3);
 	
 	
-	//Asignación de las salidas, Bnaderas y resultado de la ALU
+	//Asignación de las salidas, Banderas y resultado de la ALU
 	assign Result = Resultado;
-	assign Flags[2] = (Resultado == 0) ? 1:0;
-	assign Flags[3] = Resultado[Bits-1];
-	assign Flags[1] = ~Control[1] & cout;
-	assign Flags[0] = InO1 & InO2 & ~(Control[1]);
+	assign Flags[3] = Resultado[Bits-1]; //Negativo
+	assign Flags[2] = (Resultado == 0) ? 1:0; //Zero
+	assign Flags[1] = ~Control[1] & cout; //Carry
+	assign Flags[0] = InO1 & InO2 & ~(Control[1]); //Overflow
 	
 endmodule
