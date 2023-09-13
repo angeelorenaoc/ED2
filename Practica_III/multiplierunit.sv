@@ -5,20 +5,34 @@ module multiplierunit (dataA, dataB, dataR);
 	input logic [31:0] dataA, dataB;
 	output logic [31:0] dataR;
 
-	// Internal signals to perform the multiplication
-	// WRITE HERE YOUR CODE
-			
-	// Process: sign XORer
-	// WRITE HERE YOUR CODE
+
+	// Internal signals to perform the multiplication	
+	logic [47:0] Result;
+	logic [7:0] exponent;
+	logic [22:0] mantissa;
+	logic sign;
 	
-	// Process: exponent adder
-	// WRITE HERE YOUR CODE
 	
-	// Process: mantissa multiplier
-	// WRITE HERE YOUR CODE
+	always_comb begin
+		//Mantissa multiplier
+		Result = {1'b1, A[22:0]} * {1'b1, B[22:0]};
+		//Exponent adder
+		if(Result[47] == 0)begin
+			exponent = (A[30:23]-7'b1111111) + B[30:23];
+			mantissa = Result[45:22];
+		end
+		else begin
+			exponent = (A[30:23]-7'b1111111) + B[30:23] + 1b'1;
+			mantissa = Result[46:23];
+		end
+		
+	end
 	
-	// Process: operand validator and result normalizer and assembler
-	// WRITE HERE YOUR CODE
+	assign sign = dataA[31] ^ dataB[31];
+	
+	//Assembler
+	assign dataR = {sign,exponent,mantissa}
+	
 endmodule
 
 // ***************************** 

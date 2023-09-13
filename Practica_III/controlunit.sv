@@ -7,15 +7,30 @@ module controlunit (clk, reset, loaddata, inputdata_ready);
 	input logic inputdata_ready;
 
 	// Internal signals for state machine
-	// WRITE HERE YOUR CODE
+	logic nextState, currentState, load, result;
 
 	// Process (Sequential): update currentState
 	always_ff @(posedge clk, posedge reset) begin
-		
+		if (reset)begin
+			currentState <= load;
+		end
+		else begin
+			currentState <= nextState;
+		end
 	endmodule;
 	
 	// Process (Combinational): update nextState
-	// WRITE HERE YOUR CODE
+	always_comb begin
+		nextState = currentState;
+		case (currentState)
+			result:
+				if (inputdata_ready)
+					nextState = load;
+			
+			load:
+				if(loaddata)
+					nextState = result;
+	end
 
 	// Process (Combinational): update outputs 
 	// WRITE HERE YOUR CODE
