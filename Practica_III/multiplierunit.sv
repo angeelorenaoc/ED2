@@ -68,34 +68,26 @@ endmodule
 // Testbench for Multiplier Unit
 // ***************************** 
 module tb_multiplierunit ();
-//	//Definición de las señales para la simulación
-//	logic [31:0] dataA, dataB, dataR;
-//	logic [3:0] casesspecial;
-//	
-//	multiplierunit multi (dataA, dataB, dataR, casesspecial);
-//	
-//	initial begin
-//	
-//	dataA = 31'b0;
-//	dataB = 31'b0;
-//	
-//	//Los siguientes ciclos son utilizados para la variación de las entradas, y el cambio de operación.
-//	for ( int i = 0; i < 4 ;i++) begin
-//		for ( int j = 0; j < 4 ;j++) begin
-//			
-//			#(CLK_PERIOD * 1);
-//			dataB = dataB + 5'b00100;
-//			Opersel = 1;
-//			
-//			#(CLK_PERIOD * 4);
-//			Opersel = 0;
-//		
-//		end
-//		vA = vA + 5'b00100;
-//	end
-//		$stop;
-//	end
-//
-//	
-//always #(CLK_PERIOD / 2) clk = ~clk;
+	//Definición de las señales para la simulación
+	logic [31:0] dataA, dataB, dataR;
+	logic [3:0] casesspecial;
+	
+	multiplierunit multi (dataA, dataB, dataR, casesspecial);
+	
+	initial begin
+	
+	dataA = 31'b0;
+	dataB = 31'b0;
+	
+	//Los siguientes ciclos son utilizados para la variación de las entradas, y el cambio de operación.
+	while ( dataA != 32'b1111_1111_1111_1111_1111_1111_1111_1111) begin
+		while (dataB != 32'b1111_1111_1111_1111_1111_1111_1111_1111) begin
+			dataB = dataB + 8'b10000000;
+		end
+		dataB = 31'b0;
+		dataA = dataA + 8'b10000000;
+	end
+		$stop;
+	end
+
 endmodule
