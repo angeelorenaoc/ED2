@@ -16,7 +16,9 @@ module top (clk, nreset, nenter, inputdata, disp3, disp2, disp1, disp0);
 	controlunit cu0 (clk, reset, loaddata, inputdata_ready);
 
 	// Module instantation: datapath unit 
-	datapathunit dp0 (clk, reset, enter, inputdata, loaddata, inputdata_ready, disp3, disp2, disp1, disp0);
+	datapathunit dp0 (clk, reset, enter, inputdata,
+						   loaddata, inputdata_ready,
+						   disp3, disp2, disp1, disp0);
 endmodule
 
 // ********************** 

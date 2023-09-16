@@ -1,5 +1,3 @@
-
-
 // *******************
 // Control Unit Module
 // *******************
@@ -11,34 +9,39 @@ module controlunit (clk, reset, loaddata, inputdata_ready);
 	// Internal signals for state machine
 	typedef enum logic {load, Result} State;
 	State currentState, nextState;
+	logic loadaux;
 
 	// Process (Sequential): update currentState
 	
-	always_ff @(posedge clk, posedge reset) 
-		if (reset)
+	always_ff @(posedge clk, posedge reset) begin
+		if (reset) begin
 			currentState <= load;
+			
+		end
 		else 
 			currentState <= nextState;
-	
+	end
 	// Process (Combinational): update nextState
 	always_comb begin
 		nextState = currentState;	// Para evitar escribir los else
 		case (currentState)
-			result:	
-				nextState = result;
-			load:
+			Result:begin
+				nextState = Result;
+				loaddata = 1'b0;
+			end
+			load:begin
 				if(inputdata_ready)begin 
-					nextState = result;
-					loaddata = 1'b1;//Aquí se actualiza la salida, ¿estaría bien?
+					nextState = Result;
 				end
+				loaddata= 1'b1;
+			end
 			default:		
 				nextState = load;
 		endcase
 	end	
 	
-
 	// Process (Combinational): update outputs 
-	// WRITE HERE YOUR CODE
+
 endmodule
 
 // ************************** 

@@ -1,0 +1,517 @@
+Analysis & Synthesis report for ieee754mult
+Fri Sep 15 18:04:04 2023
+Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis DSP Block Usage Summary
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for Inferred Entity Instance: datapathunit:dp0|multiplierunit:multiplicador|lpm_mult:Mult0
+ 12. lpm_mult Parameter Settings by Entity Instance
+ 13. Port Connectivity Checks: "datapathunit:dp0|peripherals:perifericos|peripheral_deco7seg:deco0"
+ 14. Port Connectivity Checks: "datapathunit:dp0|peripherals:perifericos|peripheral_deco7seg:deco1"
+ 15. Port Connectivity Checks: "datapathunit:dp0|peripherals:perifericos|peripheral_deco7seg:deco2"
+ 16. Port Connectivity Checks: "datapathunit:dp0|peripherals:perifericos|peripheral_deco7seg:deco3"
+ 17. Post-Synthesis Netlist Statistics for Top Partition
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                        ;
++------------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Sep 15 18:04:04 2023          ;
+; Quartus Prime Version              ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
+; Revision Name                      ; ieee754mult                                    ;
+; Top-level Entity Name              ; top                                            ;
+; Family                             ; MAX 10                                         ;
+; Total logic elements               ; 289                                            ;
+;     Total combinational functions  ; 226                                            ;
+;     Dedicated logic registers      ; 71                                             ;
+; Total registers                    ; 71                                             ;
+; Total pins                         ; 39                                             ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 0                                              ;
+; Embedded Multiplier 9-bit elements ; 7                                              ;
+; Total PLLs                         ; 0                                              ;
+; UFM blocks                         ; 0                                              ;
+; ADC blocks                         ; 0                                              ;
++------------------------------------+------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 10M50DAF484C6GES   ;                    ;
+; Top-level entity name                                            ; top                ; ieee754mult        ;
+; Family name                                                      ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 6           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-6         ;   0.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                  ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                              ; Library ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------+---------+
+; peripheral_pulse.sv              ; yes             ; User SystemVerilog HDL File  ; U:/ED2/Laboratorio/Practica_III/peripheral_pulse.sv                       ;         ;
+; peripheral_deco7seg.sv           ; yes             ; User SystemVerilog HDL File  ; U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv                    ;         ;
+; top.sv                           ; yes             ; User SystemVerilog HDL File  ; U:/ED2/Laboratorio/Practica_III/top.sv                                    ;         ;
+; controlunit.sv                   ; yes             ; User SystemVerilog HDL File  ; U:/ED2/Laboratorio/Practica_III/controlunit.sv                            ;         ;
+; datapathunit.sv                  ; yes             ; User SystemVerilog HDL File  ; U:/ED2/Laboratorio/Practica_III/datapathunit.sv                           ;         ;
+; peripherals.sv                   ; yes             ; User SystemVerilog HDL File  ; U:/ED2/Laboratorio/Practica_III/peripherals.sv                            ;         ;
+; peripheral_getoperands.sv        ; yes             ; User SystemVerilog HDL File  ; U:/ED2/Laboratorio/Practica_III/peripheral_getoperands.sv                 ;         ;
+; multiplierunit.sv                ; yes             ; User SystemVerilog HDL File  ; U:/ED2/Laboratorio/Practica_III/multiplierunit.sv                         ;         ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/lpm_mult.tdf    ;         ;
+; aglobal221.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/aglobal221.inc  ;         ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/lpm_add_sub.inc ;         ;
+; multcore.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/multcore.inc    ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/bypassff.inc    ;         ;
+; altshift.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/22.1std/quartus/libraries/megafunctions/altshift.inc    ;         ;
+; db/mult_1os.tdf                  ; yes             ; Auto-Generated Megafunction  ; U:/ED2/Laboratorio/Practica_III/db/mult_1os.tdf                           ;         ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 289       ;
+;                                             ;           ;
+; Total combinational functions               ; 226       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 115       ;
+;     -- 3 input functions                    ; 80        ;
+;     -- <=2 input functions                  ; 31        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 152       ;
+;     -- arithmetic mode                      ; 74        ;
+;                                             ;           ;
+; Total registers                             ; 71        ;
+;     -- Dedicated logic registers            ; 71        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 39        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 7         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 71        ;
+; Total fan-out                               ; 1194      ;
+; Average fan-out                             ; 3.12      ;
++---------------------------------------------+-----------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                ;
++-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------+------------------------+--------------+
+; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                       ; Entity Name            ; Library Name ;
++-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------+------------------------+--------------+
+; |top                                      ; 226 (0)             ; 71 (0)                    ; 0           ; 0          ; 7            ; 1       ; 3         ; 39   ; 0            ; 0          ; |top                                                                                      ; top                    ; work         ;
+;    |datapathunit:dp0|                     ; 226 (0)             ; 71 (0)                    ; 0           ; 0          ; 7            ; 1       ; 3         ; 0    ; 0            ; 0          ; |top|datapathunit:dp0                                                                     ; datapathunit           ; work         ;
+;       |multiplierunit:multiplicador|      ; 104 (49)            ; 0 (0)                     ; 0           ; 0          ; 7            ; 1       ; 3         ; 0    ; 0            ; 0          ; |top|datapathunit:dp0|multiplierunit:multiplicador                                        ; multiplierunit         ; work         ;
+;          |lpm_mult:Mult0|                 ; 55 (0)              ; 0 (0)                     ; 0           ; 0          ; 7            ; 1       ; 3         ; 0    ; 0            ; 0          ; |top|datapathunit:dp0|multiplierunit:multiplicador|lpm_mult:Mult0                         ; lpm_mult               ; work         ;
+;             |mult_1os:auto_generated|     ; 55 (55)             ; 0 (0)                     ; 0           ; 0          ; 7            ; 1       ; 3         ; 0    ; 0            ; 0          ; |top|datapathunit:dp0|multiplierunit:multiplicador|lpm_mult:Mult0|mult_1os:auto_generated ; mult_1os               ; work         ;
+;       |peripherals:perifericos|           ; 122 (69)            ; 71 (5)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|datapathunit:dp0|peripherals:perifericos                                             ; peripherals            ; work         ;
+;          |peripheral_deco7seg:deco0|      ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|datapathunit:dp0|peripherals:perifericos|peripheral_deco7seg:deco0                   ; peripheral_deco7seg    ; work         ;
+;          |peripheral_deco7seg:deco1|      ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|datapathunit:dp0|peripherals:perifericos|peripheral_deco7seg:deco1                   ; peripheral_deco7seg    ; work         ;
+;          |peripheral_deco7seg:deco2|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|datapathunit:dp0|peripherals:perifericos|peripheral_deco7seg:deco2                   ; peripheral_deco7seg    ; work         ;
+;          |peripheral_deco7seg:deco3|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|datapathunit:dp0|peripherals:perifericos|peripheral_deco7seg:deco3                   ; peripheral_deco7seg    ; work         ;
+;          |peripheral_getoperands:getdata| ; 14 (14)             ; 64 (64)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|datapathunit:dp0|peripherals:perifericos|peripheral_getoperands:getdata              ; peripheral_getoperands ; work         ;
+;          |peripheral_pulse:pulse0|        ; 3 (3)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|datapathunit:dp0|peripherals:perifericos|peripheral_pulse:pulse0                     ; peripheral_pulse       ; work         ;
++-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------+------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary        ;
++---------------------------------------+-------------+
+; Statistic                             ; Number Used ;
++---------------------------------------+-------------+
+; Simple Multipliers (9-bit)            ; 1           ;
+; Simple Multipliers (18-bit)           ; 3           ;
+; Embedded Multiplier Blocks            ; --          ;
+; Embedded Multiplier 9-bit elements    ; 7           ;
+; Signed Embedded Multipliers           ; 0           ;
+; Unsigned Embedded Multipliers         ; 4           ;
+; Mixed Sign Embedded Multipliers       ; 0           ;
+; Variable Sign Embedded Multipliers    ; 0           ;
+; Dedicated Input Shift Register Chains ; 0           ;
++---------------------------------------+-------------+
+Note: number of Embedded Multiplier Blocks used is only available after a successful fit.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 71    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 71    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 67    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |top|datapathunit:dp0|multiplierunit:multiplicador|casesspecial[1] ;
+; 14:1               ; 7 bits    ; 63 LEs        ; 63 LEs               ; 0 LEs                  ; No         ; |top|datapathunit:dp0|peripherals:perifericos|aux[3]               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: datapathunit:dp0|multiplierunit:multiplicador|lpm_mult:Mult0 ;
++------------------------------------------------+----------+---------------------------------------------------+
+; Parameter Name                                 ; Value    ; Type                                              ;
++------------------------------------------------+----------+---------------------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON       ; AUTO_CARRY                                        ;
+; IGNORE_CARRY_BUFFERS                           ; OFF      ; IGNORE_CARRY                                      ;
+; AUTO_CASCADE_CHAINS                            ; ON       ; AUTO_CASCADE                                      ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF      ; IGNORE_CASCADE                                    ;
+; LPM_WIDTHA                                     ; 24       ; Untyped                                           ;
+; LPM_WIDTHB                                     ; 24       ; Untyped                                           ;
+; LPM_WIDTHP                                     ; 48       ; Untyped                                           ;
+; LPM_WIDTHR                                     ; 48       ; Untyped                                           ;
+; LPM_WIDTHS                                     ; 1        ; Untyped                                           ;
+; LPM_REPRESENTATION                             ; UNSIGNED ; Untyped                                           ;
+; LPM_PIPELINE                                   ; 0        ; Untyped                                           ;
+; LATENCY                                        ; 0        ; Untyped                                           ;
+; INPUT_A_IS_CONSTANT                            ; NO       ; Untyped                                           ;
+; INPUT_B_IS_CONSTANT                            ; NO       ; Untyped                                           ;
+; USE_EAB                                        ; OFF      ; Untyped                                           ;
+; MAXIMIZE_SPEED                                 ; 5        ; Untyped                                           ;
+; DEVICE_FAMILY                                  ; MAX 10   ; Untyped                                           ;
+; CARRY_CHAIN                                    ; MANUAL   ; Untyped                                           ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT      ; TECH_MAPPER_APEX20K                               ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO     ; Untyped                                           ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0        ; Untyped                                           ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0        ; Untyped                                           ;
+; CBXI_PARAMETER                                 ; mult_1os ; Untyped                                           ;
+; INPUT_A_FIXED_VALUE                            ; Bx       ; Untyped                                           ;
+; INPUT_B_FIXED_VALUE                            ; Bx       ; Untyped                                           ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF      ; Untyped                                           ;
++------------------------------------------------+----------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                                                       ;
++---------------------------------------+--------------------------------------------------------------+
+; Name                                  ; Value                                                        ;
++---------------------------------------+--------------------------------------------------------------+
+; Number of entity instances            ; 1                                                            ;
+; Entity Instance                       ; datapathunit:dp0|multiplierunit:multiplicador|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 24                                                           ;
+;     -- LPM_WIDTHB                     ; 24                                                           ;
+;     -- LPM_WIDTHP                     ; 48                                                           ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                                                     ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                           ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                           ;
+;     -- USE_EAB                        ; OFF                                                          ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                                         ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                           ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                           ;
++---------------------------------------+--------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapathunit:dp0|peripherals:perifericos|peripheral_deco7seg:deco0"                                                                                                                       ;
++--------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port         ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; EXTENDED     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; EXTENDED[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; deco         ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapathunit:dp0|peripherals:perifericos|peripheral_deco7seg:deco1"                                                                                                                       ;
++--------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port         ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; EXTENDED     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; EXTENDED[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; deco[31..1]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; deco[0]      ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++--------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapathunit:dp0|peripherals:perifericos|peripheral_deco7seg:deco2"                                                                                                                       ;
++--------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port         ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; D            ; Input ; Warning  ; Input port expression (2 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "D[3..2]" will be connected to GND.                                          ;
+; EXTENDED     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; EXTENDED[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; deco[31..2]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; deco[1]      ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; deco[0]      ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "datapathunit:dp0|peripherals:perifericos|peripheral_deco7seg:deco3"                                                                                                                       ;
++--------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port         ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; D[3]         ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; EXTENDED     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; EXTENDED[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; deco[1..0]   ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; deco[31..2]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 39                          ;
+; cycloneiii_ff         ; 71                          ;
+;     CLR               ; 4                           ;
+;     ENA CLR           ; 67                          ;
+; cycloneiii_lcell_comb ; 231                         ;
+;     arith             ; 74                          ;
+;         2 data inputs ; 18                          ;
+;         3 data inputs ; 56                          ;
+;     normal            ; 157                         ;
+;         0 data inputs ; 3                           ;
+;         1 data inputs ; 8                           ;
+;         2 data inputs ; 7                           ;
+;         3 data inputs ; 24                          ;
+;         4 data inputs ; 115                         ;
+; cycloneiii_mac_mult   ; 4                           ;
+; cycloneiii_mac_out    ; 4                           ;
+;                       ;                             ;
+; Max LUT depth         ; 12.90                       ;
+; Average LUT depth     ; 7.65                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+    Info: Processing started: Fri Sep 15 18:03:58 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ieee754mult -c ieee754mult
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file peripheral_pulse.sv
+    Info (12023): Found entity 1: peripheral_pulse File: U:/ED2/Laboratorio/Practica_III/peripheral_pulse.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file peripheral_deco7seg.sv
+    Info (12023): Found entity 1: peripheral_deco7seg File: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv Line: 4
+Info (12021): Found 2 design units, including 2 entities, in source file top.sv
+    Info (12023): Found entity 1: top File: U:/ED2/Laboratorio/Practica_III/top.sv Line: 4
+    Info (12023): Found entity 2: tb_topunit File: U:/ED2/Laboratorio/Practica_III/top.sv Line: 25
+Info (12021): Found 2 design units, including 2 entities, in source file controlunit.sv
+    Info (12023): Found entity 1: controlunit File: U:/ED2/Laboratorio/Practica_III/controlunit.sv Line: 4
+    Info (12023): Found entity 2: tb_controlunit File: U:/ED2/Laboratorio/Practica_III/controlunit.sv Line: 50
+Info (12021): Found 2 design units, including 2 entities, in source file datapathunit.sv
+    Info (12023): Found entity 1: datapathunit File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 4
+    Info (12023): Found entity 2: tb_datapathunit File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file peripherals.sv
+    Info (12023): Found entity 1: peripherals File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file peripheral_getoperands.sv
+    Info (12023): Found entity 1: peripheral_getoperands File: U:/ED2/Laboratorio/Practica_III/peripheral_getoperands.sv Line: 4
+Info (12021): Found 2 design units, including 2 entities, in source file multiplierunit.sv
+    Info (12023): Found entity 1: multiplierunit File: U:/ED2/Laboratorio/Practica_III/multiplierunit.sv Line: 4
+    Info (12023): Found entity 2: tb_multiplierunit File: U:/ED2/Laboratorio/Practica_III/multiplierunit.sv Line: 70
+Info (12127): Elaborating entity "top" for the top level hierarchy
+Info (12128): Elaborating entity "controlunit" for hierarchy "controlunit:cu0" File: U:/ED2/Laboratorio/Practica_III/top.sv Line: 16
+Info (12128): Elaborating entity "datapathunit" for hierarchy "datapathunit:dp0" File: U:/ED2/Laboratorio/Practica_III/top.sv Line: 19
+Info (12128): Elaborating entity "multiplierunit" for hierarchy "datapathunit:dp0|multiplierunit:multiplicador" File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 16
+Warning (10230): Verilog HDL assignment warning at multiplierunit.sv(30): truncated value with size 24 to match size of target (23) File: U:/ED2/Laboratorio/Practica_III/multiplierunit.sv Line: 30
+Warning (10230): Verilog HDL assignment warning at multiplierunit.sv(43): truncated value with size 24 to match size of target (23) File: U:/ED2/Laboratorio/Practica_III/multiplierunit.sv Line: 43
+Warning (10230): Verilog HDL assignment warning at multiplierunit.sv(52): truncated value with size 24 to match size of target (23) File: U:/ED2/Laboratorio/Practica_III/multiplierunit.sv Line: 52
+Warning (10230): Verilog HDL assignment warning at multiplierunit.sv(56): truncated value with size 24 to match size of target (23) File: U:/ED2/Laboratorio/Practica_III/multiplierunit.sv Line: 56
+Info (12128): Elaborating entity "peripherals" for hierarchy "datapathunit:dp0|peripherals:perifericos" File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 19
+Warning (10230): Verilog HDL assignment warning at peripherals.sv(34): truncated value with size 32 to match size of target (4) File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 34
+Info (12128): Elaborating entity "peripheral_pulse" for hierarchy "datapathunit:dp0|peripherals:perifericos|peripheral_pulse:pulse0" File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 24
+Info (12128): Elaborating entity "peripheral_getoperands" for hierarchy "datapathunit:dp0|peripherals:perifericos|peripheral_getoperands:getdata" File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 58
+Info (12128): Elaborating entity "peripheral_deco7seg" for hierarchy "datapathunit:dp0|peripherals:perifericos|peripheral_deco7seg:deco3" File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 61
+Info (10264): Verilog HDL Case Statement information at peripheral_deco7seg.sv(15): all case item expressions in this case statement are onehot File: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv Line: 15
+Info (278001): Inferred 1 megafunctions from design logic
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "datapathunit:dp0|multiplierunit:multiplicador|Mult0" File: U:/ED2/Laboratorio/Practica_III/multiplierunit.sv Line: 23
+Info (12130): Elaborated megafunction instantiation "datapathunit:dp0|multiplierunit:multiplicador|lpm_mult:Mult0" File: U:/ED2/Laboratorio/Practica_III/multiplierunit.sv Line: 23
+Info (12133): Instantiated megafunction "datapathunit:dp0|multiplierunit:multiplicador|lpm_mult:Mult0" with the following parameter: File: U:/ED2/Laboratorio/Practica_III/multiplierunit.sv Line: 23
+    Info (12134): Parameter "LPM_WIDTHA" = "24"
+    Info (12134): Parameter "LPM_WIDTHB" = "24"
+    Info (12134): Parameter "LPM_WIDTHP" = "48"
+    Info (12134): Parameter "LPM_WIDTHR" = "48"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_1os.tdf
+    Info (12023): Found entity 1: mult_1os File: U:/ED2/Laboratorio/Practica_III/db/mult_1os.tdf Line: 31
+Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (13014): Ignored 153 buffer(s)
+    Info (13019): Ignored 153 SOFT buffer(s)
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "disp3[0]" is stuck at GND File: U:/ED2/Laboratorio/Practica_III/top.sv Line: 7
+    Warning (13410): Pin "disp3[3]" is stuck at VCC File: U:/ED2/Laboratorio/Practica_III/top.sv Line: 7
+    Warning (13410): Pin "disp3[4]" is stuck at GND File: U:/ED2/Laboratorio/Practica_III/top.sv Line: 7
+    Warning (13410): Pin "disp3[5]" is stuck at GND File: U:/ED2/Laboratorio/Practica_III/top.sv Line: 7
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 335 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 11 input pins
+    Info (21059): Implemented 28 output pins
+    Info (21061): Implemented 289 logic cells
+    Info (21062): Implemented 7 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 4805 megabytes
+    Info: Processing ended: Fri Sep 15 18:04:05 2023
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:13
+
+
