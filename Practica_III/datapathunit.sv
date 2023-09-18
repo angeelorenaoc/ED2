@@ -46,7 +46,7 @@ module tb_datapathunit ();
 	inputdata = 8'b0;
 	loaddata = 0;
 	
-	#(CLK_PERIOD * 1);
+	#(CLK_PERIOD * 1);//
 	rst = 1;
 	
 	//Los siguientes for son usados para la variación en la data de entrada y la captura del dato
