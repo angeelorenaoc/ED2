@@ -7,61 +7,63 @@ module multiplierunit (dataA, dataB, dataR, casesspecial);
 	output logic [3:0] casesspecial;// Cero,Inf,-Inf,Nan;
 
 
-	// Internal signals to perform the multiplication
+// Internal signals to perform the multiplication
 //Agregar los casos especiales, evaluandolos al final
 //Verificar Nand
 //Agregar el caso del 0	
-	logic [47:0] Result;
+	logic [47:0] Resultado_auxiliar;
 	logic [7:0] exponent;
 	logic [22:0] mantissa;
 	logic sign;
-	logic aux;
-	
-	
+	logic aux;	
 	
 	always_comb begin
 		//Mantissa multiplier
-		Result = {1'b1, dataA[22:0]} * {1'b1, dataB[22:0]};
+		
+		Resultado_auxiliar = {1'b1, dataA[22:0]} * {1'b1, dataB[22:0]};//¿Cómo reevaluar el multiplicador?
 		sign = dataA[31] ^ dataB[31];
 		
 		//Casos especiales(Revisar la asignación del caso especial al deco, podría usarse un entero)
 		//Hacer condicionales de acuerdo al peso que tiene el valor, es decir, valor que se impone
 		
-		if(dataA[30:23] == 8'b11111111 || dataB[30:23] == 8'b11111111)begin //Recuestionar evaluación de casos especiales en este punto
-			mantissa = Result[45:22];
-			exponent = 8'b11111111;
-			if(Result[45:23] != 23'b0 || dataA[30:23] == 8'b0 || dataB[30:23] == 8'b0)begin//¿Puede ser (A[] || B[]) == 0?
+		if(dataA[30:23] == 8'b11111111 || dataB[30:23] == 8'b11111111)begin //NAN & ±infinito
+			mantissa = Resultado_auxiliar[45:23];
+			exponent = 8'b11111111;																																	
+																										//¿Puede ser (A[] || B[]) == 0?
+			if((dataA[22:0] != 23'b0 && dataA[30:23] == 8'b11111111) || (dataB[22:0] != 23'b0 && dataB[30:23] == 8'b11111111) || dataA[30:23] == 8'b0 || dataB[30:23] == 8'b0)begin //NAN
+				//Revisar cómo reevaular esta condición
 				casesspecial = 4'b0001; 			
 			end
-			else if (Result[45:23] == 23'b0 && sign ) begin 
-				casesspecial = 4'b0010;				
+			else if ((dataA[22:0] == 23'b0 || dataB[22:0] == 23'b0) && sign ) begin //-Infinito
+				casesspecial = 4'b0010;
+				mantissa = 23'b0;				
 			end
-			else begin
+			else begin //+Infinito
 				casesspecial = 4'b0100;	
+				mantissa = 23'b0;	
 			end
 		end
-		else if (dataA[30:23] == 8'b0 || dataB[30:23] == 8'b0)begin
-			mantissa = Result[45:22];
+		else if (dataA == 32'b0 || dataB == 32'b0)begin
+			mantissa = 23'b0;
 			exponent = 8'b00000000;
 			casesspecial = 4'b1000;	
 		end
-		//Exponent adder
+		//Números "normales"
 		else begin
 			casesspecial = 4'b0000;
-			if(Result[47] == 1'b0)begin
+			if(Resultado_auxiliar[47] == 1'b0)begin
 				exponent = (dataA[30:23]-7'b1111111) + dataB[30:23];
-				mantissa = Result[45:23];
+				mantissa = Resultado_auxiliar[45:23];
 				aux = 1;
 			end
 			else begin
 				exponent = (dataA[30:23]-7'b1111111) + dataB[30:23] + 1'b1;
-				mantissa = Result[46:24];
+				mantissa = Resultado_auxiliar[46:24];
 				aux = 0;
 			end
 		end
 	end
 
-	
 	//Assembler
 	assign dataR = {sign,exponent,mantissa};
 	
@@ -85,7 +87,7 @@ module tb_multiplierunit ();
 	dataA = 32'b0;
 	dataB = 32'b0;
 	
-	//Los siguientes ciclos son utilizados para la variación de las entradas, y el cambio de operación.
+	//Verificación de casos especiales y algunos casos normales
 	//Cero por Cero
 	#(CLK_PERIOD * 1);
 	dataA = 32'b0000_0000_0000_0000_0000_0000_0000_0000;
@@ -118,6 +120,10 @@ module tb_multiplierunit ();
 	#(CLK_PERIOD * 1);
 	dataA = 32'b0111_1111_1000_0000_1111_0000_1111_0000;
 	dataB = 32'b1111_1111_1000_0000_1111_0000_1111_0000;
+	//7.875*0=0
+	#(CLK_PERIOD * 1);
+	dataA = 32'b0100_0000_1111_1100_0000_0000_0000_0000;
+	dataB = 32'b0000_0000_0000_0000_0000_0000_0000_0000;
 	//7.875*0.1875=1.4765625
 	#(CLK_PERIOD * 1);
 	dataA = 32'b0100_0000_1111_1100_0000_0000_0000_0000;
@@ -127,15 +133,11 @@ module tb_multiplierunit ();
 	dataA = 32'b1100_0001_1001_0000_0000_0000_0000_0000;
 	dataB = 32'b0100_0001_0001_1000_0000_0000_0000_0000;
 	#(CLK_PERIOD * 1);
+	//-Infinito*9.5 = Infinito
+	dataA = 32'b1111_1111_1000_0000_0000_0000_0000_0000;
+	dataB = 32'b0100_0001_0001_1000_0000_0000_0000_0000;
+	#(CLK_PERIOD * 1);
 	
-
-//	while ( dataA != 32'b1111_1111_1111_1111_1111_1111_1111_1111) begin
-//		while (dataB != 32'b1111_1111_1111_1111_1111_1111_1111_1111) begin
-//			dataB = dataB + 8'b10000000;
-//		end
-//		dataB = 31'b0;
-//		dataA = dataA + 8'b10000000;
-//	end
 		$stop;
 	end
 

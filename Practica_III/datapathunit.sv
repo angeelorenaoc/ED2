@@ -41,20 +41,20 @@ module tb_datapathunit ();
 	initial begin
 	
 	clk = 0;
-	rst = 0;
+	rst = 1;
 	enter = 0;
 	inputdata = 8'b0;
-	loaddata = 0;
+	loaddata = 1;
 	
 	#(CLK_PERIOD * 1);//
-	rst = 1;
+	rst = 0;
 	
 	//Los siguientes for son usados para la variación en la data de entrada y la captura del dato
 	for ( int i = 0; i < 4 ;i++) begin
-		for ( int j = 0; j < 4 ;j++) begin
+		loaddata = 1;
+		for ( int j = 0; j < 8 ;j++) begin
 			
 			#(CLK_PERIOD * 1);
-			loaddata = 0;
 			enter = 1;
 			
 			#(CLK_PERIOD * 4);
@@ -62,14 +62,13 @@ module tb_datapathunit ();
 			enter = 0;
 		
 		end
-		
 		#(CLK_PERIOD * 1);
-		loaddata =1;
+		loaddata =0;
 		
 		#(CLK_PERIOD * 1);
 		inputdata = inputdata + 5'b0000_0001;
-		
 	end
+		
 		$stop;
 	end
 

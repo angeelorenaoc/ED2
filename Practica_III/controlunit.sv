@@ -60,25 +60,26 @@ module tb_controlunit ();
 	initial begin
 	
 	clk = 0;
-	rst = 0;
+	rst = 1;
 	inputdata_ready = 0;
-	loaddata = 0;
 	
 	#(CLK_PERIOD * 1);//
-	rst = 1;
+	rst = 0;
 	
 	//Los siguientes for son usados para la variación en la data de entrada y la captura del dato
 	for ( int i = 0; i < 4 ;i++) begin
-		for ( int j = 0; j < 4 ;j++) begin
-			
-			#(CLK_PERIOD * 1);
-			loaddata = 1;
+
+		#(CLK_PERIOD * 2);
+		inputdata_ready = 1;
 		
-		end
+		#(CLK_PERIOD * 2);
+		inputdata_ready = 0;
 		
 		#(CLK_PERIOD * 1);
-		loaddata =0;
-		inputdata_ready = 1;
+		rst = 1;
+		
+		#(CLK_PERIOD * 1);
+		rst = 0;
 		
 	end
 		$stop;
