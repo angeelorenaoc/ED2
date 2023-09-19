@@ -15,6 +15,7 @@ module multiplierunit (dataA, dataB, dataR, casesspecial);
 	logic [7:0] exponent;
 	logic [22:0] mantissa;
 	logic sign;
+	logic aux;
 	
 	
 	
@@ -47,13 +48,15 @@ module multiplierunit (dataA, dataB, dataR, casesspecial);
 		//Exponent adder
 		else begin
 			casesspecial = 4'b0000;
-			if(Result[47] == 0)begin
+			if(Result[47] == 1'b0)begin
 				exponent = (dataA[30:23]-7'b1111111) + dataB[30:23];
-				mantissa = Result[45:22];
+				mantissa = Result[45:23];
+				aux = 1;
 			end
 			else begin
 				exponent = (dataA[30:23]-7'b1111111) + dataB[30:23] + 1'b1;
-				mantissa = Result[46:23];
+				mantissa = Result[46:24];
+				aux = 0;
 			end
 		end
 	end
@@ -69,6 +72,8 @@ endmodule
 // ***************************** 
 module tb_multiplierunit ();
 	//Definición de las señales para la simulación
+	localparam CLK_PERIOD = 20ns;
+	logic clk;
 	logic [31:0] dataA, dataB, dataR;
 	logic [3:0] casesspecial;
 	
@@ -76,40 +81,52 @@ module tb_multiplierunit ();
 	
 	initial begin
 	
-	dataA = 31'b0;
-	dataB = 31'b0;
+	clk = 0;
+	dataA = 32'b0;
+	dataB = 32'b0;
 	
 	//Los siguientes ciclos son utilizados para la variación de las entradas, y el cambio de operación.
 	//Cero por Cero
-	dataA = 8'b0000_0000_0000_0000_0000_0000_0000_0000;
-	dataB = 8'b0000_0000_0000_0000_0000_0000_0000_0000;
+	#(CLK_PERIOD * 1);
+	dataA = 32'b0000_0000_0000_0000_0000_0000_0000_0000;
+	dataB = 32'b0000_0000_0000_0000_0000_0000_0000_0000;
 	//Cero por infinito
-	dataA = 8'b0000_0000_0000_0000_0000_0000_0000_0000;
-	dataB = 8'b0111_1111_1000_0000_0000_0000_0000_0000;
+	#(CLK_PERIOD * 1);
+	dataA = 32'b0000_0000_0000_0000_0000_0000_0000_0000;
+	dataB = 32'b0111_1111_1000_0000_0000_0000_0000_0000;
 	//-infinito por Cero
-	dataA = 8'b1111_1111_1000_0000_0000_0000_0000_0000;
-	dataB = 8'b0000_0000_0000_0000_0000_0000_0000_0000;
+	#(CLK_PERIOD * 1);
+	dataA = 32'b1111_1111_1000_0000_0000_0000_0000_0000;
+	dataB = 32'b0000_0000_0000_0000_0000_0000_0000_0000;
 	//-infinito por NAN
-	dataA = 8'b1111_1111_1000_0000_0000_0000_0000_0000;
-	dataB = 8'b0111_1111_1000_0000_1111_0000_1111_0000;
+	#(CLK_PERIOD * 1);
+	dataA = 32'b1111_1111_1000_0000_0000_0000_0000_0000;
+	dataB = 32'b0111_1111_1000_0000_1111_0000_1111_0000;
 	//infinito por NAN
-	dataA = 8'b0111_1111_1000_0000_0000_0000_0000_0000;
-	dataB = 8'b0111_1111_1000_0000_1111_0000_1111_0000;
+	#(CLK_PERIOD * 1);
+	dataA = 32'b0111_1111_1000_0000_0000_0000_0000_0000;
+	dataB = 32'b0111_1111_1000_0000_1111_0000_1111_0000;
 	//-infinito por infinito
-	dataA = 8'b1111_1111_1000_0000_0000_0000_0000_0000;
-	dataB = 8'b0111_1111_1000_0000_0000_0000_0000_0000;
+	#(CLK_PERIOD * 1);
+	dataA = 32'b1111_1111_1000_0000_0000_0000_0000_0000;
+	dataB = 32'b0111_1111_1000_0000_0000_0000_0000_0000;
 	//Cero por NAN
-	dataA = 8'b0000_0000_0000_0000_0000_0000_0000_0000;
-	dataB = 8'b1111_1111_1000_0000_1111_0000_1111_0000;
+	#(CLK_PERIOD * 1);
+	dataA = 32'b0000_0000_0000_0000_0000_0000_0000_0000;
+	dataB = 32'b1111_1111_1000_0000_1111_0000_1111_0000;
 	//NAN por NAN
-	dataA = 8'b0111_1111_1000_0000_1111_0000_1111_0000;
-	dataB = 8'b1111_1111_1000_0000_1111_0000_1111_0000;
+	#(CLK_PERIOD * 1);
+	dataA = 32'b0111_1111_1000_0000_1111_0000_1111_0000;
+	dataB = 32'b1111_1111_1000_0000_1111_0000_1111_0000;
 	//7.875*0.1875=1.4765625
-	dataA = 8'b0100_0000_1111_1100_0000_0000_0000_0000;
-	dataB = 8'b0011_1110_0100_0000_0000_0000_0000_0000;
+	#(CLK_PERIOD * 1);
+	dataA = 32'b0100_0000_1111_1100_0000_0000_0000_0000;
+	dataB = 32'b0011_1110_0100_0000_0000_0000_0000_0000;
 	//−18*9.5=-171.0
-	dataA = 8'b1100_0001_1001_0000_0000_0000_0000_0000;
-	dataB = 8'b0100_0001_0001_1000_0000_0000_0000_0000;
+	#(CLK_PERIOD * 1);
+	dataA = 32'b1100_0001_1001_0000_0000_0000_0000_0000;
+	dataB = 32'b0100_0001_0001_1000_0000_0000_0000_0000;
+	#(CLK_PERIOD * 1);
 	
 
 //	while ( dataA != 32'b1111_1111_1111_1111_1111_1111_1111_1111) begin
@@ -122,4 +139,6 @@ module tb_multiplierunit ();
 		$stop;
 	end
 
+	always #(CLK_PERIOD / 2) clk = ~clk;
+	
 endmodule
