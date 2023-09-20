@@ -12,94 +12,94 @@
 # 
 # vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III {U:/ED2/Laboratorio/Practica_III/peripheral_pulse.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:09:53 on Sep 19,2023
+# Start time: 15:58:53 on Sep 20,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/peripheral_pulse.sv 
 # -- Compiling module peripheral_pulse
 # 
 # Top level modules:
 # 	peripheral_pulse
-# End time: 16:09:53 on Sep 19,2023, Elapsed time: 0:00:00
+# End time: 15:58:53 on Sep 20,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III {U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:09:53 on Sep 19,2023
+# Start time: 15:58:53 on Sep 20,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv 
 # -- Compiling module peripheral_deco7seg
 # 
 # Top level modules:
 # 	peripheral_deco7seg
-# End time: 16:09:53 on Sep 19,2023, Elapsed time: 0:00:00
+# End time: 15:58:53 on Sep 20,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III {U:/ED2/Laboratorio/Practica_III/top.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:09:53 on Sep 19,2023
+# Start time: 15:58:53 on Sep 20,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/top.sv 
 # -- Compiling module top
 # -- Compiling module tb_topunit
+# ** Warning: U:/ED2/Laboratorio/Practica_III/top.sv(63): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
 # 
 # Top level modules:
-# 	top
 # 	tb_topunit
-# End time: 16:09:53 on Sep 19,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
+# End time: 15:58:53 on Sep 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
 # vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III {U:/ED2/Laboratorio/Practica_III/controlunit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:09:53 on Sep 19,2023
+# Start time: 15:58:53 on Sep 20,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/controlunit.sv 
 # -- Compiling module controlunit
 # -- Compiling module tb_controlunit
 # 
 # Top level modules:
 # 	tb_controlunit
-# End time: 16:09:53 on Sep 19,2023, Elapsed time: 0:00:00
+# End time: 15:58:53 on Sep 20,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III {U:/ED2/Laboratorio/Practica_III/datapathunit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:09:53 on Sep 19,2023
+# Start time: 15:58:53 on Sep 20,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/datapathunit.sv 
 # -- Compiling module datapathunit
 # -- Compiling module tb_datapathunit
-# ** Warning: U:/ED2/Laboratorio/Practica_III/datapathunit.sv(71): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: U:/ED2/Laboratorio/Practica_III/datapathunit.sv(69): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
 # 
 # Top level modules:
 # 	tb_datapathunit
-# End time: 16:09:53 on Sep 19,2023, Elapsed time: 0:00:00
+# End time: 15:58:53 on Sep 20,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III {U:/ED2/Laboratorio/Practica_III/peripherals.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:09:53 on Sep 19,2023
+# Start time: 15:58:53 on Sep 20,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/peripherals.sv 
 # -- Compiling module peripherals
 # 
 # Top level modules:
 # 	peripherals
-# End time: 16:09:53 on Sep 19,2023, Elapsed time: 0:00:00
+# End time: 15:58:53 on Sep 20,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III {U:/ED2/Laboratorio/Practica_III/peripheral_getoperands.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:09:53 on Sep 19,2023
+# Start time: 15:58:53 on Sep 20,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/peripheral_getoperands.sv 
 # -- Compiling module peripheral_getoperands
 # 
 # Top level modules:
 # 	peripheral_getoperands
-# End time: 16:09:53 on Sep 19,2023, Elapsed time: 0:00:00
+# End time: 15:58:53 on Sep 20,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III {U:/ED2/Laboratorio/Practica_III/multiplierunit.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:09:53 on Sep 19,2023
+# Start time: 15:58:53 on Sep 20,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/multiplierunit.sv 
 # -- Compiling module multiplierunit
 # -- Compiling module tb_multiplierunit
 # 
 # Top level modules:
 # 	tb_multiplierunit
-# End time: 16:09:53 on Sep 19,2023, Elapsed time: 0:00:00
+# End time: 15:58:53 on Sep 20,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vsim work.tb_datapathunit
 # vsim work.tb_datapathunit 
-# Start time: 16:10:18 on Sep 19,2023
+# Start time: 15:59:20 on Sep 20,2023
 # Loading sv_std.std
 # Loading work.tb_datapathunit
 # Loading work.datapathunit
@@ -108,16 +108,20 @@ vsim work.tb_datapathunit
 # Loading work.peripheral_pulse
 # Loading work.peripheral_getoperands
 # Loading work.peripheral_deco7seg
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecial'. The port definition is at: U:/ED2/Laboratorio/Practica_III/multiplierunit.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/multiplicador File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 16
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecial'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripherals.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 19
 # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco3 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 61
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco3 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 62
 # ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (2) for port 'D'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 62
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 63
 # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 62
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 63
 # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco1 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 63
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco1 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 64
 # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco0 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 64
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco0 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 65
 add wave -position end  sim:/tb_datapathunit/clk
 add wave -position end  sim:/tb_datapathunit/rst
 add wave -position end  sim:/tb_datapathunit/enter
@@ -127,14 +131,23 @@ add wave -position end  sim:/tb_datapathunit/inputdata_ready
 add wave -position end  sim:/tb_datapathunit/unidatapath/multiplicador/dataA
 add wave -position end  sim:/tb_datapathunit/unidatapath/multiplicador/dataB
 add wave -position end  sim:/tb_datapathunit/unidatapath/multiplicador/dataR
-add wave -position end  sim:/tb_datapathunit/unidatapath/multiplicador/casesspecial
 run -all
-# ** Note: $stop    : U:/ED2/Laboratorio/Practica_III/datapathunit.sv(73)
-#    Time: 1780 ns  Iteration: 0  Instance: /tb_datapathunit
-# Break in Module tb_datapathunit at U:/ED2/Laboratorio/Practica_III/datapathunit.sv line 73
+# ** Note: $stop    : U:/ED2/Laboratorio/Practica_III/datapathunit.sv(72)
+#    Time: 3380 ns  Iteration: 0  Instance: /tb_datapathunit
+# Break in Module tb_datapathunit at U:/ED2/Laboratorio/Practica_III/datapathunit.sv line 72
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/peripherals.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:03:14 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/peripherals.sv 
+# -- Compiling module peripherals
+# 
+# Top level modules:
+# 	peripherals
+# End time: 16:03:14 on Sep 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/datapathunit.sv
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:31:40 on Sep 19,2023
+# Start time: 16:03:14 on Sep 20,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/datapathunit.sv 
 # -- Compiling module datapathunit
 # -- Compiling module tb_datapathunit
@@ -142,192 +155,229 @@ vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/P
 # 
 # Top level modules:
 # 	tb_datapathunit
-# End time: 16:31:40 on Sep 19,2023, Elapsed time: 0:00:00
+# End time: 16:03:14 on Sep 20,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 # Loading work.tb_datapathunit
 # Loading work.datapathunit
+# Loading work.peripherals
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecial'. The port definition is at: U:/ED2/Laboratorio/Practica_III/multiplierunit.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/multiplicador File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 16
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecial'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripherals.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 19
 # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco3 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 61
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco3 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 63
 # ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (2) for port 'D'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 62
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 64
 # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 62
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 64
 # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco1 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 63
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco1 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 65
 # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco0 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 64
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco0 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 66
 run -all
 # ** Note: $stop    : U:/ED2/Laboratorio/Practica_III/datapathunit.sv(72)
 #    Time: 3380 ns  Iteration: 0  Instance: /tb_datapathunit
 # Break in Module tb_datapathunit at U:/ED2/Laboratorio/Practica_III/datapathunit.sv line 72
-vsim work.tb_controlunit
-# End time: 16:39:23 on Sep 19,2023, Elapsed time: 0:29:05
-# Errors: 0, Warnings: 5
-# vsim work.tb_controlunit 
-# Start time: 16:39:23 on Sep 19,2023
-# Loading sv_std.std
-# Loading work.tb_controlunit
-# Loading work.controlunit
-add wave -position end  sim:/tb_controlunit/clk
-add wave -position end  sim:/tb_controlunit/rst
-add wave -position end  sim:/tb_controlunit/loaddata
-add wave -position end  sim:/tb_controlunit/inputdata_ready
-run -all
-# ** Note: $stop    : U:/ED2/Laboratorio/Practica_III/controlunit.sv(84)
-#    Time: 420 ns  Iteration: 0  Instance: /tb_controlunit
-# Break in Module tb_controlunit at U:/ED2/Laboratorio/Practica_III/controlunit.sv line 84
-vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/controlunit.sv
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/peripheral_getoperands.sv
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:40:26 on Sep 19,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/controlunit.sv 
-# -- Compiling module controlunit
-# -- Compiling module tb_controlunit
+# Start time: 16:12:10 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/peripheral_getoperands.sv 
+# -- Compiling module peripheral_getoperands
 # 
 # Top level modules:
-# 	tb_controlunit
-# End time: 16:40:26 on Sep 19,2023, Elapsed time: 0:00:00
+# 	peripheral_getoperands
+# End time: 16:12:10 on Sep 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/peripherals.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:12:10 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/peripherals.sv 
+# -- Compiling module peripherals
+# 
+# Top level modules:
+# 	peripherals
+# End time: 16:12:10 on Sep 20,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 restart
-# Loading work.tb_controlunit
-# Loading work.controlunit
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.peripherals
+# Loading work.peripheral_getoperands
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecial'. The port definition is at: U:/ED2/Laboratorio/Practica_III/multiplierunit.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/multiplicador File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 16
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecial'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripherals.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco3 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 63
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (2) for port 'D'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 64
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 64
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco1 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco0 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 66
 run -all
-# ** Note: $stop    : U:/ED2/Laboratorio/Practica_III/controlunit.sv(79)
-#    Time: 180 ns  Iteration: 0  Instance: /tb_controlunit
-# Break in Module tb_controlunit at U:/ED2/Laboratorio/Practica_III/controlunit.sv line 79
-vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/controlunit.sv
+# ** Note: $stop    : U:/ED2/Laboratorio/Practica_III/datapathunit.sv(72)
+#    Time: 3380 ns  Iteration: 0  Instance: /tb_datapathunit
+# Break in Module tb_datapathunit at U:/ED2/Laboratorio/Practica_III/datapathunit.sv line 72
+add wave -position end  sim:/tb_datapathunit/unidatapath/perifericos/count
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecial'. The port definition is at: U:/ED2/Laboratorio/Practica_III/multiplierunit.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/multiplicador File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 16
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecial'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripherals.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco3 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 63
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (2) for port 'D'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 64
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 64
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco1 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco0 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 66
+run -all
+# ** Note: $stop    : U:/ED2/Laboratorio/Practica_III/datapathunit.sv(72)
+#    Time: 3380 ns  Iteration: 0  Instance: /tb_datapathunit
+# Break in Module tb_datapathunit at U:/ED2/Laboratorio/Practica_III/datapathunit.sv line 72
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/peripheral_getoperands.sv
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:42:34 on Sep 19,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/controlunit.sv 
-# -- Compiling module controlunit
-# -- Compiling module tb_controlunit
+# Start time: 16:25:28 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/peripheral_getoperands.sv 
+# -- Compiling module peripheral_getoperands
 # 
 # Top level modules:
-# 	tb_controlunit
-# End time: 16:42:34 on Sep 19,2023, Elapsed time: 0:00:00
+# 	peripheral_getoperands
+# End time: 16:25:28 on Sep 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/peripherals.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:25:28 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/peripherals.sv 
+# -- Compiling module peripherals
+# 
+# Top level modules:
+# 	peripherals
+# End time: 16:25:28 on Sep 20,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 restart
-# Loading work.tb_controlunit
-# Loading work.controlunit
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.peripherals
+# Loading work.peripheral_getoperands
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecial'. The port definition is at: U:/ED2/Laboratorio/Practica_III/multiplierunit.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/multiplicador File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 16
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecial'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripherals.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco3 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 63
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (2) for port 'D'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 64
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 64
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco1 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco0 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 66
 run -all
-# ** Note: $stop    : U:/ED2/Laboratorio/Practica_III/controlunit.sv(84)
-#    Time: 340 ns  Iteration: 0  Instance: /tb_controlunit
-# Break in Module tb_controlunit at U:/ED2/Laboratorio/Practica_III/controlunit.sv line 84
-vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/controlunit.sv
+# ** Note: $stop    : U:/ED2/Laboratorio/Practica_III/datapathunit.sv(72)
+#    Time: 3380 ns  Iteration: 0  Instance: /tb_datapathunit
+# Break in Module tb_datapathunit at U:/ED2/Laboratorio/Practica_III/datapathunit.sv line 72
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/peripheral_getoperands.sv
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:43:08 on Sep 19,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/controlunit.sv 
-# -- Compiling module controlunit
-# -- Compiling module tb_controlunit
+# Start time: 16:27:36 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/peripheral_getoperands.sv 
+# -- Compiling module peripheral_getoperands
 # 
 # Top level modules:
-# 	tb_controlunit
-# End time: 16:43:08 on Sep 19,2023, Elapsed time: 0:00:00
+# 	peripheral_getoperands
+# End time: 16:27:36 on Sep 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/peripherals.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:27:36 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/peripherals.sv 
+# -- Compiling module peripherals
+# 
+# Top level modules:
+# 	peripherals
+# End time: 16:27:36 on Sep 20,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 restart
-# Loading work.tb_controlunit
-# Loading work.controlunit
-run -all
-# ** Note: $stop    : U:/ED2/Laboratorio/Practica_III/controlunit.sv(84)
-#    Time: 580 ns  Iteration: 0  Instance: /tb_controlunit
-# Break in Module tb_controlunit at U:/ED2/Laboratorio/Practica_III/controlunit.sv line 84
-vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/controlunit.sv
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.peripherals
+# Loading work.peripheral_getoperands
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecial'. The port definition is at: U:/ED2/Laboratorio/Practica_III/multiplierunit.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/multiplicador File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 16
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecial'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripherals.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco3 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 63
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (2) for port 'D'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 64
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 64
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco1 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco0 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 66
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/datapathunit.sv
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:45:28 on Sep 19,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/controlunit.sv 
-# -- Compiling module controlunit
-# -- Compiling module tb_controlunit
+# Start time: 16:27:49 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/datapathunit.sv 
+# -- Compiling module datapathunit
+# -- Compiling module tb_datapathunit
+# ** Warning: U:/ED2/Laboratorio/Practica_III/datapathunit.sv(70): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
 # 
 # Top level modules:
-# 	tb_controlunit
-# End time: 16:45:28 on Sep 19,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.tb_controlunit
-# Loading work.controlunit
-run -all
-# ** Note: $stop    : U:/ED2/Laboratorio/Practica_III/controlunit.sv(84)
-#    Time: 580 ns  Iteration: 0  Instance: /tb_controlunit
-# Break in Module tb_controlunit at U:/ED2/Laboratorio/Practica_III/controlunit.sv line 84
-vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/controlunit.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:46:11 on Sep 19,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/controlunit.sv 
-# -- Compiling module controlunit
-# -- Compiling module tb_controlunit
-# 
-# Top level modules:
-# 	tb_controlunit
-# End time: 16:46:11 on Sep 19,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.tb_controlunit
-# Loading work.controlunit
-run -all
-# ** Note: $stop    : U:/ED2/Laboratorio/Practica_III/controlunit.sv(84)
-#    Time: 740 ns  Iteration: 0  Instance: /tb_controlunit
-# Break in Module tb_controlunit at U:/ED2/Laboratorio/Practica_III/controlunit.sv line 84
-vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/controlunit.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:47:03 on Sep 19,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/controlunit.sv 
-# -- Compiling module controlunit
-# -- Compiling module tb_controlunit
-# 
-# Top level modules:
-# 	tb_controlunit
-# End time: 16:47:03 on Sep 19,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.tb_controlunit
-# Loading work.controlunit
-run -all
-# ** Note: $stop    : U:/ED2/Laboratorio/Practica_III/controlunit.sv(84)
-#    Time: 820 ns  Iteration: 0  Instance: /tb_controlunit
-# Break in Module tb_controlunit at U:/ED2/Laboratorio/Practica_III/controlunit.sv line 84
-vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/controlunit.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:48:18 on Sep 19,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/controlunit.sv 
-# -- Compiling module controlunit
-# -- Compiling module tb_controlunit
-# 
-# Top level modules:
-# 	tb_controlunit
-# End time: 16:48:19 on Sep 19,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-restart
-# Loading work.tb_controlunit
-# Loading work.controlunit
-run -all
-# ** Note: $stop    : U:/ED2/Laboratorio/Practica_III/controlunit.sv(85)
-#    Time: 500 ns  Iteration: 0  Instance: /tb_controlunit
-# Break in Module tb_controlunit at U:/ED2/Laboratorio/Practica_III/controlunit.sv line 85
-vsim work.tb_topunit
-# End time: 16:57:31 on Sep 19,2023, Elapsed time: 0:18:08
-# Errors: 0, Warnings: 0
-# vsim work.tb_topunit 
-# Start time: 16:57:31 on Sep 19,2023
-# Loading sv_std.std
-# Loading work.tb_topunit
-vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/top.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:57:45 on Sep 19,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/top.sv 
-# -- Compiling module top
-# -- Compiling module tb_topunit
-# ** Warning: U:/ED2/Laboratorio/Practica_III/top.sv(63): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# 
-# Top level modules:
-# 	tb_topunit
-# End time: 16:57:45 on Sep 19,2023, Elapsed time: 0:00:00
+# 	tb_datapathunit
+# End time: 16:27:49 on Sep 20,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
+run -all
+# ** Note: $stop    : U:/ED2/Laboratorio/Practica_III/datapathunit.sv(72)
+#    Time: 3380 ns  Iteration: 0  Instance: /tb_datapathunit
+# Break in Module tb_datapathunit at U:/ED2/Laboratorio/Practica_III/datapathunit.sv line 72
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/datapathunit.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:30:57 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/datapathunit.sv 
+# -- Compiling module datapathunit
+# -- Compiling module tb_datapathunit
+# ** Warning: U:/ED2/Laboratorio/Practica_III/datapathunit.sv(69): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	tb_datapathunit
+# End time: 16:30:57 on Sep 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_datapathunit
+# Loading work.datapathunit
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecial'. The port definition is at: U:/ED2/Laboratorio/Practica_III/multiplierunit.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/multiplicador File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 16
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecial'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripherals.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco3 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 63
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (2) for port 'D'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 64
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 64
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco1 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_datapathunit/unidatapath/perifericos/deco0 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 66
+run -all
+# ** Note: $stop    : U:/ED2/Laboratorio/Practica_III/datapathunit.sv(72)
+#    Time: 3300 ns  Iteration: 0  Instance: /tb_datapathunit
+# Break in Module tb_datapathunit at U:/ED2/Laboratorio/Practica_III/datapathunit.sv line 72
 vsim work.tb_topunit
-# End time: 16:57:47 on Sep 19,2023, Elapsed time: 0:00:16
-# Errors: 0, Warnings: 0
+# End time: 16:35:45 on Sep 20,2023, Elapsed time: 0:36:25
+# Errors: 0, Warnings: 7
 # vsim work.tb_topunit 
-# Start time: 16:57:47 on Sep 19,2023
+# Start time: 16:35:45 on Sep 20,2023
 # Loading sv_std.std
 # Loading work.tb_topunit
 # Loading work.top
@@ -338,26 +388,690 @@ vsim work.tb_topunit
 # Loading work.peripheral_pulse
 # Loading work.peripheral_getoperands
 # Loading work.peripheral_deco7seg
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecial'. The port definition is at: U:/ED2/Laboratorio/Practica_III/multiplierunit.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/multiplicador File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 16
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecial'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripherals.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 19
 # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco3 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 61
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco3 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 63
 # ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (2) for port 'D'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 62
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 64
 # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 62
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 64
 # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco1 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 63
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco1 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 65
 # ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco0 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 64
-add wave -position end  sim:/tb_topunit/clk
-add wave -position end  sim:/tb_topunit/nreset
-add wave -position end  sim:/tb_topunit/nenter
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco0 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 66
 add wave -position end  sim:/tb_topunit/inputdata
-add wave -position end  sim:/tb_topunit/topis/dp0/dataA
-add wave -position end  sim:/tb_topunit/topis/dp0/dataB
-add wave -position end  sim:/tb_topunit/topis/dp0/dataR
+add wave -position 0  sim:/tb_topunit/nenter
+add wave -position 0  sim:/tb_topunit/clk
+add wave -position end  sim:/tb_topunit/topis/cu0/loaddata
+add wave -position end  sim:/tb_topunit/topis/cu0/inputdata_ready
+add wave -position end  sim:/tb_topunit/topis/cu0/currentState
+add wave -position end  sim:/tb_topunit/topis/cu0/nextState
+add wave -position end  sim:/tb_topunit/topis/dp0/multiplicador/dataA
+add wave -position end  sim:/tb_topunit/topis/dp0/multiplicador/dataB
+add wave -position end  sim:/tb_topunit/topis/dp0/multiplicador/dataR
 run -all
 # ** Note: $stop    : U:/ED2/Laboratorio/Practica_III/top.sv(66)
 #    Time: 2020 ns  Iteration: 0  Instance: /tb_topunit
 # Break in Module tb_topunit at U:/ED2/Laboratorio/Practica_III/top.sv line 66
-# End time: 17:00:12 on Sep 19,2023, Elapsed time: 0:02:25
-# Errors: 0, Warnings: 5
+add wave -position end  sim:/tb_topunit/disp3
+add wave -position end  sim:/tb_topunit/disp2
+add wave -position end  sim:/tb_topunit/disp1
+add wave -position end  sim:/tb_topunit/disp0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecial'. The port definition is at: U:/ED2/Laboratorio/Practica_III/multiplierunit.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/multiplicador File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 16
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecial'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripherals.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco3 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 63
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (2) for port 'D'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 64
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 64
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco1 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco0 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 66
+run -all
+# ** Note: $stop    : U:/ED2/Laboratorio/Practica_III/top.sv(66)
+#    Time: 2020 ns  Iteration: 0  Instance: /tb_topunit
+# Break in Module tb_topunit at U:/ED2/Laboratorio/Practica_III/top.sv line 66
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecial'. The port definition is at: U:/ED2/Laboratorio/Practica_III/multiplierunit.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/multiplicador File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 16
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecial'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripherals.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco3 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 63
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (2) for port 'D'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 64
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 64
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco1 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco0 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 66
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/controlunit.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:12:15 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/controlunit.sv 
+# -- Compiling module controlunit
+# -- Compiling module tb_controlunit
+# 
+# Top level modules:
+# 	tb_controlunit
+# End time: 17:12:15 on Sep 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/datapathunit.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:12:15 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/datapathunit.sv 
+# -- Compiling module datapathunit
+# -- Compiling module tb_datapathunit
+# ** Warning: U:/ED2/Laboratorio/Practica_III/datapathunit.sv(69): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	tb_datapathunit
+# End time: 17:12:15 on Sep 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/multiplierunit.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:12:15 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/multiplierunit.sv 
+# -- Compiling module multiplierunit
+# -- Compiling module tb_multiplierunit
+# 
+# Top level modules:
+# 	tb_multiplierunit
+# End time: 17:12:15 on Sep 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:12:15 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv 
+# -- Compiling module peripheral_deco7seg
+# 
+# Top level modules:
+# 	peripheral_deco7seg
+# End time: 17:12:15 on Sep 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/peripheral_getoperands.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:12:15 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/peripheral_getoperands.sv 
+# -- Compiling module peripheral_getoperands
+# 
+# Top level modules:
+# 	peripheral_getoperands
+# End time: 17:12:15 on Sep 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/peripheral_pulse.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:12:15 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/peripheral_pulse.sv 
+# -- Compiling module peripheral_pulse
+# 
+# Top level modules:
+# 	peripheral_pulse
+# End time: 17:12:15 on Sep 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/peripherals.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:12:15 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/peripherals.sv 
+# -- Compiling module peripherals
+# 
+# Top level modules:
+# 	peripherals
+# End time: 17:12:15 on Sep 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/controlunit.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:12:15 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/controlunit.sv 
+# -- Compiling module controlunit
+# -- Compiling module tb_controlunit
+# 
+# Top level modules:
+# 	tb_controlunit
+# End time: 17:12:15 on Sep 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/datapathunit.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:12:15 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/datapathunit.sv 
+# -- Compiling module datapathunit
+# -- Compiling module tb_datapathunit
+# ** Warning: U:/ED2/Laboratorio/Practica_III/datapathunit.sv(69): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	tb_datapathunit
+# End time: 17:12:15 on Sep 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/multiplierunit.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:12:15 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/multiplierunit.sv 
+# -- Compiling module multiplierunit
+# -- Compiling module tb_multiplierunit
+# 
+# Top level modules:
+# 	tb_multiplierunit
+# End time: 17:12:16 on Sep 20,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/top.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:12:16 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/top.sv 
+# -- Compiling module top
+# -- Compiling module tb_topunit
+# ** Warning: U:/ED2/Laboratorio/Practica_III/top.sv(63): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	tb_topunit
+# End time: 17:12:16 on Sep 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/top.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:12:16 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/top.sv 
+# -- Compiling module top
+# -- Compiling module tb_topunit
+# ** Warning: U:/ED2/Laboratorio/Practica_III/top.sv(63): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	tb_topunit
+# End time: 17:12:16 on Sep 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vsim work.tb_topunit
+# End time: 17:12:19 on Sep 20,2023, Elapsed time: 0:36:34
+# Errors: 0, Warnings: 7
+# vsim work.tb_topunit 
+# Start time: 17:12:19 on Sep 20,2023
+# Loading sv_std.std
+# Loading work.tb_topunit
+# Loading work.top
+# Loading work.controlunit
+# Loading work.datapathunit
+# Loading work.multiplierunit
+# Loading work.peripherals
+# Loading work.peripheral_pulse
+# Loading work.peripheral_getoperands
+# Loading work.peripheral_deco7seg
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecial'. The port definition is at: U:/ED2/Laboratorio/Practica_III/multiplierunit.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/multiplicador File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 16
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecialm'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripherals.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco3 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (2) for port 'D'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 66
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 66
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco1 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 67
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco0 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 68
+add wave -position end  sim:/tb_topunit/clk
+add wave -position end  sim:/tb_topunit/nreset
+add wave -position end  sim:/tb_topunit/nenter
+add wave -position end  sim:/tb_topunit/inputdata
+add wave -position end  sim:/tb_topunit/topis/dp0/multiplicador/dataA
+add wave -position end  sim:/tb_topunit/topis/dp0/multiplicador/dataB
+add wave -position end  sim:/tb_topunit/topis/dp0/multiplicador/dataR
+add wave -position end  sim:/tb_topunit/topis/dp0/multiplicador/casesspecial
+run -all
+# ** Note: $stop    : U:/ED2/Laboratorio/Practica_III/top.sv(66)
+#    Time: 2020 ns  Iteration: 0  Instance: /tb_topunit
+# Break in Module tb_topunit at U:/ED2/Laboratorio/Practica_III/top.sv line 66
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/multiplierunit.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:39:28 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/multiplierunit.sv 
+# -- Compiling module multiplierunit
+# -- Compiling module tb_multiplierunit
+# 
+# Top level modules:
+# 	tb_multiplierunit
+# End time: 17:39:28 on Sep 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/multiplierunit.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:39:28 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/multiplierunit.sv 
+# -- Compiling module multiplierunit
+# -- Compiling module tb_multiplierunit
+# 
+# Top level modules:
+# 	tb_multiplierunit
+# End time: 17:39:29 on Sep 20,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/top.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:39:29 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/top.sv 
+# -- Compiling module top
+# -- Compiling module tb_topunit
+# ** Warning: U:/ED2/Laboratorio/Practica_III/top.sv(63): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	tb_topunit
+# End time: 17:39:29 on Sep 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vsim work.tb_multiplierunit
+# End time: 17:39:35 on Sep 20,2023, Elapsed time: 0:27:16
+# Errors: 0, Warnings: 7
+# vsim work.tb_multiplierunit 
+# Start time: 17:39:35 on Sep 20,2023
+# Loading sv_std.std
+# Loading work.tb_multiplierunit
+# Loading work.multiplierunit
+add wave -position end  sim:/tb_multiplierunit/clk
+add wave -position end  sim:/tb_multiplierunit/dataA
+add wave -position end  sim:/tb_multiplierunit/dataB
+add wave -position end  sim:/tb_multiplierunit/dataR
+add wave -position end  sim:/tb_multiplierunit/casesspecial
+run -all
+# ** Note: $stop    : U:/ED2/Laboratorio/Practica_III/multiplierunit.sv(150)
+#    Time: 280 ns  Iteration: 0  Instance: /tb_multiplierunit
+# Break in Module tb_multiplierunit at U:/ED2/Laboratorio/Practica_III/multiplierunit.sv line 150
+vsim work.tb_topunit
+# End time: 17:42:17 on Sep 20,2023, Elapsed time: 0:02:42
+# Errors: 0, Warnings: 0
+# vsim work.tb_topunit 
+# Start time: 17:42:18 on Sep 20,2023
+# Loading sv_std.std
+# Loading work.tb_topunit
+# Loading work.top
+# Loading work.controlunit
+# Loading work.datapathunit
+# Loading work.multiplierunit
+# Loading work.peripherals
+# Loading work.peripheral_pulse
+# Loading work.peripheral_getoperands
+# Loading work.peripheral_deco7seg
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecial'. The port definition is at: U:/ED2/Laboratorio/Practica_III/multiplierunit.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/multiplicador File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 16
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecialm'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripherals.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco3 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (2) for port 'D'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 66
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 66
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco1 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 67
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco0 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 68
+add wave -position end  sim:/tb_topunit/disp3
+add wave -position end  sim:/tb_topunit/disp2
+add wave -position end  sim:/tb_topunit/disp1
+add wave -position end  sim:/tb_topunit/disp0
+add wave -position end  sim:/tb_topunit/topis/dp0/multiplicador/dataA
+add wave -position end  sim:/tb_topunit/topis/dp0/multiplicador/dataB
+add wave -position end  sim:/tb_topunit/topis/dp0/multiplicador/dataR
+add wave -position end  sim:/tb_topunit/topis/dp0/multiplicador/casesspecial
+run -all
+# ** Note: $stop    : U:/ED2/Laboratorio/Practica_III/top.sv(66)
+#    Time: 2020 ns  Iteration: 0  Instance: /tb_topunit
+# Break in Module tb_topunit at U:/ED2/Laboratorio/Practica_III/top.sv line 66
+add wave -position end  sim:/tb_topunit/disp2
+add wave -position 0  sim:/tb_topunit/topis/enter
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecial'. The port definition is at: U:/ED2/Laboratorio/Practica_III/multiplierunit.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/multiplicador File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 16
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecialm'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripherals.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco3 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (2) for port 'D'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 66
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 66
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco1 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 67
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco0 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 68
+run -all
+# ** Note: $stop    : U:/ED2/Laboratorio/Practica_III/top.sv(66)
+#    Time: 2020 ns  Iteration: 0  Instance: /tb_topunit
+# Break in Module tb_topunit at U:/ED2/Laboratorio/Practica_III/top.sv line 66
+add wave -position end  sim:/tb_topunit/topis/disp3
+add wave -position end  sim:/tb_topunit/topis/disp2
+add wave -position end  sim:/tb_topunit/topis/disp1
+add wave -position end  sim:/tb_topunit/topis/disp0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecial'. The port definition is at: U:/ED2/Laboratorio/Practica_III/multiplierunit.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/multiplicador File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 16
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecialm'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripherals.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco3 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (2) for port 'D'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 66
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 66
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco1 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 67
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco0 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 68
+run -all
+# ** Note: $stop    : U:/ED2/Laboratorio/Practica_III/top.sv(66)
+#    Time: 2020 ns  Iteration: 0  Instance: /tb_topunit
+# Break in Module tb_topunit at U:/ED2/Laboratorio/Practica_III/top.sv line 66
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/top.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:47:50 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/top.sv 
+# -- Compiling module top
+# -- Compiling module tb_topunit
+# 
+# Top level modules:
+# 	tb_topunit
+# End time: 17:47:50 on Sep 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_topunit
+# Loading work.top
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecial'. The port definition is at: U:/ED2/Laboratorio/Practica_III/multiplierunit.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/multiplicador File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 16
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecialm'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripherals.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco3 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (2) for port 'D'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 66
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 66
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco1 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 67
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco0 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 68
+run -all
+# ** Note: $stop    : U:/ED2/Laboratorio/Practica_III/top.sv(66)
+#    Time: 2020 ns  Iteration: 0  Instance: /tb_topunit
+# Break in Module tb_topunit at U:/ED2/Laboratorio/Practica_III/top.sv line 66
+add wave -position end  sim:/tb_topunit/topis/dp0/perifericos/deco2/casesspecial
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecial'. The port definition is at: U:/ED2/Laboratorio/Practica_III/multiplierunit.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/multiplicador File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 16
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecialm'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripherals.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco3 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (2) for port 'D'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 66
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 66
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco1 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 67
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco0 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 68
+run -all
+# ** Note: $stop    : U:/ED2/Laboratorio/Practica_III/top.sv(66)
+#    Time: 2020 ns  Iteration: 0  Instance: /tb_topunit
+# Break in Module tb_topunit at U:/ED2/Laboratorio/Practica_III/top.sv line 66
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecial'. The port definition is at: U:/ED2/Laboratorio/Practica_III/multiplierunit.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/multiplicador File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 16
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecialm'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripherals.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco3 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (2) for port 'D'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 66
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 66
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco1 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 67
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco0 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 68
+run -all
+# ** Note: $stop    : U:/ED2/Laboratorio/Practica_III/top.sv(66)
+#    Time: 2020 ns  Iteration: 0  Instance: /tb_topunit
+# Break in Module tb_topunit at U:/ED2/Laboratorio/Practica_III/top.sv line 66
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/peripherals.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:08:07 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/peripherals.sv 
+# -- Compiling module peripherals
+# 
+# Top level modules:
+# 	peripherals
+# End time: 18:08:07 on Sep 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.peripherals
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecial'. The port definition is at: U:/ED2/Laboratorio/Practica_III/multiplierunit.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/multiplicador File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 16
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecialm'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripherals.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco3 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (2) for port 'deco'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco3 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 66
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (2) for port 'deco'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 66
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco1 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 67
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (2) for port 'deco'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco1 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 67
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco0 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 68
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (2) for port 'deco'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco0 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 68
+run -all
+# ** Note: $stop    : U:/ED2/Laboratorio/Practica_III/top.sv(66)
+#    Time: 2020 ns  Iteration: 0  Instance: /tb_topunit
+# Break in Module tb_topunit at U:/ED2/Laboratorio/Practica_III/top.sv line 66
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/controlunit.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:09:39 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/controlunit.sv 
+# -- Compiling module controlunit
+# -- Compiling module tb_controlunit
+# 
+# Top level modules:
+# 	tb_controlunit
+# End time: 18:09:39 on Sep 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/datapathunit.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:09:39 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/datapathunit.sv 
+# -- Compiling module datapathunit
+# -- Compiling module tb_datapathunit
+# ** Warning: U:/ED2/Laboratorio/Practica_III/datapathunit.sv(69): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	tb_datapathunit
+# End time: 18:09:39 on Sep 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/multiplierunit.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:09:39 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/multiplierunit.sv 
+# -- Compiling module multiplierunit
+# -- Compiling module tb_multiplierunit
+# 
+# Top level modules:
+# 	tb_multiplierunit
+# End time: 18:09:39 on Sep 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:09:39 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv 
+# -- Compiling module peripheral_deco7seg
+# 
+# Top level modules:
+# 	peripheral_deco7seg
+# End time: 18:09:39 on Sep 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/peripheral_getoperands.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:09:39 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/peripheral_getoperands.sv 
+# -- Compiling module peripheral_getoperands
+# 
+# Top level modules:
+# 	peripheral_getoperands
+# End time: 18:09:39 on Sep 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/peripheral_pulse.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:09:39 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/peripheral_pulse.sv 
+# -- Compiling module peripheral_pulse
+# 
+# Top level modules:
+# 	peripheral_pulse
+# End time: 18:09:40 on Sep 20,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/peripherals.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:09:40 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/peripherals.sv 
+# -- Compiling module peripherals
+# 
+# Top level modules:
+# 	peripherals
+# End time: 18:09:40 on Sep 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/controlunit.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:09:40 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/controlunit.sv 
+# -- Compiling module controlunit
+# -- Compiling module tb_controlunit
+# 
+# Top level modules:
+# 	tb_controlunit
+# End time: 18:09:40 on Sep 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/datapathunit.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:09:40 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/datapathunit.sv 
+# -- Compiling module datapathunit
+# -- Compiling module tb_datapathunit
+# ** Warning: U:/ED2/Laboratorio/Practica_III/datapathunit.sv(69): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	tb_datapathunit
+# End time: 18:09:40 on Sep 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/multiplierunit.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:09:40 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/multiplierunit.sv 
+# -- Compiling module multiplierunit
+# -- Compiling module tb_multiplierunit
+# 
+# Top level modules:
+# 	tb_multiplierunit
+# End time: 18:09:40 on Sep 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/top.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:09:40 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/top.sv 
+# -- Compiling module top
+# -- Compiling module tb_topunit
+# 
+# Top level modules:
+# 	tb_topunit
+# End time: 18:09:40 on Sep 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_III U:/ED2/Laboratorio/Practica_III/top.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:09:40 on Sep 20,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_III" U:/ED2/Laboratorio/Practica_III/top.sv 
+# -- Compiling module top
+# -- Compiling module tb_topunit
+# 
+# Top level modules:
+# 	tb_topunit
+# End time: 18:09:40 on Sep 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_topunit
+# Loading work.top
+# Loading work.controlunit
+# Loading work.datapathunit
+# Loading work.multiplierunit
+# Loading work.peripherals
+# Loading work.peripheral_pulse
+# Loading work.peripheral_getoperands
+# Loading work.peripheral_deco7seg
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecial'. The port definition is at: U:/ED2/Laboratorio/Practica_III/multiplierunit.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/multiplicador File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 16
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecialm'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripherals.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco3 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 66
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco1 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 67
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco0 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 68
+run -all
+# ** Note: $stop    : U:/ED2/Laboratorio/Practica_III/top.sv(66)
+#    Time: 2020 ns  Iteration: 0  Instance: /tb_topunit
+# Break in Module tb_topunit at U:/ED2/Laboratorio/Practica_III/top.sv line 66
+add wave -position end  sim:/tb_topunit/topis/dp0/perifericos/deco3/casesspecial
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecial'. The port definition is at: U:/ED2/Laboratorio/Practica_III/multiplierunit.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/multiplicador File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 16
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecialm'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripherals.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco3 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 66
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco1 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 67
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco0 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 68
+run -all
+# ** Note: $stop    : U:/ED2/Laboratorio/Practica_III/top.sv(66)
+#    Time: 2020 ns  Iteration: 0  Instance: /tb_topunit
+# Break in Module tb_topunit at U:/ED2/Laboratorio/Practica_III/top.sv line 66
+add wave -position end  sim:/tb_topunit/topis/dp0/perifericos/casesspecialm
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecial'. The port definition is at: U:/ED2/Laboratorio/Practica_III/multiplierunit.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/multiplicador File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 16
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (4) for port 'casesspecialm'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripherals.sv(5).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos File: U:/ED2/Laboratorio/Practica_III/datapathunit.sv Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco3 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 65
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco2 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 66
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco1 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 67
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'EXTENDED'. The port definition is at: U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_topunit/topis/dp0/perifericos/deco0 File: U:/ED2/Laboratorio/Practica_III/peripherals.sv Line: 68
+run -all
+# ** Note: $stop    : U:/ED2/Laboratorio/Practica_III/top.sv(66)
+#    Time: 2020 ns  Iteration: 0  Instance: /tb_topunit
+# Break in Module tb_topunit at U:/ED2/Laboratorio/Practica_III/top.sv line 66
+# End time: 18:13:24 on Sep 20,2023, Elapsed time: 0:31:06
+# Errors: 0, Warnings: 6

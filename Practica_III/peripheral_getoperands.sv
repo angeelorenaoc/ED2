@@ -1,10 +1,10 @@
 // ******************* 
 // Get Operands Module
 // ******************* 
-module peripheral_getoperands (clk, reset, inputdata, enterpulse, datainput_i, dataA, dataB);
+module peripheral_getoperands (clk, reset, inputdata, loaddata, datainput_i, dataA, dataB);
 	input logic clk, reset;
 	input logic [7:0] inputdata;
-	input logic enterpulse;
+	input logic loaddata;
 	input logic [3:0] datainput_i;
 	output logic [31:0] dataA, dataB;
 
@@ -16,7 +16,7 @@ module peripheral_getoperands (clk, reset, inputdata, enterpulse, datainput_i, d
 		if(reset) begin
 			aux[63:0] <= 63'b0;
 		end
-		else if(enterpulse)begin 
+		else if(loaddata)begin 
 			if (datainput_i < 8) begin
 				aux[datainput_i*8+:8] <= inputdata;
 			end

@@ -4,7 +4,7 @@
 module multiplierunit (dataA, dataB, dataR, casesspecial);
 	input logic [31:0] dataA, dataB;
 	output logic [31:0] dataR;
-	output logic [3:0] casesspecial;// Cero,Inf,-Inf,Nan;
+	output logic [4:0] casesspecial;// Cero,Inf,-Inf,Nan;
 
 
 // Internal signals to perform the multiplication
@@ -32,25 +32,31 @@ module multiplierunit (dataA, dataB, dataR, casesspecial);
 																										//¿Puede ser (A[] || B[]) == 0?
 			if((dataA[22:0] != 23'b0 && dataA[30:23] == 8'b11111111) || (dataB[22:0] != 23'b0 && dataB[30:23] == 8'b11111111) || dataA[30:23] == 8'b0 || dataB[30:23] == 8'b0)begin //NAN
 				//Revisar cómo reevaular esta condición
-				casesspecial = 4'b0001; 			
+				casesspecial = 5'b00001; 			
 			end
 			else if ((dataA[22:0] == 23'b0 || dataB[22:0] == 23'b0) && sign ) begin //-Infinito
-				casesspecial = 4'b0010;
+				casesspecial = 5'b00010;
 				mantissa = 23'b0;				
 			end
 			else begin //+Infinito
-				casesspecial = 4'b0100;	
+				casesspecial = 5'b00100;	
 				mantissa = 23'b0;	
 			end
 		end
-		else if (dataA == 32'b0 || dataB == 32'b0)begin
+		else if ((dataA[30:0] == 31'b0 || dataB[30:0] == 31'b0))begin
 			mantissa = 23'b0;
 			exponent = 8'b00000000;
-			casesspecial = 4'b1000;	
+			casesspecial = 5'b10000 >> sign;	
 		end
+		/*
+		else if ((dataA == 32'b0 || dataB == 32'b0) && sign == 1'b0)begin
+			mantissa = 23'b0;
+			exponent = 8'b00000000;
+			casesspecial = 5'b10000;	
+		end*/
 		//Números "normales"
 		else begin
-			casesspecial = 4'b0000;
+			casesspecial = 5'b00000;
 			if(Resultado_auxiliar[47] == 1'b0)begin
 				exponent = (dataA[30:23]-7'b1111111) + dataB[30:23];
 				mantissa = Resultado_auxiliar[45:23];
@@ -77,7 +83,7 @@ module tb_multiplierunit ();
 	localparam CLK_PERIOD = 20ns;
 	logic clk;
 	logic [31:0] dataA, dataB, dataR;
-	logic [3:0] casesspecial;
+	logic [4:0] casesspecial;
 	
 	multiplierunit multi (dataA, dataB, dataR, casesspecial);
 	
@@ -136,6 +142,10 @@ module tb_multiplierunit ();
 	//-Infinito*9.5 = Infinito
 	dataA = 32'b1111_1111_1000_0000_0000_0000_0000_0000;
 	dataB = 32'b0100_0001_0001_1000_0000_0000_0000_0000;
+	#(CLK_PERIOD * 1);
+	//-Infinito*9.5 = Infinito
+	dataA = 32'b0000_0000_0000_0000_0000_0000_0000_0000;
+	dataB = 32'b1000_0000_0000_0000_0000_0000_0000_0000;
 	#(CLK_PERIOD * 1);
 	
 		$stop;

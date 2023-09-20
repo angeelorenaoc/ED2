@@ -3,9 +3,9 @@
 // ************************
 module peripheral_deco7seg(
 	input  logic [3:0] D,
-	input  logic [3:0] casesspecial,
+	input  logic [4:0] casesspecial,
 	input  logic EXTENDED,
-	input  int   deco,
+	input  logic [1:0]  deco,
 	output logic [6:0] SEG
 );
  
@@ -13,21 +13,27 @@ module peripheral_deco7seg(
 		if (EXTENDED == 0) begin
 			if (casesspecial != 0) begin
 				case(casesspecial)
-					4'b1000: SEG = 7'b1000000;
-					
-					4'b0100: if(deco == 2)
+					5'b10000: if (deco != 2'b10)
+									SEG = 7'b1000000;
+								else
+									SEG = 7'b1111111;
+					5'b01000: if (deco != 2'b10)
+									SEG = 7'b1000000;
+								else
+									SEG = 7'b0111111;
+					5'b00100: if(deco == 2'b10)
 									SEG = 7'b1111111;
 								else
 									SEG = 7'b0011100;
 									
-					4'b0010: if(deco == 2)
+					5'b00010: if(deco == 2'b10)
 									SEG = 7'b1111111;
 								else
 									SEG = 7'b0011100;
 									
-					4'b0001: if(deco == 2)
+					5'b00001: if(deco == 2'b10)
 									SEG = 7'b1001000;
-								else if (deco == 1)
+								else if (deco == 2'b01)
 									SEG = 7'b0001000;
 								else
 									SEG = 7'b1001000;

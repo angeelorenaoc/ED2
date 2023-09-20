@@ -54,13 +54,13 @@ module tb_topunit ();
 			nenter = 1;
 			
 			#(CLK_PERIOD * 2);
-			inputdata = inputdata + 8'b0000_0100;
+			//inputdata = inputdata + 8'b0000_0100;
 			nenter = 0;
 		
 		end
 		
 		#(CLK_PERIOD * 1);
-		inputdata = inputdata + 5'b0000_0001;
+		//inputdata = inputdata + 5'b0000_0001;
 	end
 		
 		$stop;
