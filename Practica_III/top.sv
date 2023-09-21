@@ -1,6 +1,7 @@
-// **********
+		// **********
 // Top Module
 // ********** 
+//corregir error en el contador del display, salida de r
 module top (clk, nreset, nenter, inputdata, disp3, disp2, disp1, disp0);
 	input logic clk, nreset, nenter;
 	input logic [7:0] inputdata;
@@ -46,7 +47,7 @@ module tb_topunit ();
 	
 	#(CLK_PERIOD * 1);
 	nreset = 1;
-	
+/*	
 	for ( int i = 0; i < 4 ;i++) begin
 		for ( int j = 0; j < 8 ;j++) begin
 			
@@ -65,7 +66,76 @@ module tb_topunit ();
 
 		$stop;
 	end
+*/
 	
+	//dataA = 32'b1111_1111_1000_0000_0000_0000_0000_0000;
+	//dataB = 32'b0100_0001_0001_1000_0000_0000_0000_0000;
+	
+	#(CLK_PERIOD * 1);
+	inputdata = 8'b0000_0000;
+	nenter = 0;
+	
+	#(CLK_PERIOD * 1);
+	nenter= 1;
+
+	#(CLK_PERIOD * 1);
+	inputdata = 8'b0000_0000;
+	nenter= 0;
+	
+	#(CLK_PERIOD * 1);
+	nenter= 1;
+	
+	#(CLK_PERIOD * 1);
+	inputdata = 8'b1000_0000;
+	nenter = 0;
+	
+	#(CLK_PERIOD * 1);
+	nenter = 1;
+	
+	#(CLK_PERIOD * 1);
+	inputdata = 8'b1111_1111;
+	nenter = 0;
+	
+	#(CLK_PERIOD * 1);
+	nenter = 1;
+	
+	#(CLK_PERIOD * 1);
+	inputdata = 8'b0000_0000;
+	nenter = 0;
+	
+	#(CLK_PERIOD * 1);
+	nenter = 1;
+	
+	#(CLK_PERIOD * 1);
+	inputdata = 8'b0001_1000;
+	nenter = 0;
+	
+	#(CLK_PERIOD * 1);
+	nenter = 1;
+	
+	#(CLK_PERIOD * 1);
+	inputdata = 8'b0100_0001;
+	nenter = 0;
+	
+	#(CLK_PERIOD * 1);
+	nenter = 1;
+	
+#(CLK_PERIOD * 1);
+	nenter = 0;
+	
+	#(CLK_PERIOD * 1);
+	nenter = 1;
+	
+	#(CLK_PERIOD * 1);
+	nenter = 0;
+	
+	#(CLK_PERIOD * 1);
+	nenter = 1;
+	
+
+	$stop;
+	end
 	always #(CLK_PERIOD / 2) clk = ~clk;
+
 	
 endmodule

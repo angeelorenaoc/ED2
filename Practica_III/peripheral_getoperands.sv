@@ -17,7 +17,7 @@ module peripheral_getoperands (clk, reset, inputdata, loaddata, datainput_i, dat
 			aux[63:0] <= 63'b0;
 		end
 		else if(loaddata)begin 
-			if (datainput_i < 8) begin
+			if (datainput_i < 4'd8) begin
 				aux[datainput_i*8+:8] <= inputdata;
 			end
 		end

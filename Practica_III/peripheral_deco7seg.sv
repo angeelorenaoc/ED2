@@ -27,7 +27,7 @@ module peripheral_deco7seg(
 									SEG = 7'b0011100;
 									
 					5'b00010: if(deco == 2'b10)
-									SEG = 7'b1111111;
+									SEG = 7'b0111111;
 								else
 									SEG = 7'b0011100;
 									

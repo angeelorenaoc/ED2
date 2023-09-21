@@ -17,6 +17,8 @@ module peripherals (clk, reset, enter, inputdata,
 	// Internal signals and module instantiation for pulse generation
 	logic pulse;
 	logic [3:0] count;
+	logic [3:0] countout;
+	logic [3:0] countf;
 	logic [3:0] name;
 	logic [7:0] aux;
 	logic [4:0] casesspecial;
@@ -35,8 +37,16 @@ module peripherals (clk, reset, enter, inputdata,
 				count = count + 1'b1 ;
 				inputdata_ready = 1'b0;
 			end
+			else if (inputdata_ready)begin
+				if(countout < 4'd3)begin
+					countout = countout + 1'b1 ;
+				end
+				else begin
+					countout = 0;
+				end
+			end
 			else begin
-				count = 0;
+				//count = 0;
 				inputdata_ready = 1'b1;
 			end
 		end
@@ -53,11 +63,11 @@ module peripherals (clk, reset, enter, inputdata,
 		end
 		else begin
 			name = 4'b1100;
-			aux  = dataR[count[1:0]*8+:8];
+			aux  = dataR[countout[1:0]*8+:8];
 		end
 	end
 	assign casesspecial = (loaddata ? 5'b0 : casesspecialm);
-	
+	assign countf = (loaddata ? count : countout);
 	// Internal signals and module instantiation for getting operands
 	peripheral_getoperands getdata (clk, reset, inputdata, loaddata, count, dataA, dataB);
 
