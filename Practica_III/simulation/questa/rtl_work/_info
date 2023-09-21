@@ -11,7 +11,7 @@ cModel Technology
 Z0 dU:/ED2/Laboratorio/Practica_III/simulation/questa
 vcontrolunit
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1695251380
+Z2 !s110 1695302958
 !i10b 1
 !s100 k?H:QK3nYDgZ>ZfXJdQeQ2
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -22,13 +22,13 @@ R0
 Z5 w1695160096
 Z6 8U:/ED2/Laboratorio/Practica_III/controlunit.sv
 Z7 FU:/ED2/Laboratorio/Practica_III/controlunit.sv
-!i122 42
+!i122 3
 L0 4 42
 Z8 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z9 !s108 1695251380.000000
+Z9 !s108 1695302958.000000
 Z10 !s107 U:/ED2/Laboratorio/Practica_III/controlunit.sv|
 Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_III|U:/ED2/Laboratorio/Practica_III/controlunit.sv|
 !i113 1
@@ -39,16 +39,16 @@ vdatapathunit
 R1
 R2
 !i10b 1
-!s100 Q7zZ1NFLUiKXcHNRCNO_B0
+!s100 d0O4>@n0G0=D:EVNImAj?1
 R3
-Io[VP]DG>Ea`]Ff=hc1@`@2
+I_lkhd<2?Oe3zL6a]79NYj3
 R4
 S1
 R0
-Z15 w1695245444
+Z15 w1695251504
 Z16 8U:/ED2/Laboratorio/Practica_III/datapathunit.sv
 Z17 FU:/ED2/Laboratorio/Practica_III/datapathunit.sv
-!i122 43
+!i122 4
 Z18 L0 4 17
 R8
 r1
@@ -63,33 +63,33 @@ R13
 R14
 vmultiplierunit
 R1
-R2
+Z21 !s110 1695304814
 !i10b 1
-!s100 HnVkYnFC718``CRU_HckV0
+!s100 OKJc`1]7B3D:E8l1Z7?cQ2
 R3
-IJ`VHGhZjBYz_MnRXz>hRO1
+IYHe5@9X0Pe4aUd`gRKWAM2
 R4
 S1
 R0
-Z21 w1695250609
-Z22 8U:/ED2/Laboratorio/Practica_III/multiplierunit.sv
-Z23 FU:/ED2/Laboratorio/Practica_III/multiplierunit.sv
-!i122 44
-L0 4 73
+Z22 w1695304803
+Z23 8U:/ED2/Laboratorio/Practica_III/multiplierunit.sv
+Z24 FU:/ED2/Laboratorio/Practica_III/multiplierunit.sv
+!i122 14
+L0 4 77
 R8
 r1
 !s85 0
 31
-R9
-Z24 !s107 U:/ED2/Laboratorio/Practica_III/multiplierunit.sv|
-Z25 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_III|U:/ED2/Laboratorio/Practica_III/multiplierunit.sv|
+Z25 !s108 1695304813.000000
+Z26 !s107 U:/ED2/Laboratorio/Practica_III/multiplierunit.sv|
+Z27 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_III|U:/ED2/Laboratorio/Practica_III/multiplierunit.sv|
 !i113 1
 R12
 R13
 R14
 vperipheral_deco7seg
 R1
-Z26 !s110 1695251379
+R2
 !i10b 1
 !s100 29clWcbcEFo?YeGBmiF0Y2
 R3
@@ -100,13 +100,13 @@ R0
 w1695249353
 8U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv
 FU:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv
-!i122 38
+!i122 1
 L0 4 70
 R8
 r1
 !s85 0
 31
-Z27 !s108 1695251379.000000
+R9
 !s107 U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_III|U:/ED2/Laboratorio/Practica_III/peripheral_deco7seg.sv|
 !i113 1
@@ -115,7 +115,7 @@ R13
 R14
 vperipheral_getoperands
 R1
-R26
+R2
 !i10b 1
 !s100 3e6<[9FQFSl3[_mM@EaDn3
 R3
@@ -126,13 +126,13 @@ R0
 w1695244301
 8U:/ED2/Laboratorio/Practica_III/peripheral_getoperands.sv
 FU:/ED2/Laboratorio/Practica_III/peripheral_getoperands.sv
-!i122 39
+!i122 6
 L0 4 26
 R8
 r1
 !s85 0
 31
-R27
+R9
 !s107 U:/ED2/Laboratorio/Practica_III/peripheral_getoperands.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_III|U:/ED2/Laboratorio/Practica_III/peripheral_getoperands.sv|
 !i113 1
@@ -152,13 +152,13 @@ R0
 w1694640166
 8U:/ED2/Laboratorio/Practica_III/peripheral_pulse.sv
 FU:/ED2/Laboratorio/Practica_III/peripheral_pulse.sv
-!i122 40
+!i122 0
 L0 4 19
 R8
 r1
 !s85 0
 31
-R27
+R9
 !s107 U:/ED2/Laboratorio/Practica_III/peripheral_pulse.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_III|U:/ED2/Laboratorio/Practica_III/peripheral_pulse.sv|
 !i113 1
@@ -178,7 +178,7 @@ R0
 w1695251247
 8U:/ED2/Laboratorio/Practica_III/peripherals.sv
 FU:/ED2/Laboratorio/Practica_III/peripherals.sv
-!i122 41
+!i122 5
 L0 4 66
 R8
 r1
@@ -204,7 +204,7 @@ R0
 R5
 R6
 R7
-!i122 42
+!i122 3
 L0 50 41
 R8
 r1
@@ -230,7 +230,7 @@ R0
 R15
 R16
 R17
-!i122 43
+!i122 4
 L0 25 54
 R8
 r1
@@ -245,59 +245,59 @@ R13
 R14
 vtb_multiplierunit
 R1
-R2
+R21
 !i10b 1
-!s100 NYM@41a6l?>]4iZ8dF?gB0
+!s100 dnXX02<P2hX@k:8Z^3i6;0
 R3
-IoO^I^ami_9B;jBcGFJE@?2
+I4>SV=_=SmVcM`z_D@bDen3
 R4
 S1
 R0
-R21
 R22
 R23
-!i122 44
-L0 81 76
+R24
+!i122 14
+L0 85 76
 R8
 r1
 !s85 0
 31
-R9
-R24
 R25
+R26
+R27
 !i113 1
 R12
 R13
 R14
 vtb_topunit
 R1
-R2
+Z28 !s110 1695304886
 !i10b 1
-!s100 _cMDz`]M?W@1QiNe1IQSB3
+!s100 TPRCSENAiDZNC?E8?EgR82
 R3
-I3W>a2H>czgDi9mU1hFbNk2
+IAEK:3bzz5Q^3DfWSl?CYP1
 R4
 S1
 R0
-Z28 w1695250057
-Z29 8U:/ED2/Laboratorio/Practica_III/top.sv
-Z30 FU:/ED2/Laboratorio/Practica_III/top.sv
-!i122 46
+Z29 w1695304882
+Z30 8U:/ED2/Laboratorio/Practica_III/top.sv
+Z31 FU:/ED2/Laboratorio/Practica_III/top.sv
+!i122 15
 L0 25 47
 R8
 r1
 !s85 0
 31
-R9
+Z32 !s108 1695304886.000000
 !s107 U:/ED2/Laboratorio/Practica_III/top.sv|
-Z31 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_III|U:/ED2/Laboratorio/Practica_III/top.sv|
+Z33 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_III|U:/ED2/Laboratorio/Practica_III/top.sv|
 !i113 1
 R12
 R13
 R14
 vtop
 R1
-R2
+R28
 !i10b 1
 !s100 SAHG6V1Q1:::f8:c=dMSR0
 R3
@@ -305,18 +305,18 @@ Izdg`lFcc;@j;dNS4U^Z3f2
 R4
 S1
 R0
-R28
 R29
 R30
-!i122 46
+R31
+!i122 15
 R18
 R8
 r1
 !s85 0
 31
-R9
-Z32 !s107 U:/ED2/Laboratorio/Practica_III/top.sv|
-R31
+R32
+Z34 !s107 U:/ED2/Laboratorio/Practica_III/top.sv|
+R33
 !i113 1
 R12
 R13

@@ -30,9 +30,13 @@ module multiplierunit (dataA, dataB, dataR, casesspecial);
 			mantissa = Resultado_auxiliar[45:23];
 			exponent = 8'b11111111;																																	
 																										//¿Puede ser (A[] || B[]) == 0?
-			if((dataA[22:0] != 23'b0 && dataA[30:23] == 8'b11111111) || (dataB[22:0] != 23'b0 && dataB[30:23] == 8'b11111111) || dataA[30:23] == 8'b0 || dataB[30:23] == 8'b0)begin //NAN
+			if((dataA[22:0] != 23'b0 && dataA[30:23] == 8'b11111111) || (dataB[22:0] != 23'b0 && dataB[30:23] == 8'b11111111))begin //NAN
 				//Revisar cómo reevaular esta condición
-				casesspecial = 5'b00001; 			
+				//if (dataA[30:0] == 8'b0 || dataB[30:0] == 8'b0) begin
+				casesspecial = 5'b00001;
+			end
+			else if ((dataA[30:0] == 31'b0 && dataB[30:0] == 31'h7f800000) || (dataB[30:0] == 31'b0 && dataA[30:0] == 31'h7f800000)) begin //O*∞
+				casesspecial = 5'b00001;
 			end
 			else if ((dataA[22:0] == 23'b0 || dataB[22:0] == 23'b0) && sign ) begin //-Infinito
 				casesspecial = 5'b00010;
