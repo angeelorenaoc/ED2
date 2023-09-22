@@ -73,7 +73,7 @@ module peripherals (clk, reset, enter, inputdata,
 
 	// Instanciación del deco(falta)
 	peripheral_deco7seg deco3 (name, casesspecial, 1, 2'd3, disp3);
-	peripheral_deco7seg deco2({2'b0, count[1:0]}, casesspecial, 0, 2'd2, disp2);
+	peripheral_deco7seg deco2({2'b0, countf[1:0]}, casesspecial, 0, 2'd2, disp2);
 	peripheral_deco7seg deco1(aux[7:4], casesspecial, 0, 2'd1, disp1);
 	peripheral_deco7seg deco0 (aux[3:0], casesspecial, 0, 2'd0, disp0);
 endmodule
