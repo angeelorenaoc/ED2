@@ -5,7 +5,8 @@ module peripheral_pulse(input logic d, clk, reset,
 								output logic pulse);
 	// Internal signals: outputs from each Flip Flop
 	logic q1, q2;
-	//Generación del pulso 
+	
+	// Sequential process to generate one-cycle pulse when signal d becomes 1'b1	
 	always_ff @(posedge clk, posedge reset) begin
 		if (reset) begin
 			q1 <= 0;

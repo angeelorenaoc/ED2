@@ -68,32 +68,25 @@ module tb_topunit ();
 	end
 */
 	
-	//dataA = 32'b1111_1111_1000_0000_0000_0000_0000_0000;
-	//dataB = 32'b0100_0001_0001_1000_0000_0000_0000_0000;
+	//dataA = 32'b0000_0000_0001_0101_0101_0111_1010_1000;
+	//dataB = 32'b1101_0001_1011_1001_0101_0001_0100_1011;
 	
 	#(CLK_PERIOD * 1);
-	inputdata = 8'b0000_0000;
+	inputdata = 8'b1010_1000;
 	nenter = 0;
 	
 	#(CLK_PERIOD * 1);
 	nenter= 1;
 
 	#(CLK_PERIOD * 1);
-	inputdata = 8'b0000_0000;
+	inputdata = 8'b0101_0111;
 	nenter= 0;
 	
 	#(CLK_PERIOD * 1);
 	nenter= 1;
 	
 	#(CLK_PERIOD * 1);
-	inputdata = 8'b1000_0000;
-	nenter = 0;
-	
-	#(CLK_PERIOD * 1);
-	nenter = 1;
-	
-	#(CLK_PERIOD * 1);
-	inputdata = 8'b1111_1111;
+	inputdata = 8'b0001_010;
 	nenter = 0;
 	
 	#(CLK_PERIOD * 1);
@@ -107,14 +100,28 @@ module tb_topunit ();
 	nenter = 1;
 	
 	#(CLK_PERIOD * 1);
-	inputdata = 8'b0001_1000;
+	inputdata = 8'b0100_1011;
 	nenter = 0;
 	
 	#(CLK_PERIOD * 1);
 	nenter = 1;
 	
 	#(CLK_PERIOD * 1);
-	inputdata = 8'b0100_0001;
+	inputdata = 8'b0101_0001;
+	nenter = 0;
+	
+	#(CLK_PERIOD * 1);
+	nenter = 1;
+	
+	#(CLK_PERIOD * 1);
+	inputdata = 8'b1011_1001;
+	nenter = 0;
+	
+	#(CLK_PERIOD * 1);
+	nenter = 1;
+	
+	#(CLK_PERIOD * 1);
+	inputdata = 8'b1101_0001;
 	nenter = 0;
 	
 	#(CLK_PERIOD * 1);

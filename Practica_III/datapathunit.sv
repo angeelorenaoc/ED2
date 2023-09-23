@@ -9,13 +9,15 @@ module datapathunit (clk, reset, enter, inputdata,
 	input logic  loaddata;
 	output logic inputdata_ready;
 	output logic [6:0] disp3, disp2, disp1, disp0;
+	//Modulo encargado de conectar el multiplicador con los perifericos de la tarjeta para que estos puedan ser visualizados
 
-	// Internal signals and module instantiation for multiplier unit
+	// Señales internas para el multiplicador 
 	logic [31:0] dataA, dataB, dataR;
 	logic [4:0] casesspecial;
+	//Instanciación del multiplicador 
 	multiplierunit multiplicador (dataA, dataB, dataR, casesspecial);
 	
-	// Internal signals and module instantiation for peripherals unit
+	// Instanciación del módulo que maneja los periféricos 
 	peripherals perifericos (clk, reset, enter, inputdata, loaddata, casesspecial, inputdata_ready, dataA, dataB, dataR, disp3, disp2, disp1, disp0);
 endmodule
 

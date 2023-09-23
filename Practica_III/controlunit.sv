@@ -11,7 +11,8 @@ module controlunit (clk, reset, loaddata, inputdata_ready);
 	State currentState, nextState;
 	logic loadaux;
 
-	// Process (Sequential): update currentState
+	// Máquina de estados que maneja la carga de datos mediante la señal loaddata y la generación de los resultados.
+	//Esta máquina de estados una vez da el resultado se queda en el estado de Result
 	
 	always_ff @(posedge clk, posedge reset) begin
 		if (reset) begin

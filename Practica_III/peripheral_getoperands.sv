@@ -11,7 +11,7 @@ module peripheral_getoperands (clk, reset, inputdata, loaddata, datainput_i, dat
 	// Internal signals and processes to store data into proper registers
 	logic [63:0] aux;
 	
-	
+	//Proceso que se encarga de almacenar los datos que ingresan en la variable auxiliar
 	always_ff @(posedge clk, posedge reset) begin
 		if(reset) begin
 			aux[63:0] <= 63'b0;
@@ -22,7 +22,7 @@ module peripheral_getoperands (clk, reset, inputdata, loaddata, datainput_i, dat
 			end
 		end
 	end
-	
+	// Segmentación de la variable auxiliar para obtener la entrada A y B.
 	assign dataA = aux[31:0];
 	assign dataB = aux[63:32];
 	

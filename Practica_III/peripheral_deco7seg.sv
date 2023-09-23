@@ -8,7 +8,7 @@ module peripheral_deco7seg(
 	input  logic [1:0]  deco,
 	output logic [6:0] SEG
 );
- 
+ //Codificación de los displays, esta codificación incluye los casos especiales que son : 0, -0, ∞, -∞ y NAN
 	always_comb begin
 		if (EXTENDED == 0) begin
 			if (casesspecial != 0) begin

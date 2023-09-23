@@ -26,7 +26,9 @@ module peripherals (clk, reset, enter, inputdata,
 	// Instanciación del generador de pulsos 
 	peripheral_pulse pulse0 (enter, clk, reset, pulse);
 
-	// Process, internal signals and assign statement to control data input / output indexes and data input ready signals
+	// Process secuencial que se encarga de aumentar los contadores, esto con el fin de indicar hasta qué punto se da la carga de datos,
+	// y hasta qué punto la generación de los resultados, el contador de las salidas vuelve hasta 0 para que se pueda mostrar la salida de manera
+	//correcta en los displays
 	always_ff @(posedge clk, posedge reset) begin
 		if (reset) begin
 			count = 4'b0000;
@@ -51,7 +53,8 @@ module peripherals (clk, reset, enter, inputdata,
 			end
 		end
 	end
-	
+	//En este proceso se asigna la respectiva letra, es decir, cuando se estén cargando los datos de a se asignara su respectiva codificación
+	//para ser enviada a los displays, del mismo modo para b y el resultado r, por eso se evalúa el contador y la señal loaddata
 	always_comb begin
 		if (count < 4'b0100 && loaddata == 1) begin
 			name = 4'b1010;
@@ -68,10 +71,10 @@ module peripherals (clk, reset, enter, inputdata,
 	end
 	assign casesspecial = (loaddata ? 5'b0 : casesspecialm);
 	assign countf = (loaddata ? count : countout);
-	// Internal signals and module instantiation for getting operands
+	// Instanciación del módulo que almacena la data de entrada
 	peripheral_getoperands getdata (clk, reset, inputdata, loaddata, count, dataA, dataB);
 
-	// Instanciación del deco(falta)
+	// Instanciación de los 4 displays de 7 segmentos
 	peripheral_deco7seg deco3 (name, casesspecial, 1, 2'd3, disp3);
 	peripheral_deco7seg deco2({2'b0, countf[1:0]}, casesspecial, 0, 2'd2, disp2);
 	peripheral_deco7seg deco1(aux[7:4], casesspecial, 0, 2'd1, disp1);
