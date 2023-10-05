@@ -1,0 +1,7 @@
+module main (
+	output logic [6:0] o,s,c,a,r,g	
+);
+
+deco7seg o ("0000",)
+
+endmodule
