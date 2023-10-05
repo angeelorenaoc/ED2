@@ -10,7 +10,7 @@ def generar_numeros_hexadecimales(n):
         numeros_hex.append(numero_hex)
     return numeros_hex
 
-N = 150  # Reemplaza esto con la cantidad de números que deseas generar
+N = 10  # Reemplaza esto con la cantidad de números que deseas generar
 numeros_generados = generar_numeros_hexadecimales(N)
 
 resultado = ', '.join(numeros_generados)  # Combina los elementos del arreglo en una cadena

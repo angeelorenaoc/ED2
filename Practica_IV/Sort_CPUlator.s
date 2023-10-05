@@ -24,7 +24,7 @@ For_par://LLeva al arreglo de salida todos los números pares
 	MOV R2, R5
 	LDR R5, [R1,#4]!
 	SUBS R6, R6, #1 //Decremento del contador y actualización de las bandera
-	BEQ For_descendente_ext
+	BLO For_descendente_ext
 	CMP R4, #0
 	BNE For_par
 	STR R2, [R11], #4
@@ -92,6 +92,7 @@ Endloop:
 /*Sección en la cual se encuntran los datos de entrada, que serán entregados el día de la presentación de la práctica*/
 
 SortedData: .DS.L NMAX //Vector en el que se guaradará la data ordenada.
-Data: 		.DC.L 0x3, 0x5, 0x4, 0xB, 0x6, 0x18, 0x123DC, 0x152, 0xDCA, 0x186, 0x15, 0xA45//Array con los valores a ordenar
-N: 			.DC.L 12 //Número que indica la longitud del arreglo
 OP:  		.DC.L 0x2 //Bandera que indica el tipo de ordenamiento.
+N: 			.DC.L 10 //Número que indica la longitud del arreglo
+Data: 		.DC.L 0x01226a27, 0xb7bc3585, 0xd33eba1d, 0x08563ea1, 0x41129fe2, 0xf716aedb, 0x2e281c6a, 0x4c27210a, 0xb4e92888, 0xdda93c9c
+
