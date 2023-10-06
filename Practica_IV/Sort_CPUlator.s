@@ -1,11 +1,10 @@
+	//Indica el la longitud máxima que puede tomar el arreglo
 	.equ NMAX, 200
-	.equ mas, 2//(¿Es mejor definir la macro?, o ¿Poner el número en el programa?)
 .global _start
-//Revisar lo del contador en el for par
-_start:
-	//Inicio del prorama:
+
+_start: //Inicio del prorama:
 	LDR R0, =N
-	LDR R0, [R0]//Valor de i que indica la longitud del arreglo (¿Es necesario?)
+	LDR R0, [R0]//Valor de i que indica la longitud del arreglo
 	LDR R1, =Data //Dirección en la cual está data
 	LDR R5,[R1]
 	LDR R2, =OP //Dirección en la cual está el modo de ordenamiento.
@@ -19,8 +18,7 @@ _start:
 	BEQ Copia
 	
 For_par://LLeva al arreglo de salida todos los números pares
-	
-	AND R4,R5,#1
+	AND R4,R5,#1 //Máscara para verificar número par (último bit)
 	MOV R2, R5
 	LDR R5, [R1,#4]!
 	SUBS R6, R6, #1 //Decremento del contador y actualización de las bandera
@@ -31,8 +29,8 @@ For_par://LLeva al arreglo de salida todos los números pares
 	ADD R10 , R10, #1
 	B For_par
 	
-//Organizar de forma descendente:
-For_descendente_ext:
+//Organizar de forma descendente:	
+For_descendente_ext: 
 	CMP R7, R10
 	BHS Endloop
 	MOV R2, R3
@@ -41,26 +39,26 @@ For_descendente_ext:
 	MOV R8, R7
 	ADD R7, R7, #1
 	ADD R3, R3, #4
-For_descendente_int:
-	CMP R8, R10
-	BHS For_descendente_ext
-	ADD R8, R8, #1
-	LDR R5, [R6, #4]!
-	CMP R4, R5
-	BGE For_descendente_int
-	STR R5, [R2]
-	STR R4, [R6]
-	MOV R9, R5
-	MOV R5, R4
-	MOV R4, R9
-	B For_descendente_int
+	For_descendente_int:
+		CMP R8, R10
+		BHS For_descendente_ext
+		ADD R8, R8, #1
+		LDR R5, [R6, #4]!
+		CMP R4, R5
+		BGE For_descendente_int
+		STR R5, [R2]
+		STR R4, [R6]
+		MOV R9, R5
+		MOV R5, R4
+		MOV R4, R9
+		B For_descendente_int
 	
 Copia://Copia de la entrada en la salida
 	STR R5, [R3], #4
 	LDR R5, [R1,#4]!
 	SUBS R6, R6, #1
 	BNE Copia
-	LDR R3, =SortedData//Podría volver a traer la dirreción en este punto?
+	LDR R3, =SortedData
 
 //Organizar de forma ascendente:
 For_ascendente_ext:
@@ -71,20 +69,20 @@ For_ascendente_ext:
 	LDR R4, [R2]
 	MOV R8, R7
 	ADD R7, R7, #1
-	ADD R3, R3, #4
-For_ascendente_int:
-	CMP R8, R0
-	BHS For_ascendente_ext
-	ADD R8, R8, #1
-	LDR R5, [R6, #4]!
-	CMP R4, R5
-	BLE For_ascendente_int
-	STR R5, [R2]
-	STR R4, [R6]
-	MOV R9, R5
-	MOV R5, R4
-	MOV R4, R9
-	B For_ascendente_int
+	ADD R3, R3, #4	
+	For_ascendente_int:
+		CMP R8, R0
+		BHS For_ascendente_ext
+		ADD R8, R8, #1
+		LDR R5, [R6, #4]!
+		CMP R4, R5
+		BLE For_ascendente_int
+		STR R5, [R2]
+		STR R4, [R6]
+		MOV R9, R5
+		MOV R5, R4
+		MOV R4, R9
+		B For_ascendente_int
 
 Endloop: 
 	B Endloop
