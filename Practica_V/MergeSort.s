@@ -1,22 +1,23 @@
 	.global _start
 	.equ MAXN, 200
-	.text //EL LR NO CAMBIA
+	.text 
 _start:
 	LDR R12,=Data
 	LDR R0,=SortedData 	//Dirección de la primera posición del arreglo de salida
-	MOV R1, #0				//Valor de i
+	MOV R1, #0			//Valor de i
 	LDR R2, =N
 	LDR R7, [R2]
-	LDR R2, [R2,#0]  		//Valor de j que indica la longitud del arreglo menos 1
-	SUB R2, R2, #1
+	LDR R2, [R2,#0]  		
+	SUB R2, R2, #1 		//Valor de j que indica la longitud del arreglo menos 1
 	LDR R6, [R12]	
 	MOV SP, #0
 	
-Copia_Original:				//Copia de la entrada en la salida
+Copia_Original:			//Copia de la entrada en la salida
 	STR R6, [R0], #4
 	LDR R6, [R12,#4]!
 	SUBS R7, R7, #1
 	BNE Copia_Original
+	//Se actualizan nuevamente las direcciones de los arreglos
 	LDR R0, =SortedData
 	LDR R12, =C
 	LDR R7, =N
@@ -27,86 +28,84 @@ BL MergeSort
 finish:
 	b finish
 
-MergeSort:				//Función que segmenta la lista
+//Función que segmenta la lista
+MergeSort:				
 	PUSH {R4, R5, R6, R7, R8, R9, LR} 			//Guardamos la siguiente posición para cuando se salga del llamado de la función
 	CMP R1,R2 			// Comparación i==j
-	
 	BNE ELSE
 
 	IF:
 		POP {R4, R5, R6, R7, R8, R9, LR}
 		MOV PC,LR 		//Sale de la función porque no se puede partir más
+	
 	ELSE:
 		ADD R3,R1,R2
-		LSR R3, R3, #1 		//Se cálcula el nuevo punto medio para el arreglo	
-		PUSH {R2,R3} 	//Guarda el valor de j y lo reemplza por m
-		MOV R2, R3
+		LSR R3, R3, #1 		//Se calcula el nuevo punto medio para el arreglo	
+		PUSH {R2,R3} 		//Guarda el valor de j y  m
+		MOV R2, R3			//Lleva el valor de m a j
 		BL  MergeSort
-		MOV R3, R2 		//Recupera el valor original de m
-		POP {R2,R3}	//Recupera el valor original de j
-		/*MOV R4, R3  //ESTO ES UN INTENTO VAGO DE NO PERDR EL VALOR DE R3
-		ADD R3, R3, #1 	//Cálcula m+1*/
-		PUSH {R1,R3} 	//Guarda el valor de i y lo reemplaza por m
-		MOV R1, R3
-		ADD R1, R1, #1		
+		POP {R2,R3}			//Recupera el valor original de j y de m
+		PUSH {R1,R3} 		//Guarda el valor de i y m
+		MOV R1, R3			//Lleva m a i
+		ADD R1, R1, #1		//m+1
 		BL  MergeSort
-		POP {R1, R3}		//Recupera el valor orginal de i
+		POP {R1, R3}		//Recupera el valor orginal de i y de m
 		BL Fuse
-		
-		//LDR R7, =N
-		//MOV R5, R2	
-		//BL Copia_C
+		//Salta a la etiqueta para realizar la copia del arreglo C en SortedData
 		B Copia_C
 		Return_C:
 			//ADD SP, SP, #24
 			POP {R4, R5, R6, R7, R8, R9, LR} 
 			MOV PC, LR
 		
-
-Fuse://Función que organiza los números
+//Función que organiza los números
+Fuse:
 	PUSH {R4, R5, R6, R7, R8, R9}
 	MOV R5, R1 					//Contador p
 	MOV R6, R3 					//Contador q
 	ADD R6, R6, #1
 	MOV R7, R1 					//Contador r
+	
 	While:
 		CMP R5, R3
-		BGT COMP
+		BGT COMP // p > m
 		CMP R6, R2
-		BGT COMP
+		BGT COMP // q > j
 		LDR R8, [R0, R5, LSL #2]	//s[p]
 		LDR R9, [R0, R6, LSL #2]	//s[q]
 		CMP R8, R9 					//s[p] < s[q]
 		BGE ELSE_FUSE
+		
 		IF_FUSE:
-			STR R8, [R12, R7, LSL #2]
+			STR R8, [R12, R7, LSL #2] //Almacena el valor s[p] 
 			ADD R5, R5, #1
 			ADD R7, R7, #1
 			B While
+			
 		ELSE_FUSE:
-			STR R9, [R12, R7, LSL #2]
+			STR R9, [R12, R7, LSL #2]//Almacena el valor s[q]
 			ADD R6, R6, #1
 			ADD R7, R7, #1
 			B While
 			
 		COMP:			
 		CMP R5, R3
-		BGT While_2
+		BGT While_2 // p > m
 		
 		While_1:
 			CMP R5, R3
-			BHI End_While
+			BHI End_While // p > m
 			LDR R8, [R0, R5, LSL #2]	//s[p]
-			STR R8, [R12, R7, LSL #2]
+			STR R8, [R12, R7, LSL #2]	//Almacena el valor s[p] 
 			ADD R5, R5, #1
 			ADD R7, R7, #1
 			B While_1
 		
 		While_2:
 			CMP R6, R2
-			BHI End_While
+			BHI End_While // q > j
 			LDR R9, [R0, R6, LSL #2]	//s[q]
-			STR R9, [R12, R7, LSL #2]
+			STR R9, [R12, R7, LSL #2]	//Almacena el valor s[q]
 			ADD R6, R6, #1
 			ADD R7, R7, #1
 			B While_2	
@@ -115,18 +114,18 @@ Fuse://Función que organiza los números
 		POP {R4,R5,R6,R7,R8, R9}
 		MOV PC,LR
 	
-	
-Copia_C:				//Copia el arreglo C en la salida
+//Copia el arreglo C en la salida	
+Copia_C:				
 	PUSH {R2}
 	For:
 		LDR R8, [R12], #4
 		STR R8, [R0], #4
 		SUBS R2, R2, #1
 		BHS For
+	//Recuperación de las direccciones de los arreglos 
 	LDR R0, =SortedData
 	LDR R12, =C
 	POP {R2}
-	//MOV PC, LR
 	B Return_C
 	
 .data
