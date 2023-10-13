@@ -30,12 +30,12 @@ finish:
 
 //Función que segmenta la lista
 MergeSort:				
-	PUSH {R4, R5, R6, R7, R8, R9, LR} 			//Guardamos la siguiente posición para cuando se salga del llamado de la función
+	PUSH {R8, LR} 			//Guardamos la siguiente posición para cuando se salga del llamado de la función
 	CMP R1,R2 			// Comparación i==j
 	BNE ELSE
 
 	IF:
-		POP {R4, R5, R6, R7, R8, R9, LR}
+		POP {R8, LR}
 		MOV PC,LR 		//Sale de la función porque no se puede partir más
 	
 	ELSE:
@@ -51,13 +51,23 @@ MergeSort:
 		BL  MergeSort
 		POP {R1, R3}		//Recupera el valor orginal de i y de m
 		BL Fuse
-		//Salta a la etiqueta para realizar la copia del arreglo C en SortedData
-		B Copia_C
-		Return_C:
-			//ADD SP, SP, #24
-			POP {R4, R5, R6, R7, R8, R9, LR} 
-			MOV PC, LR
-		
+		//Copia el arreglo C en la salida	
+		Copia_C:				
+			PUSH {R2}
+			For:
+				LDR R8, [R12], #4
+				STR R8, [R0], #4
+				SUBS R2, R2, #1
+				BHS For
+			//Recuperación de las direccciones de los arreglos 
+
+			LDR R0, =SortedData
+			LDR R12, =C
+			POP {R2}
+			
+		POP {R8, LR} 
+		MOV PC, LR
+
 //Función que organiza los números
 Fuse:
 	PUSH {R4, R5, R6, R7, R8, R9}
@@ -114,19 +124,7 @@ Fuse:
 		POP {R4,R5,R6,R7,R8, R9}
 		MOV PC,LR
 	
-//Copia el arreglo C en la salida	
-Copia_C:				
-	PUSH {R2}
-	For:
-		LDR R8, [R12], #4
-		STR R8, [R0], #4
-		SUBS R2, R2, #1
-		BHS For
-	//Recuperación de las direccciones de los arreglos 
-	LDR R0, =SortedData
-	LDR R12, =C
-	POP {R2}
-	B Return_C
+
 	
 .data
 
