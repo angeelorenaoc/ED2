@@ -1,0 +1,268 @@
+# Reading pref.tcl
+# do top_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/22.1std/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle {U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/top.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:55:18 on Oct 21,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle" U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/top.sv 
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 16:55:18 on Oct 21,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle {U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/arm.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:55:18 on Oct 21,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle" U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/arm.sv 
+# -- Compiling module arm
+# 
+# Top level modules:
+# 	arm
+# End time: 16:55:18 on Oct 21,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle {U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/controller.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:55:19 on Oct 21,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle" U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/controller.sv 
+# -- Compiling module controller
+# 
+# Top level modules:
+# 	controller
+# End time: 16:55:19 on Oct 21,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle {U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/decoder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:55:19 on Oct 21,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle" U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/decoder.sv 
+# -- Compiling module decoder
+# 
+# Top level modules:
+# 	decoder
+# End time: 16:55:19 on Oct 21,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle {U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/condlogic.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:55:19 on Oct 21,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle" U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/condlogic.sv 
+# -- Compiling module condlogic
+# -- Compiling module condcheck
+# 
+# Top level modules:
+# 	condlogic
+# End time: 16:55:19 on Oct 21,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle {U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/datapath.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:55:19 on Oct 21,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle" U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/datapath.sv 
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# End time: 16:55:19 on Oct 21,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle {U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/regfile.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:55:19 on Oct 21,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle" U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/regfile.sv 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 16:55:19 on Oct 21,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle {U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/alu.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:55:19 on Oct 21,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle" U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/alu.sv 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 16:55:19 on Oct 21,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle {U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/extend.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:55:19 on Oct 21,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle" U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/extend.sv 
+# -- Compiling module extend
+# 
+# Top level modules:
+# 	extend
+# End time: 16:55:19 on Oct 21,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle {U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:55:19 on Oct 21,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle" U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/adder.sv 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 16:55:19 on Oct 21,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle {U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/mux2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:55:19 on Oct 21,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle" U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/mux2.sv 
+# -- Compiling module mux2
+# 
+# Top level modules:
+# 	mux2
+# End time: 16:55:20 on Oct 21,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle {U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/flopr.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:55:20 on Oct 21,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle" U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/flopr.sv 
+# -- Compiling module flopr
+# 
+# Top level modules:
+# 	flopr
+# End time: 16:55:20 on Oct 21,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle {U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/flopenr.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:55:20 on Oct 21,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle" U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/flopenr.sv 
+# -- Compiling module flopenr
+# 
+# Top level modules:
+# 	flopenr
+# End time: 16:55:20 on Oct 21,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle {U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/imem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:55:20 on Oct 21,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle" U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/imem.sv 
+# -- Compiling module imem
+# 
+# Top level modules:
+# 	imem
+# End time: 16:55:20 on Oct 21,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle {U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/dmem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:55:20 on Oct 21,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle" U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/dmem.sv 
+# -- Compiling module dmem
+# 
+# Top level modules:
+# 	dmem
+# End time: 16:55:20 on Oct 21,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/testbench_book.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:55:37 on Oct 21,2023
+# vlog -reportprogress 300 -work work U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/testbench_book.sv 
+# -- Compiling module testbench_book
+# 
+# Top level modules:
+# 	testbench_book
+# End time: 16:55:37 on Oct 21,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.testbench_book
+# vsim work.testbench_book 
+# Start time: 16:55:45 on Oct 21,2023
+# Loading sv_std.std
+# Loading work.testbench_book
+# Loading work.top
+# Loading work.imem
+# Loading work.dmem
+# Loading work.arm
+# Loading work.controller
+# Loading work.decoder
+# Loading work.condlogic
+# Loading work.flopenr
+# Loading work.condcheck
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.adder
+# Loading work.regfile
+# Loading work.extend
+# Loading work.alu
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_book/dut File: U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/testbench_book.sv Line: 11
+# ** Warning: (vsim-3722) U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/testbench_book.sv(11): [TFMPC] - Missing connection for port 'switches'.
+# ** Warning: (vsim-3722) U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/testbench_book.sv(11): [TFMPC] - Missing connection for port 'leds'.
+add wave -position end  sim:/testbench_book/clk
+add wave -position end  sim:/testbench_book/reset
+add wave -position end  sim:/testbench_book/WriteData
+add wave -position end  sim:/testbench_book/DataAdr
+add wave -position end  sim:/testbench_book/MemWrite
+run -all
+# Simulation succeeded
+# ** Note: $stop    : U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/testbench_book.sv(32)
+#    Time: 205 ps  Iteration: 1  Instance: /testbench_book
+# Break in Module testbench_book at U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/testbench_book.sv line 32
+vlog -reportprogress 300 -work work U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/testbench_peripherals.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:57:54 on Oct 21,2023
+# vlog -reportprogress 300 -work work U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/testbench_peripherals.sv 
+# -- Compiling module testbench_peripherals
+# 
+# Top level modules:
+# 	testbench_peripherals
+# End time: 16:57:54 on Oct 21,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/testbench_peripherals.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:57:55 on Oct 21,2023
+# vlog -reportprogress 300 -work work U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/testbench_peripherals.sv 
+# -- Compiling module testbench_peripherals
+# 
+# Top level modules:
+# 	testbench_peripherals
+# End time: 16:57:55 on Oct 21,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.testbench_book
+# End time: 16:58:33 on Oct 21,2023, Elapsed time: 0:02:48
+# Errors: 0, Warnings: 3
+# vsim work.testbench_book 
+# Start time: 16:58:33 on Oct 21,2023
+# Loading sv_std.std
+# Loading work.testbench_book
+# Loading work.top
+# Loading work.imem
+# Loading work.dmem
+# Loading work.arm
+# Loading work.controller
+# Loading work.decoder
+# Loading work.condlogic
+# Loading work.flopenr
+# Loading work.condcheck
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.adder
+# Loading work.regfile
+# Loading work.extend
+# Loading work.alu
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut'.  Expected 7, found 5.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_book/dut File: U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/testbench_book.sv Line: 11
+# ** Warning: (vsim-3722) U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/testbench_book.sv(11): [TFMPC] - Missing connection for port 'switches'.
+# ** Warning: (vsim-3722) U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/testbench_book.sv(11): [TFMPC] - Missing connection for port 'leds'.
+add wave -position end  sim:/testbench_book/clk
+add wave -position end  sim:/testbench_book/reset
+add wave -position end  sim:/testbench_book/WriteData
+add wave -position end  sim:/testbench_book/DataAdr
+add wave -position end  sim:/testbench_book/MemWrite
+run -all
+# Simulation succeeded
+# ** Note: $stop    : U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/testbench_book.sv(32)
+#    Time: 205 ps  Iteration: 1  Instance: /testbench_book
+# Break in Module testbench_book at U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/testbench_book.sv line 32
+# End time: 19:32:24 on Oct 21,2023, Elapsed time: 2:33:51
+# Errors: 0, Warnings: 3
