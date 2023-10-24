@@ -1,0 +1,164 @@
+# Reading pref.tcl
+# do top_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/22.1std/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VI {C:/Users/oscar/Documents/ED/Practica_VI/top.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:45:13 on Oct 24,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VI" C:/Users/oscar/Documents/ED/Practica_VI/top.sv 
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 16:45:13 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VI {C:/Users/oscar/Documents/ED/Practica_VI/arm.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:45:13 on Oct 24,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VI" C:/Users/oscar/Documents/ED/Practica_VI/arm.sv 
+# -- Compiling module arm
+# 
+# Top level modules:
+# 	arm
+# End time: 16:45:13 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VI {C:/Users/oscar/Documents/ED/Practica_VI/controller.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:45:13 on Oct 24,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VI" C:/Users/oscar/Documents/ED/Practica_VI/controller.sv 
+# -- Compiling module controller
+# 
+# Top level modules:
+# 	controller
+# End time: 16:45:13 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VI {C:/Users/oscar/Documents/ED/Practica_VI/decoder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:45:13 on Oct 24,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VI" C:/Users/oscar/Documents/ED/Practica_VI/decoder.sv 
+# -- Compiling module decoder
+# 
+# Top level modules:
+# 	decoder
+# End time: 16:45:13 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VI {C:/Users/oscar/Documents/ED/Practica_VI/condlogic.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:45:13 on Oct 24,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VI" C:/Users/oscar/Documents/ED/Practica_VI/condlogic.sv 
+# -- Compiling module condlogic
+# -- Compiling module condcheck
+# 
+# Top level modules:
+# 	condlogic
+# End time: 16:45:13 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VI {C:/Users/oscar/Documents/ED/Practica_VI/datapath.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:45:13 on Oct 24,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VI" C:/Users/oscar/Documents/ED/Practica_VI/datapath.sv 
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# End time: 16:45:13 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VI {C:/Users/oscar/Documents/ED/Practica_VI/regfile.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:45:13 on Oct 24,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VI" C:/Users/oscar/Documents/ED/Practica_VI/regfile.sv 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 16:45:13 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VI {C:/Users/oscar/Documents/ED/Practica_VI/alu.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:45:14 on Oct 24,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VI" C:/Users/oscar/Documents/ED/Practica_VI/alu.sv 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 16:45:14 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VI {C:/Users/oscar/Documents/ED/Practica_VI/extend.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:45:14 on Oct 24,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VI" C:/Users/oscar/Documents/ED/Practica_VI/extend.sv 
+# -- Compiling module extend
+# 
+# Top level modules:
+# 	extend
+# End time: 16:45:14 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VI {C:/Users/oscar/Documents/ED/Practica_VI/adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:45:14 on Oct 24,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VI" C:/Users/oscar/Documents/ED/Practica_VI/adder.sv 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 16:45:14 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VI {C:/Users/oscar/Documents/ED/Practica_VI/mux2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:45:14 on Oct 24,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VI" C:/Users/oscar/Documents/ED/Practica_VI/mux2.sv 
+# -- Compiling module mux2
+# 
+# Top level modules:
+# 	mux2
+# End time: 16:45:14 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VI {C:/Users/oscar/Documents/ED/Practica_VI/flopr.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:45:14 on Oct 24,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VI" C:/Users/oscar/Documents/ED/Practica_VI/flopr.sv 
+# -- Compiling module flopr
+# 
+# Top level modules:
+# 	flopr
+# End time: 16:45:14 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VI {C:/Users/oscar/Documents/ED/Practica_VI/flopenr.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:45:14 on Oct 24,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VI" C:/Users/oscar/Documents/ED/Practica_VI/flopenr.sv 
+# -- Compiling module flopenr
+# 
+# Top level modules:
+# 	flopenr
+# End time: 16:45:14 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VI {C:/Users/oscar/Documents/ED/Practica_VI/imem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:45:14 on Oct 24,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VI" C:/Users/oscar/Documents/ED/Practica_VI/imem.sv 
+# -- Compiling module imem
+# 
+# Top level modules:
+# 	imem
+# End time: 16:45:14 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VI {C:/Users/oscar/Documents/ED/Practica_VI/dmem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:45:14 on Oct 24,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VI" C:/Users/oscar/Documents/ED/Practica_VI/dmem.sv 
+# -- Compiling module dmem
+# 
+# Top level modules:
+# 	dmem
+# End time: 16:45:14 on Oct 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
