@@ -1,24 +1,25 @@
 module shifter (
-					input logic [31:0] imme, register,
-					input logic [3:0] id,
+					input logic [4:0] shamt5, 
+					input logic [31:0]register,
+					input logic [1:0] sh,
 					output logic [31:0] result
 					);
 
-	logic aux;
+	logic [31:0] aux;
 					
 	always_comb begin
-		case (id)
-			4'b1000: begin //LSL
-				aux = register << imme;
+		case (sh)
+			4'b00: begin //LSL
+				aux = register << shamt5;
 			end
-			4'b1010: begin //LSR
-				aux = register >> imme;
+			4'b01: begin //LSR
+				aux = register >> shamt5;
 			end
-			4'b1100: begin //ASR
-				aux = register >>> imme;
+			4'b10: begin //ASR
+				aux = register >>> shamt5;
 			end
-			4'b1110: begin //ROR
-				aux = register ror imme;
+			4'b11: begin //ROR
+				aux = (register << shamt5) | (register >> (32'd - shamt5));
 			end
 			default: begin
 				aux = imme;
