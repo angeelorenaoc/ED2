@@ -1,9 +1,8 @@
-module shifter (
-					input logic [4:0] shamt5, 
-					input logic [31:0]register,
-					input logic [1:0] sh,
-					output logic [31:0] result
-					);
+module shifter #(parameter N = 4) (shamt5,register,sh,result);
+					input logic [4:0] shamt5;
+					input logic [N-1:0]register;
+					input logic [1:0] sh;
+					output logic [31:0] result;
 
 	logic [31:0] aux;
 					
@@ -19,11 +18,14 @@ module shifter (
 				aux = register >>> shamt5;
 			end
 			4'b11: begin //ROR
-				aux = (register << shamt5) | (register >> (32'd - shamt5));
+				aux = (register << shamt5) | (register >> (N - shamt5));
 			end
 			default: begin
-				aux = imme;
+				aux = register;
 			end
-	endcase
+		endcase
+	end
 	
 	assign result = aux;
+	
+endmodule

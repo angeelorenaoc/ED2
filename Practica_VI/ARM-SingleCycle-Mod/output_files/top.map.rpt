@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top
-Wed Oct 25 14:22:22 2023
+Wed Oct 25 17:59:51 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -10,8 +10,31 @@ Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
-  6. Analysis & Synthesis Suppressed Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: arm:arm|controller:c|condlogic:cl|flopenr:flagreg1
+ 12. Parameter Settings for User Entity Instance: arm:arm|controller:c|condlogic:cl|flopenr:flagreg0
+ 13. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:pcmux
+ 14. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|flopr:pcreg
+ 15. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|adder:pcadd1
+ 16. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|adder:pcadd2
+ 17. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:ra1mux
+ 18. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:ra2mux
+ 19. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:resmux
+ 20. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|shifter:shifter
+ 21. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:srcbmux
+ 22. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu
+ 23. Port Connectivity Checks: "arm:arm|datapath:dp|mux2:ra1mux"
+ 24. Port Connectivity Checks: "arm:arm|datapath:dp|adder:pcadd2"
+ 25. Port Connectivity Checks: "arm:arm|datapath:dp|adder:pcadd1"
+ 26. Post-Synthesis Netlist Statistics for Top Partition
+ 27. Elapsed Time Per Partition
+ 28. Analysis & Synthesis Messages
+ 29. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -38,22 +61,22 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Wed Oct 25 14:22:22 2023              ;
+; Analysis & Synthesis Status        ; Successful - Wed Oct 25 17:59:51 2023          ;
 ; Quartus Prime Version              ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                      ; top                                            ;
 ; Top-level Entity Name              ; top                                            ;
 ; Family                             ; MAX 10                                         ;
-; Total logic elements               ; N/A until Partition Merge                      ;
-;     Total combinational functions  ; N/A until Partition Merge                      ;
-;     Dedicated logic registers      ; N/A until Partition Merge                      ;
-; Total registers                    ; N/A until Partition Merge                      ;
-; Total pins                         ; N/A until Partition Merge                      ;
-; Total virtual pins                 ; N/A until Partition Merge                      ;
-; Total memory bits                  ; N/A until Partition Merge                      ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                      ;
-; Total PLLs                         ; N/A until Partition Merge                      ;
-; UFM blocks                         ; N/A until Partition Merge                      ;
-; ADC blocks                         ; N/A until Partition Merge                      ;
+; Total logic elements               ; 5,148                                          ;
+;     Total combinational functions  ; 2,642                                          ;
+;     Dedicated logic registers      ; 2,573                                          ;
+; Total registers                    ; 2573                                           ;
+; Total pins                         ; 87                                             ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 0                                              ;
+; Embedded Multiplier 9-bit elements ; 0                                              ;
+; Total PLLs                         ; 0                                              ;
+; UFM blocks                         ; 0                                              ;
+; ADC blocks                         ; 0                                              ;
 +------------------------------------+------------------------------------------------+
 
 
@@ -152,11 +175,326 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processor 3            ;   0.1%      ;
+;     Processor 4            ;   0.1%      ;
 +----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                          ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                      ; Library ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------+---------+
+; top.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/top.sv                ;         ;
+; imem.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/imem.sv               ;         ;
+; dmem.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/dmem.sv               ;         ;
+; arm.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/arm.sv                ;         ;
+; controller.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/controller.sv         ;         ;
+; decoder.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/decoder.sv            ;         ;
+; condlogic.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/condlogic.sv          ;         ;
+; datapath.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/datapath.sv           ;         ;
+; regfile.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/regfile.sv            ;         ;
+; alu.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/alu.sv                ;         ;
+; extend.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/extend.sv             ;         ;
+; adder.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/adder.sv              ;         ;
+; mux2.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/mux2.sv               ;         ;
+; flopr.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/flopr.sv              ;         ;
+; flopenr.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/flopenr.sv            ;         ;
+; shifter.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/shifter.sv            ;         ;
+; dmem_tb_from_book.dat            ; yes             ; Auto-Found Unspecified File  ; C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/dmem_tb_from_book.dat ;         ;
+; imem_tb_from_book.dat            ; yes             ; Auto-Found Unspecified File  ; C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/imem_tb_from_book.dat ;         ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 5,148     ;
+;                                             ;           ;
+; Total combinational functions               ; 2642      ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 2375      ;
+;     -- 3 input functions                    ; 182       ;
+;     -- <=2 input functions                  ; 85        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 2552      ;
+;     -- arithmetic mode                      ; 90        ;
+;                                             ;           ;
+; Total registers                             ; 2573      ;
+;     -- Dedicated logic registers            ; 2573      ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 87        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 2573      ;
+; Total fan-out                               ; 18159     ;
+; Average fan-out                             ; 3.37      ;
++---------------------------------------------+-----------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                        ;
++--------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node     ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                     ; Entity Name ; Library Name ;
++--------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------+-------------+--------------+
+; |top                           ; 2642 (0)            ; 2573 (0)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 87   ; 0            ; 0          ; |top                                                    ; top         ; work         ;
+;    |arm:arm|                   ; 1163 (0)            ; 515 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm                                            ; arm         ; work         ;
+;       |controller:c|           ; 28 (0)              ; 3 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|controller:c                               ; controller  ; work         ;
+;          |condlogic:cl|        ; 18 (5)              ; 3 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|controller:c|condlogic:cl                  ; condlogic   ; work         ;
+;             |condcheck:cc|     ; 11 (11)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|controller:c|condlogic:cl|condcheck:cc     ; condcheck   ; work         ;
+;             |flopenr:flagreg0| ; 2 (2)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|controller:c|condlogic:cl|flopenr:flagreg0 ; flopenr     ; work         ;
+;             |flopenr:flagreg1| ; 0 (0)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|controller:c|condlogic:cl|flopenr:flagreg1 ; flopenr     ; work         ;
+;          |decoder:dec|         ; 10 (10)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|controller:c|decoder:dec                   ; decoder     ; work         ;
+;       |datapath:dp|            ; 1135 (0)            ; 512 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|datapath:dp                                ; datapath    ; work         ;
+;          |adder:pcadd1|        ; 30 (30)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|datapath:dp|adder:pcadd1                   ; adder       ; work         ;
+;          |adder:pcadd2|        ; 30 (30)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|datapath:dp|adder:pcadd2                   ; adder       ; work         ;
+;          |alu:alu|             ; 180 (180)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|datapath:dp|alu:alu                        ; alu         ; work         ;
+;          |flopr:pcreg|         ; 82 (82)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|datapath:dp|flopr:pcreg                    ; flopr       ; work         ;
+;          |mux2:ra1mux|         ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|datapath:dp|mux2:ra1mux                    ; mux2        ; work         ;
+;          |mux2:ra2mux|         ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|datapath:dp|mux2:ra2mux                    ; mux2        ; work         ;
+;          |mux2:resmux|         ; 24 (24)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|datapath:dp|mux2:resmux                    ; mux2        ; work         ;
+;          |mux2:srcbmux|        ; 28 (28)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|datapath:dp|mux2:srcbmux                   ; mux2        ; work         ;
+;          |regfile:rf|          ; 745 (745)           ; 480 (480)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|datapath:dp|regfile:rf                     ; regfile     ; work         ;
+;    |dmem:dmem|                 ; 1439 (1439)         ; 2058 (2058)               ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|dmem:dmem                                          ; dmem        ; work         ;
+;    |imem:imem|                 ; 40 (40)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|imem:imem                                          ; imem        ; work         ;
++--------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                           ;
++---------------------------------------------------------+--------------------+
+; Register name                                           ; Reason for Removal ;
++---------------------------------------------------------+--------------------+
+; arm:arm|controller:c|condlogic:cl|flopenr:flagreg0|q[1] ; Lost fanout        ;
+; Total Number of Removed Registers = 1                   ;                    ;
++---------------------------------------------------------+--------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 2573  ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 30    ;
+; Number of registers using Asynchronous Clear ; 35    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 2542  ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
+; 3:1                ; 22 bits   ; 44 LEs        ; 44 LEs               ; 0 LEs                  ; No         ; |top|arm:arm|datapath:dp|mux2:resmux|y[13]  ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |top|arm:arm|datapath:dp|mux2:resmux|y[1]   ;
+; 3:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |top|arm:arm|datapath:dp|mux2:srcbmux|y[15] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |top|arm:arm|datapath:dp|mux2:srcbmux|y[1]  ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |top|arm:arm|datapath:dp|mux2:srcbmux|y[6]  ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |top|arm:arm|datapath:dp|alu:alu|Selector29 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|controller:c|condlogic:cl|flopenr:flagreg1 ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; WIDTH          ; 2     ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|controller:c|condlogic:cl|flopenr:flagreg0 ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; WIDTH          ; 2     ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:pcmux ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|flopr:pcreg ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|adder:pcadd1 ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|adder:pcadd2 ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:ra1mux ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; WIDTH          ; 4     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:ra2mux ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; WIDTH          ; 4     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:resmux ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|shifter:shifter ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:srcbmux ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; N              ; 32    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "arm:arm|datapath:dp|mux2:ra1mux" ;
++------+-------+----------+-----------------------------------+
+; Port ; Type  ; Severity ; Details                           ;
++------+-------+----------+-----------------------------------+
+; d1   ; Input ; Info     ; Stuck at VCC                      ;
++------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "arm:arm|datapath:dp|adder:pcadd2" ;
++----------+-------+----------+--------------------------------+
+; Port     ; Type  ; Severity ; Details                        ;
++----------+-------+----------+--------------------------------+
+; b[31..3] ; Input ; Info     ; Stuck at GND                   ;
+; b[1..0]  ; Input ; Info     ; Stuck at GND                   ;
+; b[2]     ; Input ; Info     ; Stuck at VCC                   ;
++----------+-------+----------+--------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "arm:arm|datapath:dp|adder:pcadd1" ;
++----------+-------+----------+--------------------------------+
+; Port     ; Type  ; Severity ; Details                        ;
++----------+-------+----------+--------------------------------+
+; b[31..3] ; Input ; Info     ; Stuck at GND                   ;
+; b[1..0]  ; Input ; Info     ; Stuck at GND                   ;
+; b[2]     ; Input ; Info     ; Stuck at VCC                   ;
++----------+-------+----------+--------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 87                          ;
+; cycloneiii_ff         ; 2573                        ;
+;     CLR               ; 1                           ;
+;     CLR SLD           ; 30                          ;
+;     ENA               ; 2538                        ;
+;     ENA CLR           ; 4                           ;
+; cycloneiii_lcell_comb ; 2642                        ;
+;     arith             ; 90                          ;
+;         2 data inputs ; 58                          ;
+;         3 data inputs ; 32                          ;
+;     normal            ; 2552                        ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 25                          ;
+;         3 data inputs ; 150                         ;
+;         4 data inputs ; 2375                        ;
+;                       ;                             ;
+; Max LUT depth         ; 21.10                       ;
+; Average LUT depth     ; 13.06                       ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:08     ;
++----------------+--------------+
 
 
 +-------------------------------+
@@ -165,7 +503,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Wed Oct 25 14:22:14 2023
+    Info: Processing started: Wed Oct 25 17:59:34 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off top -c top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -204,15 +542,53 @@ Info (12021): Found 1 design units, including 1 entities, in source file testben
     Info (12023): Found entity 1: testbench_book File: C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/testbench_book.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file testbench_peripherals.sv
     Info (12023): Found entity 1: testbench_peripherals File: C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/testbench_peripherals.sv Line: 4
-Error (10170): Verilog HDL syntax error at shifter.sv(21) near text: "ror";  expecting ";". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/shifter.sv Line: 21
-Error (10171): Verilog HDL syntax error at shifter.sv(29) near end of file ;  expecting "end" File: C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/shifter.sv Line: 29
-Info (12021): Found 0 design units, including 0 entities, in source file shifter.sv
+Info (12021): Found 1 design units, including 1 entities, in source file shifter.sv
+    Info (12023): Found entity 1: shifter File: C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/shifter.sv Line: 1
+Info (12127): Elaborating entity "top" for the top level hierarchy
+Info (12128): Elaborating entity "imem" for hierarchy "imem:imem" File: C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/top.sv Line: 16
+Warning (10850): Verilog HDL warning at imem.sv(12): number of words (23) in memory file does not match the number of elements in the address range [0:63] File: C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/imem.sv Line: 12
+Warning (10030): Net "RAM.data_a" at imem.sv(6) has no driver or initial value, using a default initial value '0' File: C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/imem.sv Line: 6
+Warning (10030): Net "RAM.waddr_a" at imem.sv(6) has no driver or initial value, using a default initial value '0' File: C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/imem.sv Line: 6
+Warning (10030): Net "RAM.we_a" at imem.sv(6) has no driver or initial value, using a default initial value '0' File: C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/imem.sv Line: 6
+Info (12128): Elaborating entity "dmem" for hierarchy "dmem:dmem" File: C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/top.sv Line: 19
+Warning (10850): Verilog HDL warning at dmem.sv(12): number of words (0) in memory file does not match the number of elements in the address range [0:63] File: C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/dmem.sv Line: 12
+Info (12128): Elaborating entity "arm" for hierarchy "arm:arm" File: C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/top.sv Line: 22
+Info (12128): Elaborating entity "controller" for hierarchy "arm:arm|controller:c" File: C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/arm.sv Line: 21
+Info (12128): Elaborating entity "decoder" for hierarchy "arm:arm|controller:c|decoder:dec" File: C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/controller.sv Line: 19
+Info (12128): Elaborating entity "condlogic" for hierarchy "arm:arm|controller:c|condlogic:cl" File: C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/controller.sv Line: 23
+Info (12128): Elaborating entity "flopenr" for hierarchy "arm:arm|controller:c|condlogic:cl|flopenr:flagreg1" File: C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/condlogic.sv Line: 17
+Info (12128): Elaborating entity "condcheck" for hierarchy "arm:arm|controller:c|condlogic:cl|condcheck:cc" File: C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/condlogic.sv Line: 20
+Info (12128): Elaborating entity "datapath" for hierarchy "arm:arm|datapath:dp" File: C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/arm.sv Line: 29
+Info (12128): Elaborating entity "mux2" for hierarchy "arm:arm|datapath:dp|mux2:pcmux" File: C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/datapath.sv Line: 23
+Info (12128): Elaborating entity "flopr" for hierarchy "arm:arm|datapath:dp|flopr:pcreg" File: C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/datapath.sv Line: 24
+Info (12128): Elaborating entity "adder" for hierarchy "arm:arm|datapath:dp|adder:pcadd1" File: C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/datapath.sv Line: 25
+Info (12128): Elaborating entity "mux2" for hierarchy "arm:arm|datapath:dp|mux2:ra1mux" File: C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/datapath.sv Line: 29
+Info (12128): Elaborating entity "regfile" for hierarchy "arm:arm|datapath:dp|regfile:rf" File: C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/datapath.sv Line: 31
+Info (12128): Elaborating entity "extend" for hierarchy "arm:arm|datapath:dp|extend:ext" File: C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/datapath.sv Line: 33
+Info (12128): Elaborating entity "shifter" for hierarchy "arm:arm|datapath:dp|shifter:shifter" File: C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/datapath.sv Line: 41
+Info (12128): Elaborating entity "alu" for hierarchy "arm:arm|datapath:dp|alu:alu" File: C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/datapath.sv Line: 43
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/db/top.ram0_imem_37c714.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/db/top.ram0_dmem_351e6b.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Info (276014): Found 3 instances of uninferred RAM logic
+    Info (276007): RAM logic "arm:arm|datapath:dp|regfile:rf|rf" is uninferred due to asynchronous read logic File: C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/regfile.sv Line: 11
+    Info (276013): RAM logic "imem:imem|RAM" is uninferred because MIF is not supported for the selected family File: C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/imem.sv Line: 6
+    Info (276007): RAM logic "dmem:dmem|RAM" is uninferred due to asynchronous read logic File: C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/dmem.sv Line: 8
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/db/top.ram0_imem_37c714.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/db/top.ram0_dmem_351e6b.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/output_files/top.map.smsg
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 1 warning
-    Error: Peak virtual memory: 4718 megabytes
-    Error: Processing ended: Wed Oct 25 14:22:22 2023
-    Error: Elapsed time: 00:00:08
-    Error: Total CPU time (on all processors): 00:00:10
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 5300 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 12 input pins
+    Info (21059): Implemented 75 output pins
+    Info (21061): Implemented 5213 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 4810 megabytes
+    Info: Processing ended: Wed Oct 25 17:59:51 2023
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:19
 
 
 +------------------------------------------+

@@ -16,7 +16,7 @@ module datapath(input logic clk, reset,
 					 input logic [31:0] ReadData);
 	// Internal signals
 	logic [31:0] PCNext, PCPlus4, PCPlus8;
-	logic [31:0] ExtImm, SrcA, SrcB, Result;
+	logic [31:0] ExtImm, SrcA, SrcB, SrcB_aux, Result;
 	logic [3:0] RA1, RA2;
 	
 	// next PC logic
@@ -33,11 +33,12 @@ module datapath(input logic clk, reset,
 	extend ext(Instr[23:0], ImmSrc, ExtImm);
 
 	// ALU logic
-	mux2 #(32) srcbmux(WriteData, ExtImm, ALUSrc, SrcB);
-	/*
+		/*
 	**************************************************
 	************* AQUÍ VA ESA MONDÁ ******************
 	**************************************************
 	*/
+	shifter #(32) shifter(Instr[11:7],WriteData,Instr[6:5],SrcB_aux);
+	mux2 #(32) srcbmux(SrcB_aux, ExtImm, ALUSrc, SrcB);
 	alu #(32) alu(SrcA, SrcB, ALUControl, ALUResult, ALUFlags);
 endmodule
