@@ -3,7 +3,7 @@ module shifter #(parameter N = 4) (shamt5,register,sh,result);
 					input logic [N-1:0]register;
 					input logic [1:0] sh;
 					output logic [31:0] result;
-
+//La asignación en el MOV se hace desde el shifter o desde la ALU?, ¿Cómo se asigna el valor desde otro registro?
 	logic [31:0] aux;
 					
 	always_comb begin

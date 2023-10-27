@@ -17,6 +17,7 @@ module top(input logic clk, nreset,
 
 	// Instantiate data memory (RAM + peripherals)
 	dmem dmem(clk, MemWrite, DataAdr, WriteData, ReadData, switches, leds);
+	//que el switch sea el valor inmediato para la rotación, agregar los botones para determinar las secuencias 
 
 	// Instantiate processor
 	arm arm(clk, reset, PC, Instr, MemWrite, DataAdr, WriteData, ReadData);

@@ -9,10 +9,10 @@ module dmem(input logic clk, we, input logic [31:0] a, wd, output logic [31:0] r
 
 	initial
 		// Uncomment only the following line to load the required data for the book testbench
-		$readmemh("U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/dmem_tb_from_book.dat",RAM);
+		//$readmemh("U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/dmem_tb_from_book.dat",RAM);
 		
 		// Uncomment only the following line to load the required data for the peripherals test
-		// $readmemh("dmem_to_test_peripherals.dat",RAM);
+		 $readmemh("U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle/dmem_to_test_peripherals.dat",RAM);
 
 		// Uncomment only the following line to load the required data for the program made by the students
 		// $readmemh("dmem_made_by_students.dat",RAM);

@@ -9,13 +9,18 @@ module dmem(input logic clk, we, input logic [31:0] a, wd, output logic [31:0] r
 
 	initial
 		// Uncomment only the following line to load the required data for the book testbench
-		 $readmemh("C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/dmem_tb_from_book.dat",RAM);
+		 //$readmemh("C:/Users/oscar/Documents/ED/Practica_VI/ARM-SingleCycle-Mod/dmem_tb_from_book.dat",RAM);
+		 $readmemh("U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/dmem_tb_from_book.dat",RAM);
+		 
 		
 		// Uncomment only the following line to load the required data for the peripherals test
-		// $readmemh("C:/Users/oscar/Documents/ED/Practica_VI/dmem_to_test_peripherals.dat",RAM);
+		// $readmemh("C:/Users/oscar/Documents/ED/Practica_VI/dmem_to_test_peripherals.dat",RAM);	
+		// $readmemh("U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/dmem_to_test_peripherals.dat",RAM);
+
 
 		// Uncomment only the following line to load the required data for the program made by the students
 		// $readmemh("C:/Users/oscar/Documents/ED/Practica_VI/dmem_made_by_students.dat",RAM);
+		// $readmemh("U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/dmem_made_by_students.dat",RAM);
 	
 	// Process for reading from RAM array or peripherals mapped in memory
 	always_comb
