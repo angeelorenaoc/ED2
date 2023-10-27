@@ -18,7 +18,7 @@ module alu #(parameter N = 4) (A, B, ALUControl, Result, ALUFlags);
 			3'b010: begin
 				Result = A & B;
 			end
-			3'b1110: begin
+			3'b100: begin
 				Result = B;
 			end
 			default: begin
