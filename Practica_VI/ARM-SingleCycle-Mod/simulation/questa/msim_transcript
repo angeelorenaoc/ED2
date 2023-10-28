@@ -12,179 +12,179 @@
 # 
 # vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod {U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/top.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:13:03 on Oct 28,2023
+# Start time: 17:36:13 on Oct 28,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod" U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/top.sv 
 # -- Compiling module top
 # 
 # Top level modules:
 # 	top
-# End time: 16:13:03 on Oct 28,2023, Elapsed time: 0:00:00
+# End time: 17:36:13 on Oct 28,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod {U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/arm.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:13:03 on Oct 28,2023
+# Start time: 17:36:13 on Oct 28,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod" U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/arm.sv 
 # -- Compiling module arm
 # 
 # Top level modules:
 # 	arm
-# End time: 16:13:03 on Oct 28,2023, Elapsed time: 0:00:00
+# End time: 17:36:14 on Oct 28,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod {U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/controller.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:13:03 on Oct 28,2023
+# Start time: 17:36:14 on Oct 28,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod" U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/controller.sv 
 # -- Compiling module controller
 # 
 # Top level modules:
 # 	controller
-# End time: 16:13:03 on Oct 28,2023, Elapsed time: 0:00:00
+# End time: 17:36:14 on Oct 28,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod {U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/decoder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:13:03 on Oct 28,2023
+# Start time: 17:36:14 on Oct 28,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod" U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/decoder.sv 
 # -- Compiling module decoder
 # 
 # Top level modules:
 # 	decoder
-# End time: 16:13:03 on Oct 28,2023, Elapsed time: 0:00:00
+# End time: 17:36:14 on Oct 28,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod {U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/condlogic.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:13:03 on Oct 28,2023
+# Start time: 17:36:14 on Oct 28,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod" U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/condlogic.sv 
 # -- Compiling module condlogic
 # -- Compiling module condcheck
 # 
 # Top level modules:
 # 	condlogic
-# End time: 16:13:03 on Oct 28,2023, Elapsed time: 0:00:00
+# End time: 17:36:14 on Oct 28,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod {U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/datapath.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:13:03 on Oct 28,2023
+# Start time: 17:36:14 on Oct 28,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod" U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/datapath.sv 
 # -- Compiling module datapath
 # 
 # Top level modules:
 # 	datapath
-# End time: 16:13:03 on Oct 28,2023, Elapsed time: 0:00:00
+# End time: 17:36:14 on Oct 28,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod {U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/regfile.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:13:03 on Oct 28,2023
+# Start time: 17:36:14 on Oct 28,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod" U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/regfile.sv 
 # -- Compiling module regfile
 # 
 # Top level modules:
 # 	regfile
-# End time: 16:13:03 on Oct 28,2023, Elapsed time: 0:00:00
+# End time: 17:36:14 on Oct 28,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod {U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/alu.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:13:03 on Oct 28,2023
+# Start time: 17:36:14 on Oct 28,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod" U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/alu.sv 
 # -- Compiling module alu
 # 
 # Top level modules:
 # 	alu
-# End time: 16:13:03 on Oct 28,2023, Elapsed time: 0:00:00
+# End time: 17:36:14 on Oct 28,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod {U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/extend.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:13:03 on Oct 28,2023
+# Start time: 17:36:14 on Oct 28,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod" U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/extend.sv 
 # -- Compiling module extend
 # 
 # Top level modules:
 # 	extend
-# End time: 16:13:04 on Oct 28,2023, Elapsed time: 0:00:01
+# End time: 17:36:14 on Oct 28,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod {U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:13:04 on Oct 28,2023
+# Start time: 17:36:14 on Oct 28,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod" U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/adder.sv 
 # -- Compiling module adder
 # 
 # Top level modules:
 # 	adder
-# End time: 16:13:04 on Oct 28,2023, Elapsed time: 0:00:00
+# End time: 17:36:14 on Oct 28,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod {U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/mux2.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:13:04 on Oct 28,2023
+# Start time: 17:36:14 on Oct 28,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod" U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/mux2.sv 
 # -- Compiling module mux2
 # 
 # Top level modules:
 # 	mux2
-# End time: 16:13:04 on Oct 28,2023, Elapsed time: 0:00:00
+# End time: 17:36:14 on Oct 28,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod {U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/flopr.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:13:04 on Oct 28,2023
+# Start time: 17:36:14 on Oct 28,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod" U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/flopr.sv 
 # -- Compiling module flopr
 # 
 # Top level modules:
 # 	flopr
-# End time: 16:13:04 on Oct 28,2023, Elapsed time: 0:00:00
+# End time: 17:36:14 on Oct 28,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod {U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/flopenr.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:13:04 on Oct 28,2023
+# Start time: 17:36:14 on Oct 28,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod" U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/flopenr.sv 
 # -- Compiling module flopenr
 # 
 # Top level modules:
 # 	flopenr
-# End time: 16:13:04 on Oct 28,2023, Elapsed time: 0:00:00
+# End time: 17:36:14 on Oct 28,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod {U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/shifter.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:13:04 on Oct 28,2023
+# Start time: 17:36:14 on Oct 28,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod" U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/shifter.sv 
 # -- Compiling module shifter
 # 
 # Top level modules:
 # 	shifter
-# End time: 16:13:04 on Oct 28,2023, Elapsed time: 0:00:00
+# End time: 17:36:15 on Oct 28,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod {U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/imem.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:13:04 on Oct 28,2023
+# Start time: 17:36:15 on Oct 28,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod" U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/imem.sv 
 # -- Compiling module imem
 # 
 # Top level modules:
 # 	imem
-# End time: 16:13:04 on Oct 28,2023, Elapsed time: 0:00:00
+# End time: 17:36:15 on Oct 28,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod {U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/dmem.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:13:04 on Oct 28,2023
+# Start time: 17:36:15 on Oct 28,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod" U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/dmem.sv 
 # -- Compiling module dmem
 # 
 # Top level modules:
 # 	dmem
-# End time: 16:13:04 on Oct 28,2023, Elapsed time: 0:00:00
+# End time: 17:36:15 on Oct 28,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vlog -reportprogress 300 -work work U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/testbench_peripherals.sv
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:14:03 on Oct 28,2023
+# Start time: 17:36:29 on Oct 28,2023
 # vlog -reportprogress 300 -work work U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/testbench_peripherals.sv 
 # -- Compiling module testbench_peripherals
 # 
 # Top level modules:
 # 	testbench_peripherals
-# End time: 16:14:03 on Oct 28,2023, Elapsed time: 0:00:00
+# End time: 17:36:30 on Oct 28,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 vsim work.testbench_peripherals
 # vsim work.testbench_peripherals 
-# Start time: 16:14:10 on Oct 28,2023
+# Start time: 17:36:38 on Oct 28,2023
 # Loading sv_std.std
 # Loading work.testbench_peripherals
 # Loading work.top
@@ -211,38 +211,100 @@ add wave -position end  sim:/testbench_peripherals/DataAdr
 add wave -position end  sim:/testbench_peripherals/switches
 add wave -position end  sim:/testbench_peripherals/leds
 add wave -position end  sim:/testbench_peripherals/MemWrite
-add wave -position end  sim:/testbench_peripherals/dut/arm/Instr
-add wave -position end  sim:/testbench_peripherals/dut/arm/ALUControl
+add wave -position end  sim:/testbench_peripherals/dut/arm/dp/alu/N
 add wave -position end  sim:/testbench_peripherals/dut/arm/dp/alu/ALUControl
 add wave -position end  sim:/testbench_peripherals/dut/arm/dp/alu/A
 add wave -position end  sim:/testbench_peripherals/dut/arm/dp/alu/B
 add wave -position end  sim:/testbench_peripherals/dut/arm/dp/alu/Result
-run -all
-# ** Note: $stop    : U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/testbench_peripherals.sv(24)
-#    Time: 20010 ps  Iteration: 0  Instance: /testbench_peripherals
-# Break in Module testbench_peripherals at U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/testbench_peripherals.sv line 24
-add wave -position end  sim:/testbench_peripherals/dut/arm/dp/PC
+add wave -position end  sim:/testbench_peripherals/dut/arm/c/Instr
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -work work U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/testbench_peripherals.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:49:38 on Oct 28,2023
+# vlog -reportprogress 300 -work work U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/testbench_peripherals.sv 
+# -- Compiling module testbench_peripherals
+# 
+# Top level modules:
+# 	testbench_peripherals
+# End time: 17:49:38 on Oct 28,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 restart
-run
-run
-run
-add wave -position end sim:/testbench_peripherals/dut/arm/dp/pcmux/*
-restart
-run
-run
-run
-restart
-run
-# ** Warning: (vsim-PLI-3406) Too many digits (9) in data on line 35 of file "U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/imem_made_by_students.dat". (Max is 8.)    : U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/imem.sv(23)
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_peripherals/dut/imem
+# Loading work.testbench_peripherals
 run
 run
 run
 run
 run
-run -all
-# ** Note: $stop    : U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/testbench_peripherals.sv(24)
-#    Time: 20010 ps  Iteration: 0  Instance: /testbench_peripherals
-# Break in Module testbench_peripherals at U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/testbench_peripherals.sv line 24
-# End time: 16:44:36 on Oct 28,2023, Elapsed time: 0:30:26
-# Errors: 0, Warnings: 1
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 17:50:36 on Oct 28,2023, Elapsed time: 0:13:58
+# Errors: 0, Warnings: 0
