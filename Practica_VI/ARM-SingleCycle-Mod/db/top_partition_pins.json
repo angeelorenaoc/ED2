@@ -316,6 +316,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "switches[7]",
+					"strict" : false
+				},
+				{
 					"name" : "switches[2]",
 					"strict" : false
 				},
@@ -333,10 +337,6 @@
 				},
 				{
 					"name" : "switches[6]",
-					"strict" : false
-				},
-				{
-					"name" : "switches[7]",
 					"strict" : false
 				},
 				{
