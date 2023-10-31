@@ -18,7 +18,7 @@ module shifter #(parameter N = 4) (shamt5,register,sh,result);
 				aux = register >>> shamt5;
 			end
 			4'b11: begin //ROR
-				aux = (register << shamt5) | (register >> (N - shamt5));
+				aux = (register >> shamt5) | (register << (N - shamt5));//Revisar
 			end
 			default: begin
 				aux = register;
