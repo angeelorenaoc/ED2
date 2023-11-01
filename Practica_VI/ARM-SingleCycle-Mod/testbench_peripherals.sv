@@ -19,7 +19,7 @@ module testbench_peripherals();
 		reset <= 0; #DELAY; 
 		reset <= 1; 
 		
-		switches <= 10'd0; #(DELAY*2000);
+		switches <= 10'd1; #(DELAY*2000);
 		
 		$stop;
 	end
