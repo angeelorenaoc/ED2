@@ -24,9 +24,9 @@ module decoder(input logic [1:0] Op,
 			2'b01: 	if (Funct[0])	controls = 11'b00011110000;
 											// STR
 						else				controls = 11'b10011101000;
-											// B
-			2'b10: 	if (Funct[4])	controls = 11'b01101000110;
-			
+											// BL
+			2'b10: 	if (Funct[4])	controls = 11'b01101010110; 
+											//B
 						else 				controls = 11'b01101000100;
 											// Unimplemented
 			default: 					controls = 11'bx;

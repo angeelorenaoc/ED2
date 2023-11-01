@@ -29,7 +29,7 @@ module datapath(input logic clk, reset,
 	mux2 #(4) ra1mux(Instr[19:16], 4'b1111, RegSrc[0], RA1);
 	mux2 #(4) ra2mux(Instr[3:0], Instr[15:12], RegSrc[1], RA2);
 	mux2 #(4) r14mux(Instr[15:12], 4'b1110, BrL, RA3);
-	mux2 #(32) blmux(PCPlus4, Result, BrL, WD3);
+	mux2 #(32) blmux(Result, PCPlus4, BrL, WD3);
 	regfile rf(clk, RegWrite, RA1, RA2, RA3, WD3, PCPlus8, SrcA, WriteData);
 	mux2 #(32) resmux(ALUResult, ReadData, MemtoReg, Result);
 	extend ext(Instr[23:0], ImmSrc, ExtImm);
