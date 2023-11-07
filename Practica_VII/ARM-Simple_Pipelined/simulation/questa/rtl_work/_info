@@ -1,0 +1,478 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/simulation/questa
+vadder
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1698867847
+!i10b 1
+!s100 JTfFXPzbz[VGo95PdjoZI1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Id@?V=K8l:BnP9KZgcM[?c0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z4 w1698283193
+8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/adder.sv
+FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/adder.sv
+!i122 131
+L0 4 5
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1698867847.000000
+!s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/adder.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod
+Z9 tCvgOpt 0
+valu
+R1
+Z10 !s110 1698867848
+!i10b 1
+!s100 ZR]6jWXheoD9o>K_d6W;C0
+R2
+IDEj0XoF1cmNMYLEL6j@J41
+R3
+S1
+R0
+w1698419710
+8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/alu.sv
+FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/alu.sv
+!i122 132
+L0 4 35
+R5
+r1
+!s85 0
+31
+R6
+!s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/alu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/alu.sv|
+!i113 1
+R7
+R8
+R9
+varm
+R1
+R10
+!i10b 1
+!s100 [=j=UzYXY;>U66ISRRoAL0
+R2
+IdFCNYi@RLe<Kz`@HFkgC22
+R3
+S1
+R0
+w1698704179
+8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/arm.sv
+FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/arm.sv
+!i122 133
+L0 5 27
+R5
+r1
+!s85 0
+31
+Z11 !s108 1698867848.000000
+!s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/arm.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/arm.sv|
+!i113 1
+R7
+R8
+R9
+vcondcheck
+R1
+R10
+!i10b 1
+!s100 fDai:?4ANiM5Sj22:?Jnk2
+R2
+I@<l4ZMKVGA5bZY6f=>iPa3
+R3
+S1
+R0
+R4
+Z12 8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/condlogic.sv
+Z13 FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/condlogic.sv
+!i122 135
+L0 30 28
+R5
+r1
+!s85 0
+31
+R11
+Z14 !s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/condlogic.sv|
+Z15 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/condlogic.sv|
+!i113 1
+R7
+R8
+R9
+vcondlogic
+R1
+R10
+!i10b 1
+!s100 8b>EmRbdhGdJGHe=i0oT`0
+R2
+IzoPHOk<eF3Kom_FdUP3SG1
+R3
+S1
+R0
+R4
+R12
+R13
+!i122 135
+Z16 L0 4 22
+R5
+r1
+!s85 0
+31
+R11
+R14
+R15
+!i113 1
+R7
+R8
+R9
+vcontroller
+R1
+R10
+!i10b 1
+!s100 iFh6=Tbl_Jn[Bo:IaG:z52
+R2
+INb>?dJ[h03W>J1]KFP:J>3
+R3
+S1
+R0
+w1698704038
+8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/controller.sv
+FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/controller.sv
+!i122 136
+R16
+R5
+r1
+!s85 0
+31
+R11
+!s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/controller.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/controller.sv|
+!i113 1
+R7
+R8
+R9
+vdatapath
+R1
+R10
+!i10b 1
+!s100 =d4hP6AiO18gkUfKA8SlC0
+R2
+I]MUn;@8VHnYNPWzdECAol2
+R3
+S1
+R0
+w1698768408
+8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/datapath.sv
+FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/datapath.sv
+!i122 137
+L0 4 38
+R5
+r1
+!s85 0
+31
+R11
+!s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/datapath.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/datapath.sv|
+!i113 1
+R7
+R8
+R9
+vdecoder
+R1
+R10
+!i10b 1
+!s100 1RM1;B;K]2X=0KFTP]3W72
+R2
+IIaC[]EHEffV`JYoPPCfn70
+R3
+S1
+R0
+w1698768109
+8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/decoder.sv
+FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/decoder.sv
+!i122 138
+L0 4 57
+R5
+r1
+!s85 0
+31
+R11
+!s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/decoder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/decoder.sv|
+!i113 1
+R7
+R8
+R9
+vdmem
+R1
+R10
+!i10b 1
+!s100 kj8nZP[4=S=ZRFL37QJRP1
+R2
+ImkECWRJ4?@15iRZ=?IZ5Z0
+R3
+S1
+R0
+w1698439140
+8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/dmem.sv
+FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/dmem.sv
+!i122 139
+L0 5 36
+R5
+r1
+!s85 0
+31
+R11
+!s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/dmem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/dmem.sv|
+!i113 1
+R7
+R8
+R9
+vextend
+R1
+R10
+!i10b 1
+!s100 [g1zg?AJCcDL2m_=Q@Wg90
+R2
+I4IDbIa;KR9G6?KFb]O4:D1
+R3
+S1
+R0
+R4
+8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/extend.sv
+FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/extend.sv
+!i122 140
+L0 4 14
+R5
+r1
+!s85 0
+31
+R11
+!s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/extend.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/extend.sv|
+!i113 1
+R7
+R8
+R9
+vflopenr
+R1
+R10
+!i10b 1
+!s100 jllLgcS5=17jA`lP8EdXJ2
+R2
+I_JIUSO;V=XMHSG>GGM?;g1
+R3
+S1
+R0
+R4
+8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/flopenr.sv
+FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/flopenr.sv
+!i122 141
+Z17 L0 4 10
+R5
+r1
+!s85 0
+31
+R11
+!s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/flopenr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/flopenr.sv|
+!i113 1
+R7
+R8
+R9
+vflopr
+R1
+R10
+!i10b 1
+!s100 <DdH1fQQjAcX5`:nKh6a=1
+R2
+IXHD^PUzR;L5NzFN]Mc0<f2
+R3
+S1
+R0
+R4
+8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/flopr.sv
+FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/flopr.sv
+!i122 142
+R17
+R5
+r1
+!s85 0
+31
+R11
+!s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/flopr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/flopr.sv|
+!i113 1
+R7
+R8
+R9
+vimem
+R1
+R10
+!i10b 1
+!s100 ;A2g1:01CA3lIZadbLPXC3
+R2
+IV@bj>BQDmIQ]SI3PlQRm40
+R3
+S1
+R0
+w1698867717
+8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/imem.sv
+FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/imem.sv
+!i122 143
+L0 4 26
+R5
+r1
+!s85 0
+31
+R11
+!s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/imem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/imem.sv|
+!i113 1
+R7
+R8
+R9
+vmux2
+R1
+R10
+!i10b 1
+!s100 HbVFRXZ>5?NdYc^aRnRFf1
+R2
+I=;GHjd^9KiJ:7m8;MT:Eb0
+R3
+S1
+R0
+R4
+8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/mux2.sv
+FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/mux2.sv
+!i122 144
+L0 4 6
+R5
+r1
+!s85 0
+31
+R11
+!s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/mux2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/mux2.sv|
+!i113 1
+R7
+R8
+R9
+vregfile
+R1
+R10
+!i10b 1
+!s100 ?ckE^eEC62fX5f7FC>WZB0
+R2
+I6X6=<0k4j8m^bZdh4_akP1
+R3
+S1
+R0
+R4
+8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/regfile.sv
+FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/regfile.sv
+!i122 145
+L0 4 19
+R5
+r1
+!s85 0
+31
+R11
+!s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/regfile.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/regfile.sv|
+!i113 1
+R7
+R8
+R9
+vshifter
+R1
+R10
+!i10b 1
+!s100 eU;IWnZMeH4[lNgL?aLmR1
+R2
+IPQh<fSPAG[T;CGe?DJ3co1
+R3
+S1
+R0
+w1698691952
+8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/shifter.sv
+FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/shifter.sv
+!i122 146
+L0 1 31
+R5
+r1
+!s85 0
+31
+R11
+!s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/shifter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/shifter.sv|
+!i113 1
+R7
+R8
+R9
+vtestbench_peripherals
+R1
+!s110 1698868729
+!i10b 1
+!s100 EN=B3nIU]>QcLZ<FU<aJX2
+R2
+IaB]:Y:^b?[;V6=nf`GLgc3
+R3
+S1
+R0
+w1698865436
+8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/testbench_peripherals.sv
+FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/testbench_peripherals.sv
+!i122 151
+L0 4 30
+R5
+r1
+!s85 0
+31
+!s108 1698868729.000000
+!s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/testbench_peripherals.sv|
+!s90 -reportprogress|300|-work|work|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/testbench_peripherals.sv|
+!i113 1
+o-work work
+R9
+vtop
+R1
+!s110 1698867849
+!i10b 1
+!s100 69_HndT[@lRhP:f6FaEeJ3
+R2
+InK5f;5R@>7cGB6O01Wofz2
+R3
+S1
+R0
+w1698373705
+8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/top.sv
+FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/top.sv
+!i122 148
+L0 4 21
+R5
+r1
+!s85 0
+31
+R11
+!s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/top.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/top.sv|
+!i113 1
+R7
+R8
+R9
