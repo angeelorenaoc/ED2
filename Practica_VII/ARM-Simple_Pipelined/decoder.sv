@@ -5,13 +5,13 @@ module decoder(input logic [1:0] Op,
 					input logic [5:0] Funct,
 					input logic [3:0] Rd,
 					output logic [1:0] FlagW,
-					output logic PCS, RegW, MemW, BrL,
+					output logic PCS, RegW, MemW, Branch, BrL,
 					output logic MemtoReg, ALUSrc,
 					output logic [1:0] ImmSrc, RegSrc,
 					output logic [2:0] ALUControl);
 	// Internal signals
 	logic [10:0] controls;
-	logic Branch, ALUOp;
+	logic ALUOp;
 
 	// Main Decoder
 	always_comb

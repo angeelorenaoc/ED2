@@ -1,3 +1,0 @@
-Warning (10273): Verilog HDL warning at decoder.sv(32): extended using "x" or "z" File: U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/decoder.sv Line: 32
-Warning (10273): Verilog HDL warning at decoder.sv(46): extended using "x" or "z" File: U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/decoder.sv Line: 46
-Warning (10273): Verilog HDL warning at extend.sv(15): extended using "x" or "z" File: U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/extend.sv Line: 15
