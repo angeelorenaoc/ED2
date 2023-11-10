@@ -19,36 +19,37 @@ module controller(input logic clk, reset,
 	//Pd: Si está bueno fue Oscar, si no fue idea de Angee c;
 	//***********************************************************************
 	
+	assign Enable = 1'b1;
+	
 	//Signals Decode
 	logic [3:0] FlagsD;
-	logic [2:0] ALUControlE;
 	logic [1:0] FlagWriteD;
 	logic PCSrcD, RegWriteD, MemWriteD, BranchD, MemtoRegD, ALUSrcD;
 
 	
 	//Signals Execute
-	logic [3:0] CondE;
+	logic [3:0] CondE, Flags;
 	logic [1:0] FlagWriteE;
-	logic PCSrcE, RegWriteE, MemWriteE, BranchE, MemtoRegE;
+	logic PCSrcE, PCSrcEaux, RegWriteE, RegWriteEaux, MemWriteE, MemWriteEaux, BranchE, MemtoRegE;
 	
 	//Signals Memory
-	logic PCSrcM, RegWriteM, MemWriteM, MemtoRegM;
+	logic PCSrcM, RegWriteM, MemtoRegM;
 	
 	//Signals Writeback
-	logic PCSrcW, RegWriteW, MemWriteW, MemtoRegW;
+	logic RegWriteW, MemWriteW, MemtoRegW;
 	
 	decoder dec(Instr[27:26], Instr[25:20], Instr[15:12],
 					FlagWriteD, PCSrcD, RegWriteD, MemWriteD, BranchD, BrL,
 					MemtoRegD, ALUSrcD, ImmSrc, RegSrc, ALUControlD);
 
-	condlogic cl(clk, reset, Branch,Instr[31:28], ALUFlagsD, ALUFlagsE,
-					FlagWriteE, PCSrcE, RegWriteD, MemWriteE,
-					PCSrc, RegWrite, MemWrite, ALUFlagsD);
+	condlogic cl(clk, reset, BranchE, CondE, ALUFlagsD, ALUFlagsE,
+					FlagWriteE, PCSrcE, RegWriteE, MemWriteE,
+					PCSrcEaux, RegWriteEaux, MemWriteEaux, Flags);
 	//Registers files
-	regfileCF RFFetchC(clk, Enable, PCSrcD, RegWriteD, MemtoRegD, MemWriteD, BranchD, ALUSrcD, FlagWriteD, ALUControlD, Instr[31:28], ALUFlagsD, 
+	regfileCF RFFetchC(clk, Enable, PCSrcD, RegWriteD, MemtoRegD, MemWriteD, BranchD, ALUSrcD, FlagWriteD, ALUControlD, Instr[31:28], Flags, 
 											  PCSrcE, RegWriteE, MemtoRegE, MemWriteE, BranchE, ALUSrcE, FlagWriteE, ALUControlE, CondE, ALUFlagsE);
 											  
-	regfileCMW RFM(clk, Enable, PCSrcE, RegWriteE, MemtoRegE, MemWriteE,
+	regfileCMW RFM(clk, Enable, PCSrcEaux, RegWriteEaux, MemtoRegE, MemWriteEaux,
 										 PCSrcM, RegWriteM, MemtoRegM, MemWriteM);
 						
 	regfileCMW RFW(clk, Enable, PCSrcM, RegWriteM, MemtoRegM, MemWriteW,

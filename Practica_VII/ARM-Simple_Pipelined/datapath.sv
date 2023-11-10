@@ -8,7 +8,7 @@ module datapath(input logic clk, reset,
 					 input logic ALUSrc, 
 					 input logic [2:0] ALUControl,
 					 input logic BrL, MemtoReg,
-					 input logic PCSrc,
+					 input logic PCSrc, Enable,
 					 output logic [3:0] ALUFlags,
 					 output logic [31:0] PC,
 					 input logic [31:0] InstrF,
@@ -44,9 +44,9 @@ module datapath(input logic clk, reset,
 	alu #(32) alu(SrcAE, SrcB, ALUControl, ALUResultE, ALUFlags);
 	
 	//Registers Files
-	regfileF RFFetch(clk, RegWrite, InstrF,PCPlus4, InstrD, PCPlusD4);
-	regfileD RFDecode(clk, RegWrite, SrcA, RD2, ExtImm,InstrD, PCPlusD4, SrcAE, WriteDataE, ExtImmE,InstrE,PCPlusE4);
-	regfileEM RFExecute(clk, RegWrite, ALUResultE, WriteDataE, InstrE[15:12],PCPlusE4, ALUOutM, WriteDataM, WA3M,PCPlusM4);
-	regfileEM RFMemory(clk, RegWrite, ReadDataM, ALUOutM, WA3M, PCPlusM4, ReadDataW, ALUResultW, WA3W,PCPlusW4);
+	regfileF RFFetch(clk, Enable, InstrF,PCPlus4, InstrD, PCPlusD4);
+	regfileD RFDecode(clk, Enable, SrcA, RD2, ExtImm,InstrD, PCPlusD4, SrcAE, WriteDataE, ExtImmE,InstrE,PCPlusE4);
+	regfileEM RFExecute(clk, Enable, ALUResultE, WriteDataE, InstrE[15:12],PCPlusE4, ALUOutM, WriteDataM, WA3M,PCPlusM4);
+	regfileEM RFMemory(clk, Enable, ReadDataM, ALUOutM, WA3M, PCPlusM4, ReadDataW, ALUResultW, WA3W,PCPlusW4);
 	
 endmodule
