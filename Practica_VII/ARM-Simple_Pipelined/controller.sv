@@ -12,7 +12,7 @@ module controller(input logic clk, reset,
 						output logic MemWriteM, MemtoReg, BrL,
 						output logic PCSrcW,
 						output logic Enable);
-	
+	//						 			 ↑↑↑↑↑↑
 	//***********************************************************************
 	//NOP
 	//Output enable Combinacional que apaga los Register files en caso de NOP
