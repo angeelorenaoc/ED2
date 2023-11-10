@@ -20,7 +20,7 @@ module dmem(input logic clk, we, input logic [31:0] a, wd, output logic [31:0] r
 
 		// Uncomment only the following line to load the required data for the program made by the students
 		// $readmemh("C:/Users/oscar/Documents/ED/Practica_VI/dmem_made_by_students.dat",RAM);
-		 $readmemh("U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/dmem_made_by_students.dat",RAM);
+		 $readmemh("U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/dmem_made_by_students.dat",RAM);
 	
 	// Process for reading from RAM array or peripherals mapped in memory
 	always_comb

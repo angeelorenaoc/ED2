@@ -8,471 +8,606 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/simulation/questa
+Z0 dU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/simulation/questa
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-!s110 1698867847
+Z2 !s110 1699631687
 !i10b 1
 !s100 JTfFXPzbz[VGo95PdjoZI1
-Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-Id@?V=K8l:BnP9KZgcM[?c0
-Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I<_DA9=FoP5@@LlN2hEi8`2
+Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z4 w1698283193
-8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/adder.sv
-FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/adder.sv
-!i122 131
+Z5 w1698283193
+8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/adder.sv
+FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/adder.sv
+!i122 46
 L0 4 5
-Z5 OV;L;2020.1;71
+Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1698867847.000000
-!s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/adder.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/adder.sv|
+Z7 !s108 1699631687.000000
+!s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/adder.sv|
 !i113 1
-Z7 o-sv -work work
-Z8 !s92 -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod
-Z9 tCvgOpt 0
+Z8 o-sv -work work
+Z9 !s92 -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined
+Z10 tCvgOpt 0
 valu
 R1
-Z10 !s110 1698867848
+R2
 !i10b 1
 !s100 ZR]6jWXheoD9o>K_d6W;C0
-R2
-IDEj0XoF1cmNMYLEL6j@J41
 R3
+I;CCkoCKDTT_TlTl^Cz8aj3
+R4
 S1
 R0
 w1698419710
-8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/alu.sv
-FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/alu.sv
-!i122 132
+8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/alu.sv
+FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/alu.sv
+!i122 47
 L0 4 35
-R5
+R6
 r1
 !s85 0
 31
-R6
-!s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/alu.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/alu.sv|
-!i113 1
 R7
+!s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/alu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/alu.sv|
+!i113 1
 R8
 R9
+R10
 varm
 R1
-R10
-!i10b 1
-!s100 [=j=UzYXY;>U66ISRRoAL0
 R2
-IdFCNYi@RLe<Kz`@HFkgC22
+!i10b 1
+!s100 ;]5V3K>kZ4C8ZKVkO_BbQ0
 R3
+I@10>z@iYkSKgm7AA4WZVX1
+R4
 S1
 R0
-w1698704179
-8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/arm.sv
-FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/arm.sv
-!i122 133
+w1699631615
+8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/arm.sv
+FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/arm.sv
+!i122 48
 L0 5 27
-R5
+R6
 r1
 !s85 0
 31
-Z11 !s108 1698867848.000000
-!s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/arm.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/arm.sv|
-!i113 1
 R7
+!s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/arm.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/arm.sv|
+!i113 1
 R8
 R9
+R10
 vcondcheck
 R1
-R10
-!i10b 1
-!s100 fDai:?4ANiM5Sj22:?Jnk2
 R2
-I@<l4ZMKVGA5bZY6f=>iPa3
+!i10b 1
+!s100 e43aNN00=i>Q5zG57RHQO0
 R3
+IzG[FLXdGloGWnAZiL]W`31
+R4
 S1
 R0
-R4
-Z12 8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/condlogic.sv
-Z13 FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/condlogic.sv
-!i122 135
-L0 30 28
-R5
+Z11 w1699482070
+Z12 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/condlogic.sv
+Z13 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/condlogic.sv
+!i122 50
+L0 32 28
+R6
 r1
 !s85 0
 31
-R11
-Z14 !s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/condlogic.sv|
-Z15 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/condlogic.sv|
-!i113 1
 R7
+Z14 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/condlogic.sv|
+Z15 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/condlogic.sv|
+!i113 1
 R8
 R9
+R10
 vcondlogic
 R1
-R10
-!i10b 1
-!s100 8b>EmRbdhGdJGHe=i0oT`0
 R2
-IzoPHOk<eF3Kom_FdUP3SG1
+!i10b 1
+!s100 Ye7EVQNl0QmO=SjncKBb]2
 R3
+IjLQJ1>e^K1fVW3J;M4B?=0
+R4
 S1
 R0
-R4
+R11
 R12
 R13
-!i122 135
-Z16 L0 4 22
-R5
+!i122 50
+L0 4 24
+R6
 r1
 !s85 0
 31
-R11
+R7
 R14
 R15
 !i113 1
-R7
 R8
 R9
+R10
 vcontroller
 R1
-R10
-!i10b 1
-!s100 iFh6=Tbl_Jn[Bo:IaG:z52
 R2
-INb>?dJ[h03W>J1]KFP:J>3
+!i10b 1
+!s100 ATYK<;VQHdCo^00;0ATRT2
 R3
+I5_ee^aJFIQM4k;>MgRVPX1
+R4
 S1
 R0
-w1698704038
-8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/controller.sv
-FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/controller.sv
-!i122 136
-R16
-R5
+w1699631640
+8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/controller.sv
+FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/controller.sv
+!i122 51
+L0 4 55
+R6
 r1
 !s85 0
 31
-R11
-!s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/controller.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/controller.sv|
-!i113 1
 R7
+!s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/controller.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/controller.sv|
+!i113 1
 R8
 R9
+R10
 vdatapath
 R1
-R10
-!i10b 1
-!s100 =d4hP6AiO18gkUfKA8SlC0
 R2
-I]MUn;@8VHnYNPWzdECAol2
+!i10b 1
+!s100 3<`db:Wh;a?GIZih6nK8P2
 R3
+Io370O2^g8PA_ZN1YPeghb1
+R4
 S1
 R0
-w1698768408
-8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/datapath.sv
-FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/datapath.sv
-!i122 137
-L0 4 38
-R5
+w1699630538
+8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/datapath.sv
+FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/datapath.sv
+!i122 52
+L0 4 49
+R6
 r1
 !s85 0
 31
-R11
-!s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/datapath.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/datapath.sv|
-!i113 1
 R7
+!s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/datapath.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/datapath.sv|
+!i113 1
 R8
 R9
+R10
 vdecoder
 R1
-R10
-!i10b 1
-!s100 1RM1;B;K]2X=0KFTP]3W72
 R2
-IIaC[]EHEffV`JYoPPCfn70
+!i10b 1
+!s100 NYeSQDhdZ[lUBdMgGg5DK1
 R3
+I_GK[A;788@K?TaCi0DMoc0
+R4
 S1
 R0
-w1698768109
-8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/decoder.sv
-FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/decoder.sv
-!i122 138
+w1699476835
+8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/decoder.sv
+FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/decoder.sv
+!i122 53
 L0 4 57
-R5
+R6
 r1
 !s85 0
 31
-R11
-!s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/decoder.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/decoder.sv|
-!i113 1
 R7
+!s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/decoder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/decoder.sv|
+!i113 1
 R8
 R9
+R10
 vdmem
 R1
-R10
+Z16 !s110 1699631688
 !i10b 1
-!s100 kj8nZP[4=S=ZRFL37QJRP1
-R2
-ImkECWRJ4?@15iRZ=?IZ5Z0
+!s100 eg=N5UR1<a75YjDJ83gKQ3
 R3
+IZXMd_T1FhWn<6J0i6<l7<0
+R4
 S1
 R0
-w1698439140
-8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/dmem.sv
-FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/dmem.sv
-!i122 139
+Z17 w1699631145
+8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/dmem.sv
+FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/dmem.sv
+!i122 54
 L0 5 36
-R5
+R6
 r1
 !s85 0
 31
-R11
-!s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/dmem.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/dmem.sv|
-!i113 1
 R7
+!s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/dmem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/dmem.sv|
+!i113 1
 R8
 R9
+R10
 vextend
 R1
-R10
+R16
 !i10b 1
 !s100 [g1zg?AJCcDL2m_=Q@Wg90
-R2
-I4IDbIa;KR9G6?KFb]O4:D1
 R3
+IA8YXB^h3@:5moYWOHeAbo1
+R4
 S1
 R0
-R4
-8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/extend.sv
-FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/extend.sv
-!i122 140
-L0 4 14
 R5
+8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/extend.sv
+FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/extend.sv
+!i122 55
+L0 4 14
+R6
 r1
 !s85 0
 31
-R11
-!s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/extend.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/extend.sv|
+Z18 !s108 1699631688.000000
+!s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/extend.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/extend.sv|
 !i113 1
-R7
 R8
 R9
+R10
 vflopenr
 R1
-R10
+R16
 !i10b 1
 !s100 jllLgcS5=17jA`lP8EdXJ2
-R2
-I_JIUSO;V=XMHSG>GGM?;g1
 R3
+IQR8ZESz2mz@cVhG@PhgTg2
+R4
 S1
 R0
-R4
-8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/flopenr.sv
-FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/flopenr.sv
-!i122 141
-Z17 L0 4 10
 R5
+8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/flopenr.sv
+FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/flopenr.sv
+!i122 56
+Z19 L0 4 10
+R6
 r1
 !s85 0
 31
-R11
-!s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/flopenr.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/flopenr.sv|
+R18
+!s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/flopenr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/flopenr.sv|
 !i113 1
-R7
 R8
 R9
+R10
 vflopr
 R1
-R10
+R16
 !i10b 1
 !s100 <DdH1fQQjAcX5`:nKh6a=1
-R2
-IXHD^PUzR;L5NzFN]Mc0<f2
 R3
+I`O^dZO;kci0n[RH_8cc`12
+R4
 S1
 R0
-R4
-8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/flopr.sv
-FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/flopr.sv
-!i122 142
-R17
 R5
+8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/flopr.sv
+FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/flopr.sv
+!i122 57
+R19
+R6
 r1
 !s85 0
 31
-R11
-!s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/flopr.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/flopr.sv|
+R18
+!s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/flopr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/flopr.sv|
 !i113 1
-R7
 R8
 R9
+R10
 vimem
 R1
-R10
+R16
 !i10b 1
-!s100 ;A2g1:01CA3lIZadbLPXC3
-R2
-IV@bj>BQDmIQ]SI3PlQRm40
+!s100 R57b:UQOGgWVoGYc85]UF3
 R3
+IZLY]FQ46[fzfPULK?5=bn3
+R4
 S1
 R0
-w1698867717
-8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/imem.sv
-FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/imem.sv
-!i122 143
+R17
+8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/imem.sv
+FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/imem.sv
+!i122 58
 L0 4 26
-R5
+R6
 r1
 !s85 0
 31
-R11
-!s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/imem.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/imem.sv|
+R18
+!s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/imem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/imem.sv|
 !i113 1
-R7
 R8
 R9
+R10
 vmux2
 R1
-R10
+R16
 !i10b 1
 !s100 HbVFRXZ>5?NdYc^aRnRFf1
-R2
-I=;GHjd^9KiJ:7m8;MT:Eb0
 R3
+IlnBn;b66ZInY<1>bGYDA00
+R4
 S1
 R0
-R4
-8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/mux2.sv
-FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/mux2.sv
-!i122 144
-L0 4 6
 R5
+8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/mux2.sv
+FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/mux2.sv
+!i122 59
+L0 4 6
+R6
 r1
 !s85 0
 31
-R11
-!s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/mux2.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/mux2.sv|
+R18
+!s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/mux2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/mux2.sv|
 !i113 1
-R7
 R8
 R9
+R10
 vregfile
 R1
-R10
+R16
 !i10b 1
 !s100 ?ckE^eEC62fX5f7FC>WZB0
-R2
-I6X6=<0k4j8m^bZdh4_akP1
 R3
+IO?NHN`gXnI>nM8@5[Qf3j3
+R4
 S1
 R0
-R4
-8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/regfile.sv
-FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/regfile.sv
-!i122 145
-L0 4 19
 R5
+8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfile.sv
+FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfile.sv
+!i122 60
+L0 4 19
+R6
 r1
 !s85 0
 31
-R11
-!s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/regfile.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/regfile.sv|
+R18
+!s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfile.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfile.sv|
 !i113 1
-R7
 R8
 R9
+R10
+vregfileCF
+R1
+R16
+!i10b 1
+!s100 K^?ZRIjCJYW0b22SXMR953
+R3
+IHz4cPm<BgfhX[JS6EMzTN1
+R4
+S1
+R0
+w1699630030
+8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileCF.sv
+FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileCF.sv
+!i122 61
+L0 1 48
+R6
+r1
+!s85 0
+31
+R18
+!s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileCF.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileCF.sv|
+!i113 1
+R8
+R9
+R10
+nregfile@c@f
+vregfileCMW
+R1
+R16
+!i10b 1
+!s100 j:Q?dMZh[n[maM30mBX[;0
+R3
+I7nFb2RaVUL7llhO^5_N;90
+R4
+S1
+R0
+w1699483058
+8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileCMW.sv
+FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileCMW.sv
+!i122 62
+L0 1 25
+R6
+r1
+!s85 0
+31
+R18
+!s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileCMW.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileCMW.sv|
+!i113 1
+R8
+R9
+R10
+nregfile@c@m@w
+vregfileD
+R1
+R16
+!i10b 1
+!s100 M4_58Id1XEh3>8n?5_UF73
+R3
+IB0@6il4?Yho8PG3WMXJfH1
+R4
+S1
+R0
+Z20 w1699468557
+8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileD.sv
+FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileD.sv
+!i122 63
+L0 1 28
+R6
+r1
+!s85 0
+31
+R18
+!s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileD.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileD.sv|
+!i113 1
+R8
+R9
+R10
+nregfile@d
+vregfileEM
+R1
+R16
+!i10b 1
+!s100 ?k3M[MQG;HfNFa04Dd[LL2
+R3
+Ig7`;^PVInYbR5[D_9VT7f1
+R4
+S1
+R0
+R20
+8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileEM.sv
+FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileEM.sv
+!i122 64
+Z21 L0 1 31
+R6
+r1
+!s85 0
+31
+R18
+!s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileEM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileEM.sv|
+!i113 1
+R8
+R9
+R10
+nregfile@e@m
+vregfileF
+R1
+R16
+!i10b 1
+!s100 o2@b]0gS:TJS=@]>2ag:J3
+R3
+I=Q<KD=3EfZIB4]QOU8Rb63
+R4
+S1
+R0
+w1699468585
+8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileF.sv
+FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileF.sv
+!i122 65
+L0 1 21
+R6
+r1
+!s85 0
+31
+R18
+!s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileF.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileF.sv|
+!i113 1
+R8
+R9
+R10
+nregfile@f
 vshifter
 R1
-R10
+Z22 !s110 1699631689
 !i10b 1
 !s100 eU;IWnZMeH4[lNgL?aLmR1
-R2
-IPQh<fSPAG[T;CGe?DJ3co1
 R3
+IT<JlGARCfo;3b`hmZS_^V0
+R4
 S1
 R0
 w1698691952
-8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/shifter.sv
-FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/shifter.sv
-!i122 146
-L0 1 31
-R5
+8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/shifter.sv
+FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/shifter.sv
+!i122 66
+R21
+R6
 r1
 !s85 0
 31
-R11
-!s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/shifter.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/shifter.sv|
+R18
+!s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/shifter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/shifter.sv|
 !i113 1
-R7
 R8
 R9
+R10
 vtestbench_peripherals
 R1
-!s110 1698868729
+R22
 !i10b 1
 !s100 EN=B3nIU]>QcLZ<FU<aJX2
-R2
-IaB]:Y:^b?[;V6=nf`GLgc3
 R3
+Ih@?dBV>22]Kg`njTL46KW0
+R4
 S1
 R0
 w1698865436
-8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/testbench_peripherals.sv
-FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/testbench_peripherals.sv
-!i122 151
+8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/testbench_peripherals.sv
+FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/testbench_peripherals.sv
+!i122 67
 L0 4 30
-R5
+R6
 r1
 !s85 0
 31
-!s108 1698868729.000000
-!s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/testbench_peripherals.sv|
-!s90 -reportprogress|300|-work|work|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/testbench_peripherals.sv|
+Z23 !s108 1699631689.000000
+!s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/testbench_peripherals.sv|
+!s90 -reportprogress|300|-work|work|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/testbench_peripherals.sv|
 !i113 1
 o-work work
-R9
+R10
 vtop
 R1
-!s110 1698867849
+R22
 !i10b 1
 !s100 69_HndT[@lRhP:f6FaEeJ3
-R2
-InK5f;5R@>7cGB6O01Wofz2
 R3
+ITLEz?CeDb??Uh]3fXnI020
+R4
 S1
 R0
 w1698373705
-8U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/top.sv
-FU:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/top.sv
-!i122 148
+8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/top.sv
+FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/top.sv
+!i122 68
 L0 4 21
-R5
+R6
 r1
 !s85 0
 31
-R11
-!s107 U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/top.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod|U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/top.sv|
+R23
+!s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/top.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/top.sv|
 !i113 1
-R7
 R8
 R9
+R10

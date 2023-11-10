@@ -11,7 +11,7 @@ module arm(input logic clk, reset,
 
 	// Internal signals to interconnect the control and datapath units
 	logic [3:0] ALUFlags;
-	logic RegWrite, ALUSrc, MemtoReg, PCSrc, BrL;
+	logic RegWrite, ALUSrc, MemtoReg, PCSrc, BrL, Enable;
 	logic [1:0] RegSrc, ImmSrc;
 	logic [2:0]	ALUControl;
 
@@ -19,13 +19,13 @@ module arm(input logic clk, reset,
 	controller c(clk, reset, Instr[31:12], ALUFlags,
 						RegSrc, RegWrite, ImmSrc,
 						ALUSrc, ALUControl,
-						MemWrite, MemtoReg, BrL, PCSrc);
+						MemWrite, MemtoReg, BrL, PCSrc, Enable);
 						
 	// Datapath unit instantiation
 	datapath dp(clk, reset,
 						RegSrc, RegWrite, ImmSrc,
 						ALUSrc, ALUControl, BrL,
-						MemtoReg, PCSrc,
+						MemtoReg, PCSrc, Enable,
 						ALUFlags, PC, Instr,
 						ALUResult, WriteData, ReadData);
 endmodule

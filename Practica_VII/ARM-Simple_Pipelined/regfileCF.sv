@@ -3,16 +3,16 @@ module regfileCF(input logic clk,
 					input logic PcsrcD, RegWriteD, MemtoRegD, MemWriteD, BranchD, AluSrcD, 
 					input logic [1:0] FlagWriteD,
 					input logic [2:0] AluControlD,
-					output logic [3:0] CondD,
+					input logic [3:0] CondD, Flags,
 					output logic PcsrcE, RegWriteE, MemtoRegE, MemWriteE, BranchE, AluSrcE, 
 					output logic [1:0] FlagWriteE,
 					output logic [2:0] AluControlE,
-					output logic [3:0] CondE);
+					output logic [3:0] CondE, FlagsE);
 
 	// Internal signals
 	logic [1:0] FlagWriteDaux;
 	logic [2:0] AluControlaux;
-	logic [3:0] Condaux;
+	logic [3:0] Condaux, Flagsaux;
 	logic PcsrcDaux, RegWriteDaux, MemtoRegDaux, MemWriteDaux, BranchDaux, AluSrcDaux;
 	
 	// Three ported register file
@@ -27,7 +27,8 @@ module regfileCF(input logic clk,
 			AluSrcDaux <= AluSrcD;
 			FlagWriteDaux <= FlagWriteD;
 			AluControlaux <= AluControlD;
-			CondD <= Condaux;
+			Condaux <= CondD;
+			Flagsaux <= Flags;
 		end
 		
 	// Read two ports combinationally
@@ -41,6 +42,7 @@ module regfileCF(input logic clk,
 	assign	AluSrcE = AluSrcDaux;
 	assign	FlagWriteE = FlagWriteDaux;
 	assign	AluControlE = AluControlaux;
-	assign 	CondE = CondD;
+	assign 	CondE = Condaux;
+	assign 	FlagsE = Flagsaux;
 	
 endmodule
