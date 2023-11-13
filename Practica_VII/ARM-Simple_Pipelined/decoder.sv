@@ -16,20 +16,22 @@ module decoder(input logic [1:0] Op,
 	// Main Decoder
 	always_comb
 		casex(Op)
-											// Data-processing immediate
-			2'b00: 	if (Funct[5])	controls = 11'b00001010001;
-											// Data-processing register
-						else				controls = 11'b00000010001;
-											// LDR
-			2'b01: 	if (Funct[0])	controls = 11'b00011110000;
-											// STR
-						else				controls = 11'b10011101000;
-											// BL
-			2'b10: 	if (Funct[4])	controls = 11'b01101010110; 
-											//B
-						else 				controls = 11'b01101000100;
-											// Unimplemented
-			default: 					controls = 11'bx;
+																	//NOP																	
+			2'b00: 	if (Funct[4:0] == 5'b10010)		controls = 11'b00000000001;
+																	// Data-processing immediate
+						else if (Funct[5])					controls = 11'b00001010001;	
+																	// Data-processing register
+						else										controls = 11'b00000010001;
+																	// LDR
+			2'b01: 	if (Funct[0])							controls = 11'b00011110000;
+																	// STR
+						else										controls = 11'b10011101000;
+																	// BL
+			2'b10: 	if (Funct[4])							controls = 11'b01101010110; 
+																	//B
+						else 										controls = 11'b01101000100;
+																	// Unimplemented
+			default: 											controls = 11'bx;
 		endcase
 		
 	assign {RegSrc, ImmSrc, ALUSrc, MemtoReg, RegW, MemW, Branch, BrL, ALUOp} = controls;

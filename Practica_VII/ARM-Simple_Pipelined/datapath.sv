@@ -40,13 +40,13 @@ module datapath(input logic clk, reset,
 
 	// ALU logic
 	shifter #(32) shifter(InstrE[11:7],RD2,InstrE[6:5],SrcB_aux);
-	mux2 #(32) srcbmux(WriteDataE, ExtImmE, ALUSrc, SrcBE);
-	alu #(32) alu(SrcAE, SrcB, ALUControl, ALUResultE, ALUFlags);
+	mux2 #(32) srcbmux(SrcB_aux, ExtImmE, ALUSrc, SrcBE);
+	alu #(32) alu(SrcAE, SrcBE, ALUControl, ALUResultE, ALUFlags);
 	
 	//Registers Files
-	regfileF RFFetch(clk, Enable, InstrF,PCPlus4, InstrD, PCPlusD4);
-	regfileD RFDecode(clk, Enable, SrcA, RD2, ExtImm,InstrD, PCPlusD4, SrcAE, WriteDataE, ExtImmE,InstrE,PCPlusE4);
-	regfileEM RFExecute(clk, Enable, ALUResultE, WriteDataE, InstrE[15:12],PCPlusE4, ALUOutM, WriteDataM, WA3M,PCPlusM4);
-	regfileEM RFMemory(clk, Enable, ReadDataM, ALUOutM, WA3M, PCPlusM4, ReadDataW, ALUResultW, WA3W,PCPlusW4);
+	regfileF RFFetch(clk, Enable, reset, InstrF,PCPlus4, InstrD, PCPlusD4);
+	regfileD RFDecode(clk, Enable, reset, SrcA, RD2, ExtImm,InstrD, PCPlusD4, SrcAE, WriteDataE, ExtImmE,InstrE,PCPlusE4);
+	regfileEM RFExecute(clk, Enable, reset, ALUResultE, WriteDataE, InstrE[15:12],PCPlusE4, ALUOutM, WriteDataM, WA3M,PCPlusM4);
+	regfileEM RFMemory(clk, Enable, reset, ReadDataM, ALUOutM, WA3M, PCPlusM4, ReadDataW, ALUResultW, WA3W,PCPlusW4);
 	
 endmodule

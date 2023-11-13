@@ -11,7 +11,7 @@ cModel Technology
 Z0 dU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/simulation/questa
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1699631687
+Z2 !s110 1699913334
 !i10b 1
 !s100 JTfFXPzbz[VGo95PdjoZI1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -22,13 +22,13 @@ R0
 Z5 w1698283193
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/adder.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/adder.sv
-!i122 46
+!i122 21
 L0 4 5
 Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1699631687.000000
+Z7 !s108 1699913334.000000
 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/adder.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/adder.sv|
 !i113 1
@@ -48,7 +48,7 @@ R0
 w1698419710
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/alu.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/alu.sv
-!i122 47
+!i122 22
 L0 4 35
 R6
 r1
@@ -71,10 +71,10 @@ I@10>z@iYkSKgm7AA4WZVX1
 R4
 S1
 R0
-w1699631615
+w1699656145
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/arm.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/arm.sv
-!i122 48
+!i122 23
 L0 5 27
 R6
 r1
@@ -91,17 +91,17 @@ vcondcheck
 R1
 R2
 !i10b 1
-!s100 e43aNN00=i>Q5zG57RHQO0
+!s100 KTl[^iagaQFKWWBRJDNoP1
 R3
-IzG[FLXdGloGWnAZiL]W`31
+I60>f[kE<TTZIXYGOC<3o;3
 R4
 S1
 R0
-Z11 w1699482070
+Z11 w1699654054
 Z12 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/condlogic.sv
 Z13 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/condlogic.sv
-!i122 50
-L0 32 28
+!i122 25
+L0 46 28
 R6
 r1
 !s85 0
@@ -117,17 +117,17 @@ vcondlogic
 R1
 R2
 !i10b 1
-!s100 Ye7EVQNl0QmO=SjncKBb]2
+!s100 46dN400MAQ<1=RYkc?dTZ2
 R3
-IjLQJ1>e^K1fVW3J;M4B?=0
+I8o2m_a7Q6aP1ZQ5G54X@H3
 R4
 S1
 R0
 R11
 R12
 R13
-!i122 50
-L0 4 24
+!i122 25
+L0 4 38
 R6
 r1
 !s85 0
@@ -143,17 +143,17 @@ vcontroller
 R1
 R2
 !i10b 1
-!s100 ATYK<;VQHdCo^00;0ATRT2
+!s100 2[KagKZlgCLi:A0V6A:7N2
 R3
-I5_ee^aJFIQM4k;>MgRVPX1
+I`6SbNh6fbBeY>]E`7^H<W2
 R4
 S1
 R0
-w1699631640
+w1699655289
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/controller.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/controller.sv
-!i122 51
-L0 4 55
+!i122 26
+Z16 L0 4 49
 R6
 r1
 !s85 0
@@ -169,17 +169,17 @@ vdatapath
 R1
 R2
 !i10b 1
-!s100 3<`db:Wh;a?GIZih6nK8P2
+!s100 Pg:_hU]@4X;jX@7Z=ZJQc0
 R3
-Io370O2^g8PA_ZN1YPeghb1
+IS6ZfYn8j;U52k<HO7L@V]1
 R4
 S1
 R0
-w1699630538
+w1699913296
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/datapath.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/datapath.sv
-!i122 52
-L0 4 49
+!i122 27
+R16
 R6
 r1
 !s85 0
@@ -195,17 +195,17 @@ vdecoder
 R1
 R2
 !i10b 1
-!s100 NYeSQDhdZ[lUBdMgGg5DK1
+!s100 L0D3^mR1N76io:]=Y10KS3
 R3
-I_GK[A;788@K?TaCi0DMoc0
+I?2o7>?22VgbkA7[zI`EdJ0
 R4
 S1
 R0
-w1699476835
+w1699647360
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/decoder.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/decoder.sv
-!i122 53
-L0 4 57
+!i122 28
+L0 4 59
 R6
 r1
 !s85 0
@@ -219,7 +219,7 @@ R9
 R10
 vdmem
 R1
-Z16 !s110 1699631688
+R2
 !i10b 1
 !s100 eg=N5UR1<a75YjDJ83gKQ3
 R3
@@ -230,7 +230,7 @@ R0
 Z17 w1699631145
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/dmem.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/dmem.sv
-!i122 54
+!i122 29
 L0 5 36
 R6
 r1
@@ -245,7 +245,7 @@ R9
 R10
 vextend
 R1
-R16
+R2
 !i10b 1
 !s100 [g1zg?AJCcDL2m_=Q@Wg90
 R3
@@ -256,48 +256,22 @@ R0
 R5
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/extend.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/extend.sv
-!i122 55
+!i122 30
 L0 4 14
 R6
 r1
 !s85 0
 31
-Z18 !s108 1699631688.000000
+R7
 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/extend.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/extend.sv|
 !i113 1
 R8
 R9
 R10
-vflopenr
-R1
-R16
-!i10b 1
-!s100 jllLgcS5=17jA`lP8EdXJ2
-R3
-IQR8ZESz2mz@cVhG@PhgTg2
-R4
-S1
-R0
-R5
-8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/flopenr.sv
-FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/flopenr.sv
-!i122 56
-Z19 L0 4 10
-R6
-r1
-!s85 0
-31
-R18
-!s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/flopenr.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/flopenr.sv|
-!i113 1
-R8
-R9
-R10
 vflopr
 R1
-R16
+Z18 !s110 1699913335
 !i10b 1
 !s100 <DdH1fQQjAcX5`:nKh6a=1
 R3
@@ -308,13 +282,13 @@ R0
 R5
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/flopr.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/flopr.sv
-!i122 57
-R19
+!i122 31
+L0 4 10
 R6
 r1
 !s85 0
 31
-R18
+Z19 !s108 1699913335.000000
 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/flopr.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/flopr.sv|
 !i113 1
@@ -323,7 +297,7 @@ R9
 R10
 vimem
 R1
-R16
+R18
 !i10b 1
 !s100 R57b:UQOGgWVoGYc85]UF3
 R3
@@ -334,13 +308,13 @@ R0
 R17
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/imem.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/imem.sv
-!i122 58
+!i122 32
 L0 4 26
 R6
 r1
 !s85 0
 31
-R18
+R19
 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/imem.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/imem.sv|
 !i113 1
@@ -349,7 +323,7 @@ R9
 R10
 vmux2
 R1
-R16
+R18
 !i10b 1
 !s100 HbVFRXZ>5?NdYc^aRnRFf1
 R3
@@ -360,13 +334,13 @@ R0
 R5
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/mux2.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/mux2.sv
-!i122 59
+!i122 33
 L0 4 6
 R6
 r1
 !s85 0
 31
-R18
+R19
 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/mux2.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/mux2.sv|
 !i113 1
@@ -375,7 +349,7 @@ R9
 R10
 vregfile
 R1
-R16
+R18
 !i10b 1
 !s100 ?ckE^eEC62fX5f7FC>WZB0
 R3
@@ -386,13 +360,13 @@ R0
 R5
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfile.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfile.sv
-!i122 60
+!i122 34
 L0 4 19
 R6
 r1
 !s85 0
 31
-R18
+R19
 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfile.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfile.sv|
 !i113 1
@@ -401,24 +375,24 @@ R9
 R10
 vregfileCF
 R1
-R16
+R18
 !i10b 1
-!s100 K^?ZRIjCJYW0b22SXMR953
+!s100 9N7WI4]Y@GS;ah;WPb9MG3
 R3
-IHz4cPm<BgfhX[JS6EMzTN1
+IOYZ3G9H?YiKUzAAZRU9^02
 R4
 S1
 R0
-w1699630030
+w1699652462
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileCF.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileCF.sv
-!i122 61
-L0 1 48
+!i122 35
+L0 1 60
 R6
 r1
 !s85 0
 31
-R18
+R19
 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileCF.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileCF.sv|
 !i113 1
@@ -428,24 +402,24 @@ R10
 nregfile@c@f
 vregfileCMW
 R1
-R16
+R18
 !i10b 1
-!s100 j:Q?dMZh[n[maM30mBX[;0
+!s100 =><ok1kn`MQ;4G]^=5=5O2
 R3
-I7nFb2RaVUL7llhO^5_N;90
+I3R^3[YS^A:R=9e8f9_]1A3
 R4
 S1
 R0
-w1699483058
+Z20 w1699647775
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileCMW.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileCMW.sv
-!i122 62
-L0 1 25
+!i122 36
+Z21 L0 1 31
 R6
 r1
 !s85 0
 31
-R18
+R19
 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileCMW.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileCMW.sv|
 !i113 1
@@ -455,24 +429,24 @@ R10
 nregfile@c@m@w
 vregfileD
 R1
-R16
+R18
 !i10b 1
-!s100 M4_58Id1XEh3>8n?5_UF73
+!s100 9DReofmUQe?fUE@X]W?QZ2
 R3
-IB0@6il4?Yho8PG3WMXJfH1
+IO2[^EeVXP2N5lOE3ohdbR1
 R4
 S1
 R0
-Z20 w1699468557
+w1699647774
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileD.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileD.sv
-!i122 63
-L0 1 28
+!i122 37
+L0 1 35
 R6
 r1
 !s85 0
 31
-R18
+R19
 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileD.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileD.sv|
 !i113 1
@@ -482,24 +456,24 @@ R10
 nregfile@d
 vregfileEM
 R1
-R16
+R18
 !i10b 1
-!s100 ?k3M[MQG;HfNFa04Dd[LL2
+!s100 BYgVd<aE]XEEm0kdA:Ea93
 R3
-Ig7`;^PVInYbR5[D_9VT7f1
+I`^[2;0gS@3;?2?<FBTlbk3
 R4
 S1
 R0
 R20
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileEM.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileEM.sv
-!i122 64
-Z21 L0 1 31
+!i122 38
+L0 1 37
 R6
 r1
 !s85 0
 31
-R18
+R19
 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileEM.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileEM.sv|
 !i113 1
@@ -509,24 +483,24 @@ R10
 nregfile@e@m
 vregfileF
 R1
-R16
+R18
 !i10b 1
-!s100 o2@b]0gS:TJS=@]>2ag:J3
+!s100 Dzb?8AzY@WZ:@DT=3d=473
 R3
-I=Q<KD=3EfZIB4]QOU8Rb63
+I1Ho`EC]jZIAXBED]8z0071
 R4
 S1
 R0
-w1699468585
+R20
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileF.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileF.sv
-!i122 65
-L0 1 21
+!i122 39
+L0 1 25
 R6
 r1
 !s85 0
 31
-R18
+R19
 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileF.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileF.sv|
 !i113 1
@@ -536,7 +510,7 @@ R10
 nregfile@f
 vshifter
 R1
-Z22 !s110 1699631689
+R18
 !i10b 1
 !s100 eU;IWnZMeH4[lNgL?aLmR1
 R3
@@ -547,13 +521,13 @@ R0
 w1698691952
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/shifter.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/shifter.sv
-!i122 66
+!i122 40
 R21
 R6
 r1
 !s85 0
 31
-R18
+R19
 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/shifter.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/shifter.sv|
 !i113 1
@@ -562,7 +536,7 @@ R9
 R10
 vtestbench_peripherals
 R1
-R22
+R18
 !i10b 1
 !s100 EN=B3nIU]>QcLZ<FU<aJX2
 R3
@@ -573,13 +547,13 @@ R0
 w1698865436
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/testbench_peripherals.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/testbench_peripherals.sv
-!i122 67
+!i122 41
 L0 4 30
 R6
 r1
 !s85 0
 31
-Z23 !s108 1699631689.000000
+R19
 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/testbench_peripherals.sv|
 !s90 -reportprogress|300|-work|work|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/testbench_peripherals.sv|
 !i113 1
@@ -587,7 +561,7 @@ o-work work
 R10
 vtop
 R1
-R22
+!s110 1699913336
 !i10b 1
 !s100 69_HndT[@lRhP:f6FaEeJ3
 R3
@@ -598,13 +572,13 @@ R0
 w1698373705
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/top.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/top.sv
-!i122 68
+!i122 42
 L0 4 21
 R6
 r1
 !s85 0
 31
-R23
+!s108 1699913336.000000
 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/top.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/top.sv|
 !i113 1

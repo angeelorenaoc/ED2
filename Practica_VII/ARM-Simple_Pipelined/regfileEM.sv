@@ -1,5 +1,5 @@
 module regfileEM(input logic clk,
-					input logic we,//enable
+					input logic we, reset,//enable
 					input logic [31:0] In1,In2,
 					input logic [3:0] WA3In,
 					input logic [31:0] Pcin,
@@ -17,7 +17,13 @@ module regfileEM(input logic clk,
 	// Three ported register file
 	// Write third port on rising edge of clock
 	always_ff @(posedge clk)
-		if (we)begin
+		if (reset)begin
+				raux1 <= 0;
+				raux2 <= 0;
+				raux3 <= 0;
+				Pcaux <= 0;
+		end
+		else if (we)begin
 				raux1 <= In1;
 				raux2 <= In2;
 				raux3 <= WA3In;

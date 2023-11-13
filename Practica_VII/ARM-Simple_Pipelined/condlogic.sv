@@ -1,7 +1,7 @@
 /*
  * This module is the Conditional Logic block of the Control Unit
  */ 
-module condlogic(input logic clk, reset, BranchE,
+module condlogic(input logic BranchE,
 						input logic [3:0] Cond,
 						input logic [3:0] ALUFlags, FlagsE,
 						input logic [1:0] FlagW,
@@ -13,10 +13,24 @@ module condlogic(input logic clk, reset, BranchE,
 	logic CondEx, PCSrc, BranchAux;
 
 	// Registers to store the ALUFlags when S == 1
-	flopenr #(2)flagreg1(clk, reset, FlagWrite[1], ALUFlags[3:2], Flags[3:2]);
-	flopenr #(2)flagreg0(clk, reset, FlagWrite[0], ALUFlags[1:0], Flags[1:0]);
+	always_comb
+		if(FlagWrite[1] == 1'b1) begin
+			Flags[3:2] = ALUFlags[3:2];
+		end
+		else begin
+			Flags[3:2] = FlagsE[3:2];
+		end
+		
+	always_comb
+		if(FlagWrite[0] == 1'b1) begin
+			Flags[1:0] = ALUFlags[1:0];
+		end
+		else begin
+			Flags[1:0] = FlagsE[1:0];
+		end
+	
 	// write controls are conditional
-	condcheck cc(Cond, FlagsE, CondEx);
+	condcheck cc(Cond, Flags, CondEx);
 	assign FlagWrite = FlagW & {2{CondEx}};
 	assign RegWrite = RegW & CondEx;
 	assign MemWrite = MemW & CondEx;
