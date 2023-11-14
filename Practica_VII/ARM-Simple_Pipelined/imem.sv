@@ -19,8 +19,8 @@ module imem(input logic [31:0] a, output logic [31:0] rd);
 		
 		
 		// Uncomment only the following line to load the code made by the students
-		 $readmemh("C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/imem_made_by_students.dat",RAM);
-		// $readmemh("U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/imem_made_by_students.dat",RAM);
+		 //$readmemh("C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/imem_made_by_students.dat",RAM);
+		 $readmemh("U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/imem_made_by_students.dat",RAM);
 		 //$readmemh("U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/Pruebita.dat",RAM);
 		 //$readmemh("U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/imem_made_by_studentsbl.dat",RAM);
 		 
