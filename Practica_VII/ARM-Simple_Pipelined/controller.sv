@@ -9,7 +9,7 @@ module controller(input logic clk, reset,
 						output logic [1:0] ImmSrc,
 						output logic ALUSrcE,
 						output logic [2:0] ALUControlE,
-						output logic MemWriteM, MemtoReg, BrL,
+						output logic MemWriteM, MemtoRegW, BrL,
 						output logic PCSrcW,
 						output logic Enable);
 	
@@ -30,7 +30,7 @@ module controller(input logic clk, reset,
 	logic PCSrcM, RegWriteM, MemtoRegM;
 	
 	//Signals Writeback
-	logic MemWriteW, MemtoRegW;
+	logic MemWriteW;
 	
 	decoder dec(Instr[27:26], Instr[25:20], Instr[15:12],
 					FlagWriteD, PCSrcD, RegWriteD, MemWriteD, BranchD, BrL,

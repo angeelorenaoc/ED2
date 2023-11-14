@@ -15,7 +15,7 @@ module datapath(input logic clk, reset,
 					 output logic [31:0] ALUOutM, WriteDataM,
 					 input logic [31:0] ReadDataM);
 	// Internal signals
-	logic [31:0] PCNext, PCPlus4, PCPlusD4, PCPlus8, InstrD, PCPlusE4, PCPlusM4, PCPlusW4;
+	logic [31:0] PCNext, PCPlus4, PCPlusD4, PCPlus8, InstrD, PCPlusE4, PCPlusM4, PCPlusW4, ALUResultE;
 	logic [31:0] ExtImm, SrcA, SrcBE, SrcB_aux, Result, WD3, SrcAE, RD2, WriteDataE, ExtImmE, InstrE;
 	logic [31:0] ReadDataW, ALUResultW;
 	logic [3:0] RA1, RA2, RA3, WA3M, WA3W;
