@@ -1,7 +1,7 @@
 module regfileCMW(input logic clk,
 					input logic we,reset,//enable
-					input logic PcSrcIn, RegWriteIn, MemtoRegIn, MemWriteIn, 
-					output logic PcSrcOut, RegWriteOut, MemtoRegOut, MemWriteOut);
+					input logic PcSrcIn, RegWriteIn, MemtoRegIn, MemWriteIn, BrlIn,
+					output logic PcSrcOut, RegWriteOut, MemtoRegOut, MemWriteOut, BrlOut);
 
 	// Internal signals
 	logic PcsrcDaux, RegWriteDaux, MemtoRegDaux, MemWriteDaux;
@@ -14,12 +14,14 @@ module regfileCMW(input logic clk,
 			RegWriteDaux <= 0;
 			MemtoRegDaux <= 0;
 			MemWriteDaux <= 0;
+			BrlOut <= 0;
 		end
 		else if (we)begin//Depende realmente de WD
 			PcsrcDaux <= PcSrcIn;
 			RegWriteDaux <= RegWriteIn;
 			MemtoRegDaux <= MemtoRegIn;
 			MemWriteDaux <= MemWriteIn;
+			BrlOut <= BrlIn;
 		end
 		
 

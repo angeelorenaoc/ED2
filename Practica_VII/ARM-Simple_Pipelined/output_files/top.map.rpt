@@ -1,0 +1,756 @@
+Analysis & Synthesis report for top
+Wed Nov 15 10:23:19 2023
+Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Logic Cells Representing Combinational Loops
+  9. Registers Removed During Synthesis
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:pcmux
+ 14. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|flopr:pcreg
+ 15. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|adder:pcadd1
+ 16. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:ra1mux
+ 17. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:ra2mux
+ 18. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:r14mux
+ 19. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:blmux
+ 20. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:resmux
+ 21. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|shifter:shifter
+ 22. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:srcbmux
+ 23. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu
+ 24. Port Connectivity Checks: "arm:arm|datapath:dp|regfileD:RFDecode"
+ 25. Port Connectivity Checks: "arm:arm|datapath:dp|mux2:r14mux"
+ 26. Port Connectivity Checks: "arm:arm|datapath:dp|mux2:ra1mux"
+ 27. Port Connectivity Checks: "arm:arm|datapath:dp|adder:pcadd1"
+ 28. Port Connectivity Checks: "arm:arm|datapath:dp"
+ 29. Post-Synthesis Netlist Statistics for Top Partition
+ 30. Elapsed Time Per Partition
+ 31. Analysis & Synthesis Messages
+ 32. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                        ;
++------------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Nov 15 10:23:19 2023          ;
+; Quartus Prime Version              ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
+; Revision Name                      ; top                                            ;
+; Top-level Entity Name              ; top                                            ;
+; Family                             ; MAX 10                                         ;
+; Total logic elements               ; 1,597                                          ;
+;     Total combinational functions  ; 1,147                                          ;
+;     Dedicated logic registers      ; 861                                            ;
+; Total registers                    ; 861                                            ;
+; Total pins                         ; 87                                             ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 0                                              ;
+; Embedded Multiplier 9-bit elements ; 0                                              ;
+; Total PLLs                         ; 0                                              ;
+; UFM blocks                         ; 0                                              ;
+; ADC blocks                         ; 0                                              ;
++------------------------------------+------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 10M50DAF484C6GES   ;                    ;
+; Top-level entity name                                            ; top                ; top                ;
+; Family name                                                      ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                            ; Library ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------+---------+
+; top.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/top.sv                    ;         ;
+; imem.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/imem.sv                   ;         ;
+; dmem.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/dmem.sv                   ;         ;
+; arm.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/arm.sv                    ;         ;
+; controller.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/controller.sv             ;         ;
+; decoder.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/decoder.sv                ;         ;
+; condlogic.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/condlogic.sv              ;         ;
+; datapath.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/datapath.sv               ;         ;
+; regfile.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/regfile.sv                ;         ;
+; alu.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/alu.sv                    ;         ;
+; extend.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/extend.sv                 ;         ;
+; adder.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/adder.sv                  ;         ;
+; mux2.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/mux2.sv                   ;         ;
+; flopr.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/flopr.sv                  ;         ;
+; shifter.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/shifter.sv                ;         ;
+; regfileF.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/regfileF.sv               ;         ;
+; regfileD.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/regfileD.sv               ;         ;
+; regfileEM.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/regfileEM.sv              ;         ;
+; regfileCF.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/regfileCF.sv              ;         ;
+; regfileCMW.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/regfileCMW.sv             ;         ;
+; dmem_made_by_students.dat        ; yes             ; Auto-Found Unspecified File  ; C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/dmem_made_by_students.dat ;         ;
+; imem_made_by_students.dat        ; yes             ; Auto-Found Unspecified File  ; C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/imem_made_by_students.dat ;         ;
++----------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 1,597     ;
+;                                             ;           ;
+; Total combinational functions               ; 1147      ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 620       ;
+;     -- 3 input functions                    ; 240       ;
+;     -- <=2 input functions                  ; 287       ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 1086      ;
+;     -- arithmetic mode                      ; 61        ;
+;                                             ;           ;
+; Total registers                             ; 861       ;
+;     -- Dedicated logic registers            ; 861       ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 87        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 861       ;
+; Total fan-out                               ; 6245      ;
+; Average fan-out                             ; 2.86      ;
++---------------------------------------------+-----------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                    ;
++--------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node     ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                 ; Entity Name ; Library Name ;
++--------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------+-------------+--------------+
+; |top                           ; 1147 (0)            ; 861 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 87   ; 0            ; 0          ; |top                                                ; top         ; work         ;
+;    |arm:arm|                   ; 1117 (0)            ; 861 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm                                        ; arm         ; work         ;
+;       |controller:c|           ; 34 (0)              ; 17 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|controller:c                           ; controller  ; work         ;
+;          |condlogic:cl|        ; 15 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|controller:c|condlogic:cl              ; condlogic   ; work         ;
+;             |condcheck:cc|     ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|controller:c|condlogic:cl|condcheck:cc ; condcheck   ; work         ;
+;          |decoder:dec|         ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|controller:c|decoder:dec               ; decoder     ; work         ;
+;          |regfileCF:RFFetchC|  ; 10 (10)             ; 11 (11)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|controller:c|regfileCF:RFFetchC        ; regfileCF   ; work         ;
+;          |regfileCMW:RFM|      ; 1 (1)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|controller:c|regfileCMW:RFM            ; regfileCMW  ; work         ;
+;          |regfileCMW:RFW|      ; 3 (3)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|controller:c|regfileCMW:RFW            ; regfileCMW  ; work         ;
+;       |datapath:dp|            ; 1083 (0)            ; 844 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|datapath:dp                            ; datapath    ; work         ;
+;          |adder:pcadd1|        ; 30 (30)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|datapath:dp|adder:pcadd1               ; adder       ; work         ;
+;          |alu:alu|             ; 157 (157)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|datapath:dp|alu:alu                    ; alu         ; work         ;
+;          |flopr:pcreg|         ; 0 (0)               ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|datapath:dp|flopr:pcreg                ; flopr       ; work         ;
+;          |mux2:blmux|          ; 32 (32)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|datapath:dp|mux2:blmux                 ; mux2        ; work         ;
+;          |mux2:pcmux|          ; 30 (30)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|datapath:dp|mux2:pcmux                 ; mux2        ; work         ;
+;          |mux2:ra1mux|         ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|datapath:dp|mux2:ra1mux                ; mux2        ; work         ;
+;          |mux2:srcbmux|        ; 6 (6)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|datapath:dp|mux2:srcbmux               ; mux2        ; work         ;
+;          |regfile:rf|          ; 476 (476)           ; 480 (480)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|datapath:dp|regfile:rf                 ; regfile     ; work         ;
+;          |regfileD:RFDecode|   ; 148 (148)           ; 115 (115)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|datapath:dp|regfileD:RFDecode          ; regfileD    ; work         ;
+;          |regfileEM:RFExecute| ; 100 (100)           ; 100 (100)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|datapath:dp|regfileEM:RFExecute        ; regfileEM   ; work         ;
+;          |regfileEM:RFMemory|  ; 68 (68)             ; 68 (68)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|datapath:dp|regfileEM:RFMemory         ; regfileEM   ; work         ;
+;          |regfileF:RFFetch|    ; 34 (34)             ; 49 (49)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|arm:arm|datapath:dp|regfileF:RFFetch           ; regfileF    ; work         ;
+;    |imem:imem|                 ; 30 (30)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|imem:imem                                      ; imem        ; work         ;
++--------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------+
+; Logic Cells Representing Combinational Loops               ;
++--------------------------------------------------------+---+
+; Logic Cell Name                                        ;   ;
++--------------------------------------------------------+---+
+; arm:arm|controller:c|condlogic:cl|condcheck:cc|Mux0~0  ;   ;
+; Number of logic cells representing combinational loops ; 1 ;
++--------------------------------------------------------+---+
+Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                         ;
++-----------------------------------------------------------+----------------------------------------------------------------+
+; Register name                                             ; Reason for Removal                                             ;
++-----------------------------------------------------------+----------------------------------------------------------------+
+; arm:arm|datapath:dp|regfileD:RFDecode|raux3[26..31]       ; Merged with arm:arm|datapath:dp|regfileD:RFDecode|raux3[25]    ;
+; arm:arm|datapath:dp|regfileF:RFFetch|rf[4..11,19,26,28]   ; Stuck at GND due to stuck port data_in                         ;
+; arm:arm|controller:c|regfileCF:RFFetchC|Condaux[0]        ; Stuck at GND due to stuck port data_in                         ;
+; arm:arm|datapath:dp|regfileD:RFDecode|raux4[5..11]        ; Stuck at GND due to stuck port data_in                         ;
+; arm:arm|datapath:dp|regfileD:RFDecode|raux3[6,7,12,13,21] ; Stuck at GND due to stuck port data_in                         ;
+; arm:arm|controller:c|regfileCF:RFFetchC|MemWriteDaux      ; Stuck at GND due to stuck port data_in                         ;
+; arm:arm|controller:c|regfileCF:RFFetchC|MemtoRegDaux      ; Stuck at GND due to stuck port data_in                         ;
+; arm:arm|controller:c|regfileCMW:RFM|MemWriteDaux          ; Stuck at GND due to stuck port data_in                         ;
+; arm:arm|controller:c|regfileCMW:RFM|MemtoRegDaux          ; Stuck at GND due to stuck port data_in                         ;
+; dmem:dmem|leds[0..9]                                      ; Stuck at GND due to stuck port clock_enable                    ;
+; arm:arm|controller:c|regfileCMW:RFW|MemtoRegDaux          ; Stuck at GND due to stuck port data_in                         ;
+; arm:arm|datapath:dp|regfileEM:RFMemory|raux1[0..31]       ; Lost fanout                                                    ;
+; arm:arm|datapath:dp|regfileD:RFDecode|raux3[8..11]        ; Stuck at GND due to stuck port data_in                         ;
+; arm:arm|datapath:dp|regfileD:RFDecode|raux3[22,24]        ; Merged with arm:arm|datapath:dp|regfileD:RFDecode|raux3[19]    ;
+; arm:arm|datapath:dp|regfileF:RFFetch|rf[20,22]            ; Merged with arm:arm|datapath:dp|regfileF:RFFetch|rf[17]        ;
+; arm:arm|controller:c|regfileCF:RFFetchC|Condaux[2,3]      ; Merged with arm:arm|controller:c|regfileCF:RFFetchC|Condaux[1] ;
+; arm:arm|datapath:dp|regfileF:RFFetch|rf[30,31]            ; Merged with arm:arm|datapath:dp|regfileF:RFFetch|rf[29]        ;
+; arm:arm|controller:c|regfileCF:RFFetchC|Flagsaux[1,3]     ; Lost fanout                                                    ;
+; arm:arm|controller:c|regfileCF:RFFetchC|FlagWriteDaux[0]  ; Lost fanout                                                    ;
+; arm:arm|controller:c|regfileCF:RFFetchC|Flagsaux[0]       ; Lost fanout                                                    ;
+; Total Number of Removed Registers = 93                    ;                                                                ;
++-----------------------------------------------------------+----------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                           ;
++---------------------------------------------+---------------------------+-----------------------------------------------------------------------------+
+; Register name                               ; Reason for Removal        ; Registers Removed due to This Register                                      ;
++---------------------------------------------+---------------------------+-----------------------------------------------------------------------------+
+; arm:arm|datapath:dp|regfileF:RFFetch|rf[26] ; Stuck at GND              ; arm:arm|controller:c|regfileCF:RFFetchC|MemWriteDaux,                       ;
+;                                             ; due to stuck port data_in ; arm:arm|controller:c|regfileCF:RFFetchC|MemtoRegDaux,                       ;
+;                                             ;                           ; arm:arm|controller:c|regfileCMW:RFM|MemtoRegDaux,                           ;
+;                                             ;                           ; arm:arm|controller:c|regfileCMW:RFW|MemtoRegDaux,                           ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileEM:RFMemory|raux1[0],                            ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileEM:RFMemory|raux1[1],                            ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileEM:RFMemory|raux1[2],                            ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileEM:RFMemory|raux1[3],                            ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileEM:RFMemory|raux1[6],                            ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileEM:RFMemory|raux1[7],                            ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileEM:RFMemory|raux1[8],                            ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileEM:RFMemory|raux1[9],                            ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileEM:RFMemory|raux1[10],                           ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileEM:RFMemory|raux1[11],                           ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileEM:RFMemory|raux1[12],                           ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileEM:RFMemory|raux1[13],                           ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileEM:RFMemory|raux1[14],                           ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileEM:RFMemory|raux1[15],                           ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileEM:RFMemory|raux1[16],                           ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileEM:RFMemory|raux1[17],                           ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileEM:RFMemory|raux1[18],                           ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileEM:RFMemory|raux1[19],                           ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileEM:RFMemory|raux1[20],                           ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileEM:RFMemory|raux1[21],                           ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileEM:RFMemory|raux1[22],                           ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileEM:RFMemory|raux1[23],                           ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileEM:RFMemory|raux1[24],                           ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileEM:RFMemory|raux1[25],                           ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileEM:RFMemory|raux1[26],                           ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileEM:RFMemory|raux1[27],                           ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileEM:RFMemory|raux1[28],                           ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileEM:RFMemory|raux1[29],                           ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileEM:RFMemory|raux1[30],                           ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileEM:RFMemory|raux1[31],                           ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileD:RFDecode|raux3[11],                            ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileD:RFDecode|raux3[10],                            ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileD:RFDecode|raux3[9],                             ;
+;                                             ;                           ; arm:arm|datapath:dp|regfileD:RFDecode|raux3[8],                             ;
+;                                             ;                           ; arm:arm|controller:c|regfileCF:RFFetchC|Flagsaux[1],                        ;
+;                                             ;                           ; arm:arm|controller:c|regfileCF:RFFetchC|Flagsaux[0]                         ;
+; arm:arm|datapath:dp|regfileF:RFFetch|rf[28] ; Stuck at GND              ; arm:arm|controller:c|regfileCF:RFFetchC|Condaux[0],                         ;
+;                                             ; due to stuck port data_in ; arm:arm|controller:c|regfileCMW:RFM|MemWriteDaux, dmem:dmem|leds[0],        ;
+;                                             ;                           ; dmem:dmem|leds[1], dmem:dmem|leds[2], dmem:dmem|leds[3], dmem:dmem|leds[4], ;
+;                                             ;                           ; dmem:dmem|leds[5], dmem:dmem|leds[6], dmem:dmem|leds[7], dmem:dmem|leds[8], ;
+;                                             ;                           ; dmem:dmem|leds[9], arm:arm|controller:c|regfileCF:RFFetchC|Flagsaux[3],     ;
+;                                             ;                           ; arm:arm|controller:c|regfileCF:RFFetchC|FlagWriteDaux[0]                    ;
+; arm:arm|datapath:dp|regfileF:RFFetch|rf[11] ; Stuck at GND              ; arm:arm|datapath:dp|regfileD:RFDecode|raux4[11],                            ;
+;                                             ; due to stuck port data_in ; arm:arm|datapath:dp|regfileD:RFDecode|raux3[13]                             ;
+; arm:arm|datapath:dp|regfileF:RFFetch|rf[10] ; Stuck at GND              ; arm:arm|datapath:dp|regfileD:RFDecode|raux4[10],                            ;
+;                                             ; due to stuck port data_in ; arm:arm|datapath:dp|regfileD:RFDecode|raux3[12]                             ;
+; arm:arm|datapath:dp|regfileF:RFFetch|rf[7]  ; Stuck at GND              ; arm:arm|datapath:dp|regfileD:RFDecode|raux4[7],                             ;
+;                                             ; due to stuck port data_in ; arm:arm|datapath:dp|regfileD:RFDecode|raux3[7]                              ;
+; arm:arm|datapath:dp|regfileF:RFFetch|rf[6]  ; Stuck at GND              ; arm:arm|datapath:dp|regfileD:RFDecode|raux4[6],                             ;
+;                                             ; due to stuck port data_in ; arm:arm|datapath:dp|regfileD:RFDecode|raux3[6]                              ;
+; arm:arm|datapath:dp|regfileF:RFFetch|rf[19] ; Stuck at GND              ; arm:arm|datapath:dp|regfileD:RFDecode|raux3[21],                            ;
+;                                             ; due to stuck port data_in ; arm:arm|datapath:dp|regfileEM:RFMemory|raux1[4]                             ;
+; arm:arm|datapath:dp|regfileF:RFFetch|rf[9]  ; Stuck at GND              ; arm:arm|datapath:dp|regfileD:RFDecode|raux4[9]                              ;
+;                                             ; due to stuck port data_in ;                                                                             ;
+; arm:arm|datapath:dp|regfileF:RFFetch|rf[8]  ; Stuck at GND              ; arm:arm|datapath:dp|regfileD:RFDecode|raux4[8]                              ;
+;                                             ; due to stuck port data_in ;                                                                             ;
+; arm:arm|datapath:dp|regfileF:RFFetch|rf[5]  ; Stuck at GND              ; arm:arm|datapath:dp|regfileD:RFDecode|raux4[5]                              ;
+;                                             ; due to stuck port data_in ;                                                                             ;
++---------------------------------------------+---------------------------+-----------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 861   ;
+; Number of registers using Synchronous Clear  ; 85    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 32    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 482   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |top|arm:arm|datapath:dp|regfileD:RFDecode|raux2[2]           ;
+; 3:1                ; 14 bits   ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |top|arm:arm|datapath:dp|regfileD:RFDecode|raux3[24]          ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |top|arm:arm|datapath:dp|regfileD:RFDecode|raux3[1]           ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |top|arm:arm|datapath:dp|regfileD:RFDecode|raux3[2]           ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |top|arm:arm|datapath:dp|regfileD:RFDecode|raux1[22]          ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top|arm:arm|controller:c|regfileCF:RFFetchC|AluControlaux[0] ;
+; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; No         ; |top|arm:arm|datapath:dp|alu:alu|Mux9                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:pcmux ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|flopr:pcreg ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|adder:pcadd1 ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:ra1mux ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; WIDTH          ; 4     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:ra2mux ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; WIDTH          ; 4     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:r14mux ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; WIDTH          ; 4     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:blmux ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:resmux ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|shifter:shifter ;
++----------------+-------+---------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                    ;
++----------------+-------+---------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                          ;
++----------------+-------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:srcbmux ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; N              ; 32    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "arm:arm|datapath:dp|regfileD:RFDecode"                                                        ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port           ; Type   ; Severity ; Details                                                                             ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+; InstrE[31..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; InstrE[4..0]   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "arm:arm|datapath:dp|mux2:r14mux" ;
++----------+-------+----------+-------------------------------+
+; Port     ; Type  ; Severity ; Details                       ;
++----------+-------+----------+-------------------------------+
+; d1[3..1] ; Input ; Info     ; Stuck at VCC                  ;
+; d1[0]    ; Input ; Info     ; Stuck at GND                  ;
++----------+-------+----------+-------------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "arm:arm|datapath:dp|mux2:ra1mux" ;
++------+-------+----------+-----------------------------------+
+; Port ; Type  ; Severity ; Details                           ;
++------+-------+----------+-----------------------------------+
+; d1   ; Input ; Info     ; Stuck at VCC                      ;
++------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "arm:arm|datapath:dp|adder:pcadd1" ;
++----------+-------+----------+--------------------------------+
+; Port     ; Type  ; Severity ; Details                        ;
++----------+-------+----------+--------------------------------+
+; b[31..3] ; Input ; Info     ; Stuck at GND                   ;
+; b[1..0]  ; Input ; Info     ; Stuck at GND                   ;
+; b[2]     ; Input ; Info     ; Stuck at VCC                   ;
++----------+-------+----------+--------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "arm:arm|datapath:dp"                                                                            ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port             ; Type   ; Severity ; Details                                                                             ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; InstrDOUT[11..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 87                          ;
+; cycloneiii_ff         ; 861                         ;
+;     CLR               ; 30                          ;
+;     ENA               ; 480                         ;
+;     ENA CLR           ; 2                           ;
+;     SCLR              ; 85                          ;
+;     plain             ; 264                         ;
+; cycloneiii_lcell_comb ; 1148                        ;
+;     arith             ; 61                          ;
+;         2 data inputs ; 30                          ;
+;         3 data inputs ; 31                          ;
+;     normal            ; 1087                        ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 256                         ;
+;         3 data inputs ; 209                         ;
+;         4 data inputs ; 620                         ;
+;                       ;                             ;
+; Max LUT depth         ; 12.00                       ;
+; Average LUT depth     ; 4.20                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+    Info: Processing started: Wed Nov 15 10:23:04 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off top -c top
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file top.sv
+    Info (12023): Found entity 1: top File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/top.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file imem.sv
+    Info (12023): Found entity 1: imem File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/imem.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file dmem.sv
+    Info (12023): Found entity 1: dmem File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/dmem.sv Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file arm.sv
+    Info (12023): Found entity 1: arm File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/arm.sv Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file controller.sv
+    Info (12023): Found entity 1: controller File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/controller.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file decoder.sv
+    Info (12023): Found entity 1: decoder File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/decoder.sv Line: 4
+Info (12021): Found 2 design units, including 2 entities, in source file condlogic.sv
+    Info (12023): Found entity 1: condlogic File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/condlogic.sv Line: 4
+    Info (12023): Found entity 2: condcheck File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/condlogic.sv Line: 46
+Info (12021): Found 1 design units, including 1 entities, in source file datapath.sv
+    Info (12023): Found entity 1: datapath File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/datapath.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file regfile.sv
+    Info (12023): Found entity 1: regfile File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/regfile.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
+    Info (12023): Found entity 1: alu File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/alu.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file extend.sv
+    Info (12023): Found entity 1: extend File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/extend.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file adder.sv
+    Info (12023): Found entity 1: adder File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/adder.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file mux2.sv
+    Info (12023): Found entity 1: mux2 File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/mux2.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file flopr.sv
+    Info (12023): Found entity 1: flopr File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/flopr.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file flopenr.sv
+    Info (12023): Found entity 1: flopenr File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/flopenr.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file testbench_book.sv
+    Info (12023): Found entity 1: testbench_book File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/testbench_book.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file testbench_peripherals.sv
+    Info (12023): Found entity 1: testbench_peripherals File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/testbench_peripherals.sv Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file shifter.sv
+    Info (12023): Found entity 1: shifter File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/shifter.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file regfilef.sv
+    Info (12023): Found entity 1: regfileF File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/regfileF.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file regfiled.sv
+    Info (12023): Found entity 1: regfileD File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/regfileD.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file regfileem.sv
+    Info (12023): Found entity 1: regfileEM File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/regfileEM.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file regfilecf.sv
+    Info (12023): Found entity 1: regfileCF File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/regfileCF.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file regfilecmw.sv
+    Info (12023): Found entity 1: regfileCMW File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/regfileCMW.sv Line: 1
+Info (12127): Elaborating entity "top" for the top level hierarchy
+Info (12128): Elaborating entity "imem" for hierarchy "imem:imem" File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/top.sv Line: 16
+Warning (10850): Verilog HDL warning at imem.sv(22): number of words (14) in memory file does not match the number of elements in the address range [0:63] File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/imem.sv Line: 22
+Warning (10030): Net "RAM.data_a" at imem.sv(6) has no driver or initial value, using a default initial value '0' File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/imem.sv Line: 6
+Warning (10030): Net "RAM.waddr_a" at imem.sv(6) has no driver or initial value, using a default initial value '0' File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/imem.sv Line: 6
+Warning (10030): Net "RAM.we_a" at imem.sv(6) has no driver or initial value, using a default initial value '0' File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/imem.sv Line: 6
+Info (12128): Elaborating entity "dmem" for hierarchy "dmem:dmem" File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/top.sv Line: 20
+Warning (10850): Verilog HDL warning at dmem.sv(22): number of words (4) in memory file does not match the number of elements in the address range [0:63] File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/dmem.sv Line: 22
+Info (12128): Elaborating entity "arm" for hierarchy "arm:arm" File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/top.sv Line: 23
+Info (12128): Elaborating entity "controller" for hierarchy "arm:arm|controller:c" File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/arm.sv Line: 23
+Info (12128): Elaborating entity "decoder" for hierarchy "arm:arm|controller:c|decoder:dec" File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/controller.sv Line: 37
+Info (12128): Elaborating entity "condlogic" for hierarchy "arm:arm|controller:c|condlogic:cl" File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/controller.sv Line: 41
+Info (12128): Elaborating entity "condcheck" for hierarchy "arm:arm|controller:c|condlogic:cl|condcheck:cc" File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/condlogic.sv Line: 33
+Info (12128): Elaborating entity "regfileCF" for hierarchy "arm:arm|controller:c|regfileCF:RFFetchC" File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/controller.sv Line: 44
+Info (12128): Elaborating entity "regfileCMW" for hierarchy "arm:arm|controller:c|regfileCMW:RFM" File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/controller.sv Line: 47
+Info (12128): Elaborating entity "datapath" for hierarchy "arm:arm|datapath:dp" File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/arm.sv Line: 31
+Info (12128): Elaborating entity "mux2" for hierarchy "arm:arm|datapath:dp|mux2:pcmux" File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/datapath.sv Line: 29
+Info (12128): Elaborating entity "flopr" for hierarchy "arm:arm|datapath:dp|flopr:pcreg" File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/datapath.sv Line: 30
+Info (12128): Elaborating entity "adder" for hierarchy "arm:arm|datapath:dp|adder:pcadd1" File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/datapath.sv Line: 31
+Info (12128): Elaborating entity "mux2" for hierarchy "arm:arm|datapath:dp|mux2:ra1mux" File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/datapath.sv Line: 34
+Info (12128): Elaborating entity "regfile" for hierarchy "arm:arm|datapath:dp|regfile:rf" File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/datapath.sv Line: 38
+Info (12128): Elaborating entity "extend" for hierarchy "arm:arm|datapath:dp|extend:ext" File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/datapath.sv Line: 40
+Info (12128): Elaborating entity "shifter" for hierarchy "arm:arm|datapath:dp|shifter:shifter" File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/datapath.sv Line: 43
+Info (12128): Elaborating entity "alu" for hierarchy "arm:arm|datapath:dp|alu:alu" File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/datapath.sv Line: 45
+Info (12128): Elaborating entity "regfileF" for hierarchy "arm:arm|datapath:dp|regfileF:RFFetch" File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/datapath.sv Line: 49
+Info (12128): Elaborating entity "regfileD" for hierarchy "arm:arm|datapath:dp|regfileD:RFDecode" File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/datapath.sv Line: 51
+Info (12128): Elaborating entity "regfileEM" for hierarchy "arm:arm|datapath:dp|regfileEM:RFExecute" File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/datapath.sv Line: 53
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/db/top.ram0_imem_37c714.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/db/top.ram0_dmem_351e6b.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Info (276014): Found 3 instances of uninferred RAM logic
+    Info (276007): RAM logic "arm:arm|datapath:dp|regfile:rf|rf" is uninferred due to asynchronous read logic File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/regfile.sv Line: 11
+    Info (276013): RAM logic "imem:imem|RAM" is uninferred because MIF is not supported for the selected family File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/imem.sv Line: 6
+    Info (276013): RAM logic "dmem:dmem|RAM" is uninferred because MIF is not supported for the selected family File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/dmem.sv Line: 8
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/db/top.ram0_imem_37c714.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "MemWrite" is stuck at GND File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/top.sv Line: 6
+    Warning (13410): Pin "leds[0]" is stuck at GND File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/top.sv Line: 8
+    Warning (13410): Pin "leds[1]" is stuck at GND File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/top.sv Line: 8
+    Warning (13410): Pin "leds[2]" is stuck at GND File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/top.sv Line: 8
+    Warning (13410): Pin "leds[3]" is stuck at GND File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/top.sv Line: 8
+    Warning (13410): Pin "leds[4]" is stuck at GND File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/top.sv Line: 8
+    Warning (13410): Pin "leds[5]" is stuck at GND File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/top.sv Line: 8
+    Warning (13410): Pin "leds[6]" is stuck at GND File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/top.sv Line: 8
+    Warning (13410): Pin "leds[7]" is stuck at GND File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/top.sv Line: 8
+    Warning (13410): Pin "leds[8]" is stuck at GND File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/top.sv Line: 8
+    Warning (13410): Pin "leds[9]" is stuck at GND File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/top.sv Line: 8
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 36 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/output_files/top.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 10 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "switches[0]" File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/top.sv Line: 7
+    Warning (15610): No output dependent on input pin "switches[1]" File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/top.sv Line: 7
+    Warning (15610): No output dependent on input pin "switches[2]" File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/top.sv Line: 7
+    Warning (15610): No output dependent on input pin "switches[3]" File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/top.sv Line: 7
+    Warning (15610): No output dependent on input pin "switches[4]" File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/top.sv Line: 7
+    Warning (15610): No output dependent on input pin "switches[5]" File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/top.sv Line: 7
+    Warning (15610): No output dependent on input pin "switches[6]" File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/top.sv Line: 7
+    Warning (15610): No output dependent on input pin "switches[7]" File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/top.sv Line: 7
+    Warning (15610): No output dependent on input pin "switches[8]" File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/top.sv Line: 7
+    Warning (15610): No output dependent on input pin "switches[9]" File: C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/top.sv Line: 7
+Info (21057): Implemented 1716 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 12 input pins
+    Info (21059): Implemented 75 output pins
+    Info (21061): Implemented 1629 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 32 warnings
+    Info: Peak virtual memory: 4813 megabytes
+    Info: Processing ended: Wed Nov 15 10:23:19 2023
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:11
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/output_files/top.map.smsg.
+
+

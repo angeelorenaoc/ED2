@@ -1,10 +1,10 @@
 module regfileCF(input logic clk,
 					input logic we,reset,//enable
-					input logic PcsrcD, RegWriteD, MemtoRegD, MemWriteD, BranchD, AluSrcD, 
+					input logic PcsrcD, RegWriteD, MemtoRegD, MemWriteD, BranchD, AluSrcD, BrlD, 
 					input logic [1:0] FlagWriteD,
 					input logic [2:0] AluControlD,
 					input logic [3:0] CondD, Flags,
-					output logic PcsrcE, RegWriteE, MemtoRegE, MemWriteE, BranchE, AluSrcE, 
+					output logic PcsrcE, RegWriteE, MemtoRegE, MemWriteE, BranchE, AluSrcE, BrlE,
 					output logic [1:0] FlagWriteE,
 					output logic [2:0] AluControlE,
 					output logic [3:0] CondE, FlagsE);
@@ -29,6 +29,7 @@ module regfileCF(input logic clk,
 				AluControlaux <= 0;
 				Condaux <= 4'b0;
 				Flagsaux <= 4'b0;
+				BrlE <= 0;
 		end
 		else if (we)begin//Depende realmente de WD
 			PcsrcDaux <= PcsrcD;
@@ -41,6 +42,8 @@ module regfileCF(input logic clk,
 			AluControlaux <= AluControlD;
 			Condaux <= CondD;
 			Flagsaux <= Flags;
+			BrlE <= BrlD;
+			
 		end
 		
 	// Read two ports combinationally

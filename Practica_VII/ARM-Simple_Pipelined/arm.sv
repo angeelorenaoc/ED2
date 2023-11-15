@@ -14,9 +14,10 @@ module arm(input logic clk, reset,
 	logic RegWrite, ALUSrc, MemtoReg, PCSrc, BrL, Enable;
 	logic [1:0] RegSrc, ImmSrc;
 	logic [2:0]	ALUControl;
+	logic [31:0] InstrD;
 
 	// Control unit instantiation
-	controller c(clk, reset, Instr[31:12], ALUFlags,
+	controller c(clk, reset, InstrD[31:12], ALUFlags,
 						RegSrc, RegWrite, ImmSrc,
 						ALUSrc, ALUControl,
 						MemWrite, MemtoReg, BrL, PCSrc, Enable);
@@ -27,5 +28,5 @@ module arm(input logic clk, reset,
 						ALUSrc, ALUControl, BrL,
 						MemtoReg, PCSrc, Enable,
 						ALUFlags, PC, Instr,
-						ALUResult, WriteData, ReadData);
+						ALUResult, WriteData, ReadData, InstrD);
 endmodule
