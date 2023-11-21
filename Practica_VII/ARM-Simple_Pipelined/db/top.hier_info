@@ -494,7 +494,11 @@ Instr[28] => Instr[28].IN1
 Instr[29] => Instr[29].IN1
 Instr[30] => Instr[30].IN1
 Instr[31] => Instr[31].IN1
+<<<<<<< HEAD
 MemWrite <= controller:c.port10
+=======
+MemWrite <= controller:c.port9
+>>>>>>> ad4b11bacbc6f59b3d48bace0e6e218a934167ae
 ALUResult[0] <= datapath:dp.port14
 ALUResult[1] <= datapath:dp.port14
 ALUResult[2] <= datapath:dp.port14
@@ -623,7 +627,10 @@ ALUFlagsD[3] => ALUFlagsD[3].IN1
 RegSrc[0] <= decoder:dec.port12
 RegSrc[1] <= decoder:dec.port12
 RegWriteW <= regfileCMW:RFW.port9
+<<<<<<< HEAD
 RegWriteM <= RegWriteM.DB_MAX_OUTPUT_PORT_TYPE
+=======
+>>>>>>> ad4b11bacbc6f59b3d48bace0e6e218a934167ae
 ImmSrc[0] <= decoder:dec.port11
 ImmSrc[1] <= decoder:dec.port11
 ALUSrcE <= regfileCF:RFFetchC.port19
@@ -633,10 +640,15 @@ ALUControlE[2] <= regfileCF:RFFetchC.port22
 MemWriteM <= regfileCMW:RFM.port11
 MemtoRegW <= regfileCMW:RFW.port10
 BrlW <= regfileCMW:RFW.port12
+<<<<<<< HEAD
 MemtoRegE <= MemtoRegE.DB_MAX_OUTPUT_PORT_TYPE
 PCSrcW <= regfileCMW:RFW.port8
 Enable <= Enable.DB_MAX_OUTPUT_PORT_TYPE
 BranchtakenE <= condlogic:cl.port11
+=======
+PCSrcW <= regfileCMW:RFW.port8
+Enable <= Enable.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> ad4b11bacbc6f59b3d48bace0e6e218a934167ae
 
 
 |top|arm:arm|controller:c|decoder:dec
@@ -701,7 +713,11 @@ ALUControl[2] <= ALUControl.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |top|arm:arm|controller:c|condlogic:cl
+<<<<<<< HEAD
 BranchE => BranchtakenE.IN1
+=======
+BranchE => BranchAux.IN1
+>>>>>>> ad4b11bacbc6f59b3d48bace0e6e218a934167ae
 Cond[0] => Cond[0].IN1
 Cond[1] => Cond[1].IN1
 Cond[2] => Cond[2].IN1
@@ -716,13 +732,20 @@ FlagsE[2] => Flags.DATAA
 FlagsE[3] => Flags.DATAA
 FlagW[0] => FlagWrite[0].IN1
 FlagW[1] => FlagWrite[1].IN1
+<<<<<<< HEAD
 PCS => PCSrcM.IN1
+=======
+PCS => PCSrc.IN1
+>>>>>>> ad4b11bacbc6f59b3d48bace0e6e218a934167ae
 RegW => RegWrite.IN1
 MemW => MemWrite.IN1
 PCSrcM <= PCSrcM.DB_MAX_OUTPUT_PORT_TYPE
 RegWrite <= RegWrite.DB_MAX_OUTPUT_PORT_TYPE
 MemWrite <= MemWrite.DB_MAX_OUTPUT_PORT_TYPE
+<<<<<<< HEAD
 BranchtakenE <= BranchtakenE.DB_MAX_OUTPUT_PORT_TYPE
+=======
+>>>>>>> ad4b11bacbc6f59b3d48bace0e6e218a934167ae
 Flags[0] <= Flags[0].DB_MAX_OUTPUT_PORT_TYPE
 Flags[1] <= Flags[1].DB_MAX_OUTPUT_PORT_TYPE
 Flags[2] <= Flags[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -1121,11 +1144,14 @@ InstrDOUT[28] <= InstrD[28].DB_MAX_OUTPUT_PORT_TYPE
 InstrDOUT[29] <= InstrD[29].DB_MAX_OUTPUT_PORT_TYPE
 InstrDOUT[30] <= InstrD[30].DB_MAX_OUTPUT_PORT_TYPE
 InstrDOUT[31] <= InstrD[31].DB_MAX_OUTPUT_PORT_TYPE
+<<<<<<< HEAD
 BranchtakenE => BranchtakenE.IN1
 Match[0] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 Match[1] <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
 Match[2] <= Equal2.DB_MAX_OUTPUT_PORT_TYPE
 Match[3] <= Equal3.DB_MAX_OUTPUT_PORT_TYPE
+=======
+>>>>>>> ad4b11bacbc6f59b3d48bace0e6e218a934167ae
 
 
 |top|arm:arm|datapath:dp|mux2:pcmux
@@ -1324,6 +1350,7 @@ reset => q[28]~reg0.ACLR
 reset => q[29]~reg0.ACLR
 reset => q[30]~reg0.ACLR
 reset => q[31]~reg0.ACLR
+<<<<<<< HEAD
 enable => q[31]~reg0.ENA
 enable => q[30]~reg0.ENA
 enable => q[29]~reg0.ENA
@@ -1356,6 +1383,8 @@ enable => q[3]~reg0.ENA
 enable => q[2]~reg0.ENA
 enable => q[1]~reg0.ENA
 enable => q[0]~reg0.ENA
+=======
+>>>>>>> ad4b11bacbc6f59b3d48bace0e6e218a934167ae
 d[0] => q[0]~reg0.DATAIN
 d[1] => q[1]~reg0.DATAIN
 d[2] => q[2]~reg0.DATAIN
@@ -3348,6 +3377,7 @@ Pc[31] <= Pcaux[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |top|arm:arm|datapath:dp|regfileD:RFDecode
+<<<<<<< HEAD
 clk => RA2E[0]~reg0.CLK
 clk => RA2E[1]~reg0.CLK
 clk => RA2E[2]~reg0.CLK
@@ -3356,6 +3386,8 @@ clk => RA1E[0]~reg0.CLK
 clk => RA1E[1]~reg0.CLK
 clk => RA1E[2]~reg0.CLK
 clk => RA1E[3]~reg0.CLK
+=======
+>>>>>>> ad4b11bacbc6f59b3d48bace0e6e218a934167ae
 clk => Pcaux[0].CLK
 clk => Pcaux[1].CLK
 clk => Pcaux[2].CLK
@@ -3676,6 +3708,7 @@ we => Pcaux.OUTPUTSELECT
 we => Pcaux.OUTPUTSELECT
 we => Pcaux.OUTPUTSELECT
 we => Pcaux.OUTPUTSELECT
+<<<<<<< HEAD
 we => RA1E.OUTPUTSELECT
 we => RA1E.OUTPUTSELECT
 we => RA1E.OUTPUTSELECT
@@ -3684,6 +3717,8 @@ we => RA2E.OUTPUTSELECT
 we => RA2E.OUTPUTSELECT
 we => RA2E.OUTPUTSELECT
 we => RA2E.OUTPUTSELECT
+=======
+>>>>>>> ad4b11bacbc6f59b3d48bace0e6e218a934167ae
 reset => raux1.OUTPUTSELECT
 reset => raux1.OUTPUTSELECT
 reset => raux1.OUTPUTSELECT
@@ -3844,6 +3879,7 @@ reset => Pcaux.OUTPUTSELECT
 reset => Pcaux.OUTPUTSELECT
 reset => Pcaux.OUTPUTSELECT
 reset => Pcaux.OUTPUTSELECT
+<<<<<<< HEAD
 reset => RA1E.OUTPUTSELECT
 reset => RA1E.OUTPUTSELECT
 reset => RA1E.OUTPUTSELECT
@@ -3852,6 +3888,8 @@ reset => RA2E.OUTPUTSELECT
 reset => RA2E.OUTPUTSELECT
 reset => RA2E.OUTPUTSELECT
 reset => RA2E.OUTPUTSELECT
+=======
+>>>>>>> ad4b11bacbc6f59b3d48bace0e6e218a934167ae
 RD1D[0] => raux1.DATAB
 RD1D[1] => raux1.DATAB
 RD1D[2] => raux1.DATAB
@@ -4012,6 +4050,7 @@ Pcin[28] => Pcaux.DATAB
 Pcin[29] => Pcaux.DATAB
 Pcin[30] => Pcaux.DATAB
 Pcin[31] => Pcaux.DATAB
+<<<<<<< HEAD
 RA1D[0] => RA1E.DATAB
 RA1D[1] => RA1E.DATAB
 RA1D[2] => RA1E.DATAB
@@ -4020,6 +4059,8 @@ RA2D[0] => RA2E.DATAB
 RA2D[1] => RA2E.DATAB
 RA2D[2] => RA2E.DATAB
 RA2D[3] => RA2E.DATAB
+=======
+>>>>>>> ad4b11bacbc6f59b3d48bace0e6e218a934167ae
 RD1E[0] <= raux1[0].DB_MAX_OUTPUT_PORT_TYPE
 RD1E[1] <= raux1[1].DB_MAX_OUTPUT_PORT_TYPE
 RD1E[2] <= raux1[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -4180,6 +4221,7 @@ Pc[28] <= Pcaux[28].DB_MAX_OUTPUT_PORT_TYPE
 Pc[29] <= Pcaux[29].DB_MAX_OUTPUT_PORT_TYPE
 Pc[30] <= Pcaux[30].DB_MAX_OUTPUT_PORT_TYPE
 Pc[31] <= Pcaux[31].DB_MAX_OUTPUT_PORT_TYPE
+<<<<<<< HEAD
 RA1E[0] <= RA1E[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 RA1E[1] <= RA1E[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 RA1E[2] <= RA1E[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -4188,6 +4230,8 @@ RA2E[0] <= RA2E[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 RA2E[1] <= RA2E[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 RA2E[2] <= RA2E[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 RA2E[3] <= RA2E[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+=======
+>>>>>>> ad4b11bacbc6f59b3d48bace0e6e218a934167ae
 
 
 |top|arm:arm|datapath:dp|regfileEM:RFExecute
@@ -5196,6 +5240,7 @@ Pc[30] <= Pcaux[30].DB_MAX_OUTPUT_PORT_TYPE
 Pc[31] <= Pcaux[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |top|arm:arm|datapath:dp|hazardsmux:RD1Mux
 d0[0] => Mux31.IN0
 d0[1] => Mux30.IN0
@@ -5781,3 +5826,5 @@ y[30] <= y.DB_MAX_OUTPUT_PORT_TYPE
 y[31] <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 
+=======
+>>>>>>> ad4b11bacbc6f59b3d48bace0e6e218a934167ae
