@@ -10,23 +10,29 @@ module arm(input logic clk, reset,
 			  input logic [31:0] ReadData);
 
 	// Internal signals to interconnect the control and datapath units
-	logic [3:0] ALUFlags;
-	logic RegWrite, ALUSrc, MemtoReg, PCSrc, BrL, Enable;
-	logic [1:0] RegSrc, ImmSrc;
+	logic [3:0] ALUFlags, Match;
+	logic RegWrite, ALUSrc, MemtoReg, PCSrcD, PCSrcE, PCSrcM, PCSrcW, BrL, Enable, BranchtakenE, MemtoRegE, RegWriteM;
+	logic FlushE, FlushD, StallD, StallF;
+	logic [1:0] RegSrc, ImmSrc, ForwardAE, ForwardBE;
 	logic [2:0]	ALUControl;
 	logic [31:0] InstrD;
 
 	// Control unit instantiation
 	controller c(clk, reset, InstrD[31:12], ALUFlags,
-						RegSrc, RegWrite, ImmSrc,
+						RegSrc, RegWrite, RegWriteM, ImmSrc,
 						ALUSrc, ALUControl,
-						MemWrite, MemtoReg, BrL, PCSrc, Enable);
+						MemWrite, MemtoReg, BrL, MemtoRegE, PCSrcD, PCSrcE, PCSrcM, PCSrcW, Enable, BranchtakenE);
 						
 	// Datapath unit instantiation
 	datapath dp(clk, reset,
 						RegSrc, RegWrite, ImmSrc,
 						ALUSrc, ALUControl, BrL,
-						MemtoReg, PCSrc, Enable,
+						MemtoReg, PCSrcW, Enable,
 						ALUFlags, PC, Instr,
-						ALUResult, WriteData, ReadData, InstrD);
+						ALUResult, WriteData, ReadData, InstrD, BranchtakenE, Match, 
+						ForwardAE, ForwardBE, FlushE, FlushD, StallD, StallF);
+						
+	// Hazard unit instantiation
+	HazardUnit HU(MemtoRegE,RegWriteW, RegWriteM, PCSrcD, PCSrcE, PCSrcM, PCSrcW, Match,
+						ForwardAE, ForwardBE, FlushE, FlushD, StallD, StallF);
 endmodule

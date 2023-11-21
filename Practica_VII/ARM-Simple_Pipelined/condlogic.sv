@@ -6,11 +6,11 @@ module condlogic(input logic BranchE,
 						input logic [3:0] ALUFlags, FlagsE,
 						input logic [1:0] FlagW,
 						input logic PCS, RegW, MemW,
-						output logic PCSrcM, RegWrite,MemWrite,
+						output logic PCSrcM, RegWrite,MemWrite, BranchtakenE,
 						output logic [3:0] Flags);
 	// Internal signals
 	logic [1:0] FlagWrite;
-	logic CondEx, PCSrc, BranchAux;
+	logic CondEx;
 
 	// Registers to store the ALUFlags when S == 1
 	always_comb
@@ -34,9 +34,8 @@ module condlogic(input logic BranchE,
 	assign FlagWrite = FlagW & {2{CondEx}};
 	assign RegWrite = RegW & CondEx;
 	assign MemWrite = MemW & CondEx;
-	assign PCSrc = PCS & CondEx;
-	assign BranchAux = BranchE & CondEx;
-	assign PCSrcM = PCSrc | BranchAux;
+	assign PCSrcM = PCS & CondEx;
+	assign BranchtakenE = BranchE & CondEx;
 
 endmodule
 

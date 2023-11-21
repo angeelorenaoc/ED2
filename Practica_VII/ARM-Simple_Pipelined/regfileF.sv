@@ -1,5 +1,5 @@
 module regfileF(input logic clk,
-					input logic we,reset,//enable
+					input logic we, clear, reset,//enable
 					input logic [31:0] InstrF, Pcin,
 					output logic [31:0] InstrD,Pc);
 
@@ -9,7 +9,7 @@ module regfileF(input logic clk,
 	// Three ported register file
 	// Write third port on rising edge of clock
 	always_ff @(posedge clk)
-		if (reset)begin
+		if (reset | clear)begin
 			rf <= 0;
 			Pcaux <= 0;
 		end

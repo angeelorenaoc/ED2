@@ -1,7 +1,9 @@
 module regfileD(input logic clk,
-					input logic we,reset,//enable
+					input logic we, clear, reset,//enable
 					input logic [31:0] RD1D, RD2D,ExtendD,InstrD, Pcin,
-					output logic [31:0] RD1E, RD2E, ExtendE,InstrE,Pc);
+					input logic [3:0] RA1D, RA2D,				
+					output logic [31:0] RD1E, RD2E, ExtendE,InstrE,Pc,
+					output logic [3:0] RA1E, RA2E);
 
 	// Archivo de registros usados para las dos últimas etapas
 	//Terminar y comentar cada una de las entradas y salidas
@@ -10,12 +12,14 @@ module regfileD(input logic clk,
 	// Three ported register file
 	// Write third port on rising edge of clock
 	always_ff @(posedge clk)
-		if (reset)begin
+		if (reset | clear)begin
 				raux1 <= 0;
 				raux2 <= 0;
 				raux3 <= 0;
 				raux4 <= 0;
 				Pcaux <= 0;
+				RA1E	<= 0;
+				RA2E	<= 0;
 		end
 		else if (we)begin
 				raux1 <= RD1D;
@@ -23,6 +27,8 @@ module regfileD(input logic clk,
 				raux3 <= ExtendD;
 				raux4 <= InstrD;
 				Pcaux <= Pcin;
+				RA1E	<= RA1D;
+				RA2E	<= RA2D;
 		end
 		
 	// Read two ports combinationally
