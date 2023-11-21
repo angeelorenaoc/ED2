@@ -18,7 +18,8 @@ module datapath(input logic clk, reset,
 					 input logic BranchtakenE,
 					 output logic [3:0] Match,
 					 input logic [1:0] FowardAE, FowardBE,
-					 input logic FlushE, FlushD, StallD, StallF);
+					 input logic FlushE, FlushD, StallD, StallF,
+					 output logic [3:0] RA1D, RA2D, WA3E);
 	
 	//Negación de algunas entradas
 	assign clkn = ~clk;	
@@ -34,7 +35,6 @@ module datapath(input logic clk, reset,
 	
 	//Signals Decode
 	logic [31:0] InstrD, PCPlusD4;
-	logic [3:0] RA1D, RA2D;
 	
 	//Signals Execute
 	logic [31:0] Rd1E, Rd2E, ExtImmE,InstrE,PCPlusE4;
@@ -80,6 +80,8 @@ module datapath(input logic clk, reset,
 	hazardsmux #(32) RD1Mux(Rd1E, Result, ALUOutM,FowardAE, SrcAE);
 	hazardsmux #(32) RD2Mux(Rd2E, Result, ALUOutM,FowardBE, WriteDataE);
 	mux2 #(32) pcmuxremix(PCNext, ALUResultE, BranchtakenE, PCNextRemix);
+	
+	assign WA3E = InstrE[15:12]; 
 	
 	//Match Hazard Unit
 	assign Match[0] = RA1E == WA3M;

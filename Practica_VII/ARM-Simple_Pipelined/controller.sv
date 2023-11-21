@@ -24,7 +24,7 @@ module controller(input logic clk, reset,
 	//Signals Execute
 	logic [3:0] CondE, Flags, ALUFlagsE;
 	logic [1:0] FlagWriteE;
-	logic PPCSrcEaux, RegWriteE, RegWriteEaux, MemWriteE, MemWriteEaux, BranchE, BrlE;
+	logic PCSrcEaux, RegWriteE, RegWriteEaux, MemWriteE, MemWriteEaux, BranchE, BrlE;
 	
 	//Signals Memory
 	logic MemtoRegM, BrlM;

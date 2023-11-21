@@ -23,6 +23,8 @@ vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined
 vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileEM.sv}
 vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileCF.sv}
 vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/regfileCMW.sv}
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/hazardsmux.sv}
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/HazardUnit.sv}
 vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/imem.sv}
 vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined/dmem.sv}
 
