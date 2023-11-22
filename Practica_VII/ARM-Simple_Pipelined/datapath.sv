@@ -21,11 +21,6 @@ module datapath(input logic clk, reset,
 					 input logic FlushE, FlushD, StallD, StallF,
 					 output logic [3:0] RA1D, RA2D, WA3E);
 	
-	//Negación de algunas entradas
-	assign clkn = ~clk;	
-	assign StallFn = ~StallF;
-	assign StallDn = ~StallD;
-	assign InstrDOUT = InstrD;
 	
 	// Internal signals
 	logic [31:0] PCNext, PCNextRemix, PCPlus4, PCPlus8, ALUResultE;
@@ -48,6 +43,12 @@ module datapath(input logic clk, reset,
 	logic [31:0] ReadDataW, ALUResultW, PCPlusW4;
 	logic [3:0] WA3W;
 	
+	//Negación de algunas entradas
+	assign clkn = ~clk;	
+	assign StallFn = ~StallF;
+	assign StallDn = ~StallD;
+	assign InstrDOUT = InstrD;
+	
 	// next PC logic
 	mux2 #(32) pcmux(PCPlus4, Result, PCSrc, PCNext);
 	flopr #(32) pcreg(clk, reset, StallFn, PCNextRemix, PC);
@@ -68,7 +69,7 @@ module datapath(input logic clk, reset,
 	alu #(32) alu(SrcAE, SrcBE, ALUControl, ALUResultE, ALUFlags);
 	
 	//Registers Files
-	regfileF RFFetch(clk, StallD, FlushD, reset, InstrF,PCPlus4, 
+	regfileF RFFetch(clk, StallDn, FlushD, reset, InstrF,PCPlus4, 
 													 InstrD, PCPlusD4);
 	regfileD RFDecode(clk, Enable, FlushE, reset, SrcA, RD2, ExtImm,InstrD, PCPlusD4, RA1D, RA2D,
 																 Rd1E, Rd2E, ExtImmE,InstrE,PCPlusE4,RA1E, RA2E);
