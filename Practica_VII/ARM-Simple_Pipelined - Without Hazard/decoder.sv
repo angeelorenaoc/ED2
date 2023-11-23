@@ -58,5 +58,5 @@ module decoder(input logic [1:0] Op,
 			end
 			
 	// PC Logic
-	assign PCS = ((Rd == 4'b1111) & RegW) | Branch;
+	assign PCS = ((Rd == 4'b1111) & RegW);
 endmodule

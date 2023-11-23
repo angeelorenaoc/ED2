@@ -10,221 +10,445 @@
 # Copying C:/intelFPGA_lite/22.1std/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/top.sv}
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/top.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:33:44 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined" C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/top.sv 
+# Start time: 08:58:23 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/top.sv 
 # -- Compiling module top
 # 
 # Top level modules:
 # 	top
-# End time: 15:33:45 on Nov 17,2023, Elapsed time: 0:00:01
+# End time: 08:58:23 on Nov 23,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/arm.sv}
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/arm.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:33:45 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined" C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/arm.sv 
+# Start time: 08:58:23 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/arm.sv 
 # -- Compiling module arm
 # 
 # Top level modules:
 # 	arm
-# End time: 15:33:45 on Nov 17,2023, Elapsed time: 0:00:00
+# End time: 08:58:23 on Nov 23,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/controller.sv}
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/controller.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:33:45 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined" C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/controller.sv 
+# Start time: 08:58:23 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/controller.sv 
 # -- Compiling module controller
 # 
 # Top level modules:
 # 	controller
-# End time: 15:33:45 on Nov 17,2023, Elapsed time: 0:00:00
+# End time: 08:58:23 on Nov 23,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/decoder.sv}
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/decoder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:33:45 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined" C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/decoder.sv 
+# Start time: 08:58:23 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/decoder.sv 
 # -- Compiling module decoder
 # 
 # Top level modules:
 # 	decoder
-# End time: 15:33:45 on Nov 17,2023, Elapsed time: 0:00:00
+# End time: 08:58:23 on Nov 23,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/condlogic.sv}
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/condlogic.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:33:45 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined" C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/condlogic.sv 
+# Start time: 08:58:23 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/condlogic.sv 
 # -- Compiling module condlogic
 # -- Compiling module condcheck
 # 
 # Top level modules:
 # 	condlogic
-# End time: 15:33:45 on Nov 17,2023, Elapsed time: 0:00:00
+# End time: 08:58:24 on Nov 23,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/datapath.sv}
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/datapath.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:33:45 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined" C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/datapath.sv 
+# Start time: 08:58:24 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/datapath.sv 
 # -- Compiling module datapath
 # 
 # Top level modules:
 # 	datapath
-# End time: 15:33:45 on Nov 17,2023, Elapsed time: 0:00:00
+# End time: 08:58:24 on Nov 23,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/regfile.sv}
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/regfile.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:33:45 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined" C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/regfile.sv 
+# Start time: 08:58:24 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/regfile.sv 
 # -- Compiling module regfile
 # 
 # Top level modules:
 # 	regfile
-# End time: 15:33:45 on Nov 17,2023, Elapsed time: 0:00:00
+# End time: 08:58:24 on Nov 23,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/alu.sv}
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/alu.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:33:45 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined" C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/alu.sv 
+# Start time: 08:58:24 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/alu.sv 
 # -- Compiling module alu
 # 
 # Top level modules:
 # 	alu
-# End time: 15:33:45 on Nov 17,2023, Elapsed time: 0:00:00
+# End time: 08:58:24 on Nov 23,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/extend.sv}
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/extend.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:33:45 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined" C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/extend.sv 
+# Start time: 08:58:24 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/extend.sv 
 # -- Compiling module extend
 # 
 # Top level modules:
 # 	extend
-# End time: 15:33:45 on Nov 17,2023, Elapsed time: 0:00:00
+# End time: 08:58:24 on Nov 23,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/adder.sv}
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:33:45 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined" C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/adder.sv 
+# Start time: 08:58:24 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/adder.sv 
 # -- Compiling module adder
 # 
 # Top level modules:
 # 	adder
-# End time: 15:33:46 on Nov 17,2023, Elapsed time: 0:00:01
+# End time: 08:58:24 on Nov 23,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/mux2.sv}
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/mux2.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:33:46 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined" C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/mux2.sv 
+# Start time: 08:58:24 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/mux2.sv 
 # -- Compiling module mux2
 # 
 # Top level modules:
 # 	mux2
-# End time: 15:33:46 on Nov 17,2023, Elapsed time: 0:00:00
+# End time: 08:58:24 on Nov 23,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/flopr.sv}
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/flopr.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:33:46 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined" C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/flopr.sv 
+# Start time: 08:58:24 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/flopr.sv 
 # -- Compiling module flopr
 # 
 # Top level modules:
 # 	flopr
-# End time: 15:33:46 on Nov 17,2023, Elapsed time: 0:00:00
+# End time: 08:58:24 on Nov 23,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/shifter.sv}
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/shifter.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:33:46 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined" C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/shifter.sv 
+# Start time: 08:58:24 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/shifter.sv 
 # -- Compiling module shifter
 # 
 # Top level modules:
 # 	shifter
-# End time: 15:33:46 on Nov 17,2023, Elapsed time: 0:00:00
+# End time: 08:58:24 on Nov 23,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/regfileF.sv}
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/regfileF.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:33:46 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined" C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/regfileF.sv 
+# Start time: 08:58:24 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/regfileF.sv 
 # -- Compiling module regfileF
 # 
 # Top level modules:
 # 	regfileF
-# End time: 15:33:46 on Nov 17,2023, Elapsed time: 0:00:00
+# End time: 08:58:24 on Nov 23,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/regfileD.sv}
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/regfileD.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:33:46 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined" C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/regfileD.sv 
+# Start time: 08:58:24 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/regfileD.sv 
 # -- Compiling module regfileD
 # 
 # Top level modules:
 # 	regfileD
-# End time: 15:33:46 on Nov 17,2023, Elapsed time: 0:00:00
+# End time: 08:58:24 on Nov 23,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/regfileEM.sv}
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/regfileEM.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:33:46 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined" C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/regfileEM.sv 
+# Start time: 08:58:24 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/regfileEM.sv 
 # -- Compiling module regfileEM
 # 
 # Top level modules:
 # 	regfileEM
-# End time: 15:33:46 on Nov 17,2023, Elapsed time: 0:00:00
+# End time: 08:58:24 on Nov 23,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/regfileCF.sv}
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/regfileCF.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:33:46 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined" C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/regfileCF.sv 
+# Start time: 08:58:24 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/regfileCF.sv 
 # -- Compiling module regfileCF
 # 
 # Top level modules:
 # 	regfileCF
-# End time: 15:33:46 on Nov 17,2023, Elapsed time: 0:00:00
+# End time: 08:58:24 on Nov 23,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/regfileCMW.sv}
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/regfileCMW.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:33:46 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined" C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/regfileCMW.sv 
+# Start time: 08:58:24 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/regfileCMW.sv 
 # -- Compiling module regfileCMW
 # 
 # Top level modules:
 # 	regfileCMW
-# End time: 15:33:46 on Nov 17,2023, Elapsed time: 0:00:00
+# End time: 08:58:24 on Nov 23,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/imem.sv}
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/imem.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:33:46 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined" C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/imem.sv 
+# Start time: 08:58:24 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/imem.sv 
 # -- Compiling module imem
 # 
 # Top level modules:
 # 	imem
-# End time: 15:33:46 on Nov 17,2023, Elapsed time: 0:00:00
+# End time: 08:58:24 on Nov 23,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/dmem.sv}
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/dmem.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:33:46 on Nov 17,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined" C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/dmem.sv 
+# Start time: 08:58:24 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/dmem.sv 
 # -- Compiling module dmem
 # 
 # Top level modules:
 # 	dmem
-# End time: 15:33:47 on Nov 17,2023, Elapsed time: 0:00:01
+# End time: 08:58:25 on Nov 23,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
-vlog -reportprogress 300 -work work C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/testbench_peripherals.sv
+vlog -reportprogress 300 -work work {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/testbench_peripherals.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:34:12 on Nov 17,2023
-# vlog -reportprogress 300 -work work C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/testbench_peripherals.sv 
+# Start time: 09:04:52 on Nov 23,2023
+# vlog -reportprogress 300 -work work U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/testbench_peripherals.sv 
 # -- Compiling module testbench_peripherals
 # 
 # Top level modules:
 # 	testbench_peripherals
-# End time: 15:34:12 on Nov 17,2023, Elapsed time: 0:00:00
+# End time: 09:04:52 on Nov 23,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+do {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/simulation/questa/top_run_msim_rtl_verilog.do}
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/top.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:06:21 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/top.sv 
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 09:06:21 on Nov 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/arm.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:06:21 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/arm.sv 
+# -- Compiling module arm
+# 
+# Top level modules:
+# 	arm
+# End time: 09:06:21 on Nov 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/controller.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:06:21 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/controller.sv 
+# -- Compiling module controller
+# 
+# Top level modules:
+# 	controller
+# End time: 09:06:21 on Nov 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/decoder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:06:21 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/decoder.sv 
+# -- Compiling module decoder
+# 
+# Top level modules:
+# 	decoder
+# End time: 09:06:21 on Nov 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/condlogic.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:06:21 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/condlogic.sv 
+# -- Compiling module condlogic
+# -- Compiling module condcheck
+# 
+# Top level modules:
+# 	condlogic
+# End time: 09:06:21 on Nov 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/datapath.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:06:21 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/datapath.sv 
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# End time: 09:06:21 on Nov 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/regfile.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:06:21 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/regfile.sv 
+# -- Compiling module regfile
+# 
+# Top level modules:
+# 	regfile
+# End time: 09:06:21 on Nov 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/alu.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:06:21 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/alu.sv 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 09:06:21 on Nov 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/extend.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:06:21 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/extend.sv 
+# -- Compiling module extend
+# 
+# Top level modules:
+# 	extend
+# End time: 09:06:21 on Nov 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/adder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:06:21 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/adder.sv 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 09:06:21 on Nov 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/mux2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:06:21 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/mux2.sv 
+# -- Compiling module mux2
+# 
+# Top level modules:
+# 	mux2
+# End time: 09:06:21 on Nov 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/flopr.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:06:21 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/flopr.sv 
+# -- Compiling module flopr
+# 
+# Top level modules:
+# 	flopr
+# End time: 09:06:22 on Nov 23,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/shifter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:06:22 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/shifter.sv 
+# -- Compiling module shifter
+# 
+# Top level modules:
+# 	shifter
+# End time: 09:06:22 on Nov 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/regfileF.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:06:22 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/regfileF.sv 
+# -- Compiling module regfileF
+# 
+# Top level modules:
+# 	regfileF
+# End time: 09:06:22 on Nov 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/regfileD.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:06:22 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/regfileD.sv 
+# -- Compiling module regfileD
+# 
+# Top level modules:
+# 	regfileD
+# End time: 09:06:22 on Nov 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/regfileEM.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:06:22 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/regfileEM.sv 
+# -- Compiling module regfileEM
+# 
+# Top level modules:
+# 	regfileEM
+# End time: 09:06:22 on Nov 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/regfileCF.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:06:22 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/regfileCF.sv 
+# -- Compiling module regfileCF
+# 
+# Top level modules:
+# 	regfileCF
+# End time: 09:06:22 on Nov 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/regfileCMW.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:06:22 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/regfileCMW.sv 
+# -- Compiling module regfileCMW
+# 
+# Top level modules:
+# 	regfileCMW
+# End time: 09:06:22 on Nov 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/imem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:06:22 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/imem.sv 
+# -- Compiling module imem
+# 
+# Top level modules:
+# 	imem
+# End time: 09:06:22 on Nov 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/dmem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:06:22 on Nov 23,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard" U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/dmem.sv 
+# -- Compiling module dmem
+# 
+# Top level modules:
+# 	dmem
+# End time: 09:06:22 on Nov 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+do {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/simulation/CodigodePrueba.do}
+vlog -reportprogress 300 -work work {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/testbench_peripherals.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:06:52 on Nov 23,2023
+# vlog -reportprogress 300 -work work U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/testbench_peripherals.sv 
+# -- Compiling module testbench_peripherals
+# 
+# Top level modules:
+# 	testbench_peripherals
+# End time: 09:06:52 on Nov 23,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/simulation/CodigodePrueba.do}
 vsim work.testbench_peripherals
 # vsim work.testbench_peripherals 
-# Start time: 15:34:16 on Nov 17,2023
+# Start time: 09:07:17 on Nov 23,2023
 # Loading sv_std.std
 # Loading work.testbench_peripherals
 # Loading work.top
@@ -248,18 +472,14 @@ vsim work.testbench_peripherals
 # Loading work.regfileF
 # Loading work.regfileD
 # Loading work.regfileEM
-do C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/simulation/CodigodePrueba.do
+do {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/simulation/CodigodePrueba.do}
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: user  Hostname: DESKTOP-2J8D9HT  ProcessID: 13232
-#           Attempting to use alternate WLF file "./wlft08n6e2".
+#           Attempting to use alternate WLF file "./wlft6en50c".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft08n6e2
+#           Using alternate file: ./wlft6en50c
 run
 run
 run
-run
-run
-run
-run
-run
-run
+# End time: 09:18:03 on Nov 23,2023, Elapsed time: 0:10:46
+# Errors: 0, Warnings: 2
