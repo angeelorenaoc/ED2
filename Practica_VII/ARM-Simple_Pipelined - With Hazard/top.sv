@@ -14,7 +14,6 @@ module top(input logic clk, nreset,
 	
 	// Instantiate instruction memory
 	imem imem(PC, Instr);//AQUÍ SE CARGA LA INSTRUCCIÓN
-	//¿En dónde escribe el switch?
 
 	// Instantiate data memory (RAM + peripherals)
 	dmem dmem(clk, MemWrite, DataAdr, WriteData, ReadData, switches, leds);

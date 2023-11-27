@@ -29,7 +29,6 @@ module regfileCF(input logic clk,
 				FlagWriteDaux <= 0;
 				AluControlaux <= 0;
 				Condaux <= 4'b0;
-				Flagsaux <= 4'b0;
 				BrlE <= 0;
 		end
 		else if (we)begin//Depende realmente de WD

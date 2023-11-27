@@ -11,7 +11,7 @@ cModel Technology
 Z0 dU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/simulation/questa
 vadder
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1700756873
+Z2 !s110 1701111510
 !i10b 1
 !s100 JTfFXPzbz[VGo95PdjoZI1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -22,13 +22,13 @@ R0
 Z5 w1700747383
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/adder.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/adder.sv
-!i122 71
+!i122 8
 L0 4 5
 Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1700756873.000000
+Z7 !s108 1701111510.000000
 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/adder.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/adder.sv|
 !i113 1
@@ -48,7 +48,7 @@ R0
 R5
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/alu.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/alu.sv
-!i122 72
+!i122 6
 L0 4 35
 R6
 r1
@@ -63,7 +63,7 @@ R9
 R10
 varm
 R1
-R2
+Z11 !s110 1701111509
 !i10b 1
 !s100 gGTVVilK?88NzVGU=SciE1
 R3
@@ -74,13 +74,13 @@ R0
 R5
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/arm.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/arm.sv
-!i122 73
+!i122 1
 L0 5 38
 R6
 r1
 !s85 0
 31
-R7
+Z12 !s108 1701111509.000000
 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/arm.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/arm.sv|
 !i113 1
@@ -98,17 +98,17 @@ R4
 S1
 R0
 R5
-Z11 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/condlogic.sv
-Z12 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/condlogic.sv
-!i122 75
+Z13 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/condlogic.sv
+Z14 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/condlogic.sv
+!i122 4
 L0 45 28
 R6
 r1
 !s85 0
 31
-R7
-Z13 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/condlogic.sv|
-Z14 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/condlogic.sv|
+R12
+Z15 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/condlogic.sv|
+Z16 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/condlogic.sv|
 !i113 1
 R8
 R9
@@ -124,24 +124,24 @@ R4
 S1
 R0
 R5
-R11
-R12
-!i122 75
+R13
+R14
+!i122 4
 L0 4 37
 R6
 r1
 !s85 0
 31
-R7
-R13
-R14
+R12
+R15
+R16
 !i113 1
 R8
 R9
 R10
 vcontroller
 R1
-R2
+R11
 !i10b 1
 !s100 MoBE7VM]SOiPAlc<a_l_b2
 R3
@@ -152,13 +152,13 @@ R0
 w1700756848
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/controller.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/controller.sv
-!i122 76
+!i122 2
 L0 4 52
 R6
 r1
 !s85 0
 31
-R7
+R12
 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/controller.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/controller.sv|
 !i113 1
@@ -167,7 +167,7 @@ R9
 R10
 vdatapath
 R1
-R2
+Z17 !s110 1701111511
 !i10b 1
 !s100 cCZA`Mj7Kci3m8OlIo^;B3
 R3
@@ -178,13 +178,13 @@ R0
 R5
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/datapath.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/datapath.sv
-!i122 77
+!i122 19
 L0 4 91
 R6
 r1
 !s85 0
 31
-R7
+Z18 !s108 1701111511.000000
 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/datapath.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/datapath.sv|
 !i113 1
@@ -193,7 +193,7 @@ R9
 R10
 vdecoder
 R1
-R2
+R11
 !i10b 1
 !s100 `Yi8FK4=D1NW^VnCjAPUD1
 R3
@@ -204,13 +204,13 @@ R0
 R5
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/decoder.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/decoder.sv
-!i122 78
+!i122 3
 L0 4 59
 R6
 r1
 !s85 0
 31
-R7
+R12
 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/decoder.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/decoder.sv|
 !i113 1
@@ -219,7 +219,7 @@ R9
 R10
 vdmem
 R1
-R2
+R17
 !i10b 1
 !s100 >ffD7jWE@=MR6T01OK1?83
 R3
@@ -230,13 +230,13 @@ R0
 w1700756683
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/dmem.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/dmem.sv
-!i122 79
+!i122 21
 L0 5 36
 R6
 r1
 !s85 0
 31
-R7
+R18
 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/dmem.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/dmem.sv|
 !i113 1
@@ -256,7 +256,7 @@ R0
 R5
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/extend.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/extend.sv
-!i122 80
+!i122 7
 L0 4 14
 R6
 r1
@@ -282,7 +282,7 @@ R0
 R5
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/flopr.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/flopr.sv
-!i122 81
+!i122 10
 L0 4 10
 R6
 r1
@@ -297,7 +297,7 @@ R9
 R10
 vhazardsmux
 R1
-Z15 !s110 1700756874
+R17
 !i10b 1
 !s100 2j0OYL1jzMW_25AZ]@M5<2
 R3
@@ -308,13 +308,13 @@ R0
 R5
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/hazardsmux.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/hazardsmux.sv
-!i122 82
+!i122 17
 L0 1 22
 R6
 r1
 !s85 0
 31
-R7
+R18
 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/hazardsmux.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/hazardsmux.sv|
 !i113 1
@@ -323,7 +323,7 @@ R9
 R10
 vHazardUnit
 R1
-R15
+R17
 !i10b 1
 !s100 SnP]GMH@;6A=DA]z7z2:T1
 R3
@@ -334,13 +334,13 @@ R0
 R5
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/HazardUnit.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/HazardUnit.sv
-!i122 83
-Z16 L0 1 41
+!i122 18
+Z19 L0 1 41
 R6
 r1
 !s85 0
 31
-Z17 !s108 1700756874.000000
+R18
 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/HazardUnit.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/HazardUnit.sv|
 !i113 1
@@ -350,7 +350,7 @@ R10
 n@hazard@unit
 vimem
 R1
-R15
+R17
 !i10b 1
 !s100 V2M>3hXDh2j777fkT:<^I1
 R3
@@ -358,16 +358,16 @@ IcdVo_9?XMg<`LgM46:8mU0
 R4
 S1
 R0
-w1700754095
+w1700859967
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/imem.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/imem.sv
-!i122 84
+!i122 20
 L0 4 26
 R6
 r1
 !s85 0
 31
-R17
+R18
 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/imem.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/imem.sv|
 !i113 1
@@ -376,7 +376,7 @@ R9
 R10
 vmux2
 R1
-R15
+R2
 !i10b 1
 !s100 HbVFRXZ>5?NdYc^aRnRFf1
 R3
@@ -387,13 +387,13 @@ R0
 R5
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/mux2.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/mux2.sv
-!i122 85
+!i122 9
 L0 4 6
 R6
 r1
 !s85 0
 31
-R17
+R7
 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/mux2.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/mux2.sv|
 !i113 1
@@ -402,7 +402,7 @@ R9
 R10
 vregfile
 R1
-R15
+R2
 !i10b 1
 !s100 ?ckE^eEC62fX5f7FC>WZB0
 R3
@@ -413,13 +413,13 @@ R0
 R5
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/regfile.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/regfile.sv
-!i122 86
+!i122 5
 L0 4 19
 R6
 r1
 !s85 0
 31
-R17
+R7
 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/regfile.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/regfile.sv|
 !i113 1
@@ -428,24 +428,24 @@ R9
 R10
 vregfileCF
 R1
-R15
+!s110 1701114136
 !i10b 1
-!s100 3dbz9@gLgeHF^=[BXf[;52
+!s100 @]aJ_GH>ffWD5nzCUc=cb0
 R3
-I>dNQa58h3Xe0f^SGi=ib73
+Ij1CiQ6jz<?O1LS1GOcW3@2
 R4
 S1
 R0
-R5
+w1701114006
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/regfileCF.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/regfileCF.sv
-!i122 87
-L0 1 64
+!i122 23
+L0 1 63
 R6
 r1
 !s85 0
 31
-R17
+!s108 1701114136.000000
 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/regfileCF.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/regfileCF.sv|
 !i113 1
@@ -455,7 +455,7 @@ R10
 nregfile@c@f
 vregfileCMW
 R1
-R15
+R17
 !i10b 1
 !s100 7oATZzU<<ZFS@3eVSGSVz0
 R3
@@ -466,13 +466,13 @@ R0
 R5
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/regfileCMW.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/regfileCMW.sv
-!i122 88
+!i122 16
 L0 1 33
 R6
 r1
 !s85 0
 31
-R17
+R7
 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/regfileCMW.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/regfileCMW.sv|
 !i113 1
@@ -482,7 +482,7 @@ R10
 nregfile@c@m@w
 vregfileD
 R1
-R15
+R2
 !i10b 1
 !s100 H8<0Fm_zEd6gYUOYSa>SG2
 R3
@@ -493,13 +493,13 @@ R0
 R5
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/regfileD.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/regfileD.sv
-!i122 89
-R16
+!i122 13
+R19
 R6
 r1
 !s85 0
 31
-R17
+R7
 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/regfileD.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/regfileD.sv|
 !i113 1
@@ -509,7 +509,7 @@ R10
 nregfile@d
 vregfileEM
 R1
-R15
+R2
 !i10b 1
 !s100 BYgVd<aE]XEEm0kdA:Ea93
 R3
@@ -520,13 +520,13 @@ R0
 R5
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/regfileEM.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/regfileEM.sv
-!i122 90
+!i122 14
 L0 1 37
 R6
 r1
 !s85 0
 31
-R17
+R7
 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/regfileEM.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/regfileEM.sv|
 !i113 1
@@ -536,7 +536,7 @@ R10
 nregfile@e@m
 vregfileF
 R1
-R15
+R2
 !i10b 1
 !s100 AcBBEF6Q[omzmfb:@_9h;0
 R3
@@ -547,13 +547,13 @@ R0
 R5
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/regfileF.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/regfileF.sv
-!i122 91
+!i122 12
 L0 1 25
 R6
 r1
 !s85 0
 31
-R17
+R7
 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/regfileF.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/regfileF.sv|
 !i113 1
@@ -563,7 +563,7 @@ R10
 nregfile@f
 vshifter
 R1
-R15
+R2
 !i10b 1
 !s100 ?d5eiFnS5Vgld3n1[6X]90
 R3
@@ -574,13 +574,13 @@ R0
 R5
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/shifter.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/shifter.sv
-!i122 92
+!i122 11
 L0 1 31
 R6
 r1
 !s85 0
 31
-R17
+R7
 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/shifter.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/shifter.sv|
 !i113 1
@@ -589,24 +589,24 @@ R9
 R10
 vtestbench_peripherals
 R1
-R15
+!s110 1701111537
 !i10b 1
-!s100 EN=B3nIU]>QcLZ<FU<aJX2
+!s100 k6FmcL;C6AOj:gA0;>hcf3
 R3
-IM;>=Kb]2liEY>cQFS8Bf:1
+IB@^55UAJ>ngd:cC[HPXRT3
 R4
 S1
 R0
-R5
+w1700866289
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/testbench_peripherals.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/testbench_peripherals.sv
-!i122 93
+!i122 22
 L0 4 30
 R6
 r1
 !s85 0
 31
-R17
+!s108 1701111537.000000
 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/testbench_peripherals.sv|
 !s90 -reportprogress|300|-work|work|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/testbench_peripherals.sv|
 !i113 1
@@ -614,24 +614,24 @@ o-work work
 R10
 vtop
 R1
-!s110 1700756875
+R11
 !i10b 1
-!s100 69_HndT[@lRhP:f6FaEeJ3
+!s100 9>AfTjFm3Z?EZ=MilFIG33
 R3
-IYf<c0R_jNF1bnXAVJoMZR1
+IMfKViWhWTk8o8^o=Pb4RM0
 R4
 S1
 R0
-R5
+w1700866270
 8U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/top.sv
 FU:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/top.sv
-!i122 94
-L0 4 21
+!i122 0
+L0 4 20
 R6
 r1
 !s85 0
 31
-R17
+R12
 !s107 U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/top.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard|U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/top.sv|
 !i113 1

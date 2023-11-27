@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(10M50DAF484ES) Path("U:/ED2/Laboratorio/Practica_VI/ARM-SingleCycle-Mod/output_files/") File("top.sof") MfrSpec(OpMask(1));
+		Device PartName(10M50DAF484ES) Path("U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - With Hazard/output_files/") File("top.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
