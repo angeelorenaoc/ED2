@@ -18,8 +18,21 @@ module regfileCF(input logic clk,
 	
 	// Three ported register file
 	// Write third port on rising edge of clock
-	always_ff @(posedge clk)
-		if (reset | FlushE)begin
+	always_ff @(posedge clk, posedge reset)
+		if (reset)begin
+				PcsrcDaux <= 1'b0;
+				RegWriteDaux <= 0;
+				MemtoRegDaux <= 0;
+				MemWriteDaux <= 0;
+				BranchDaux <= 0;
+				AluSrcDaux <= 0;
+				FlagWriteDaux <= 0;
+				AluControlaux <= 0;
+				Condaux <= 4'b0;
+				Flagsaux <= 4'b0;
+				BrlE <= 0;
+		end
+		else if (FlushE)begin
 				PcsrcDaux <= 1'b0;
 				RegWriteDaux <= 0;
 				MemtoRegDaux <= 0;

@@ -5,24 +5,24 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/top.sv}
-vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/arm.sv}
-vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/controller.sv}
-vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/decoder.sv}
-vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/condlogic.sv}
-vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/datapath.sv}
-vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/regfile.sv}
-vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/alu.sv}
-vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/extend.sv}
-vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/adder.sv}
-vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/mux2.sv}
-vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/flopr.sv}
-vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/shifter.sv}
-vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/regfileF.sv}
-vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/regfileD.sv}
-vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/regfileEM.sv}
-vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/regfileCF.sv}
-vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/regfileCMW.sv}
-vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/imem.sv}
-vlog -sv -work work +incdir+C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined {C:/Users/oscar/Documents/ED/Practica_VII/ARM-Simple_Pipelined/dmem.sv}
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/top.sv}
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/arm.sv}
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/controller.sv}
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/decoder.sv}
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/condlogic.sv}
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/datapath.sv}
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/regfile.sv}
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/alu.sv}
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/extend.sv}
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/adder.sv}
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/mux2.sv}
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/flopr.sv}
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/shifter.sv}
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/regfileF.sv}
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/regfileD.sv}
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/regfileEM.sv}
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/regfileCF.sv}
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/regfileCMW.sv}
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/imem.sv}
+vlog -sv -work work +incdir+U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined\ -\ Without\ Hazard {U:/ED2/Laboratorio/Practica_VII/ARM-Simple_Pipelined - Without Hazard/dmem.sv}
 

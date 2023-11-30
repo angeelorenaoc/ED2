@@ -20,8 +20,10 @@ module decoder(input logic [1:0] Op,
 			2'b00: 	if (Funct[4:0] == 5'b10010)		controls = 11'b00000000001;
 																	// Data-processing immediate
 						else if (Funct[5])					controls = 11'b00001010001;	
+																	// Do Nothing c:
+						else if (Funct[4:0] == 5'b0)		controls = 11'b00000000000;
 																	// Data-processing register
-						else										controls = 11'b00000010001;
+						else 										controls = 11'b00000010001;
 																	// LDR
 			2'b01: 	if (Funct[0])							controls = 11'b00011110000;
 																	// STR
