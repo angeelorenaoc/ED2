@@ -1,0 +1,75 @@
+% **************************************************
+% Document Class Definition
+% **************************************************
+\documentclass[%
+paper=letter,				% paper size
+twoside=false,				% onesite or twoside printing
+%openright,					% doublepage cleaning ends up right side
+parskip=8mm,				% spacing value / method for paragraphs
+chapterprefix=false, 		% prefix for chapter marks
+12pt,						% font size
+headings=normal,			% size of headings
+bibliography=totoc,			% include bib in toc
+listof=totoc,				% include listof entries in toc
+titlepage=on,				% own page for each title page
+captions=tableabove,		% display table captions above the float env
+draft=false,				% value for draft version
+]{scrbook}%
+
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{graphics}
+\usepackage{amsmath,amsfonts}
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage[shortlabels]{enumitem}
+\usepackage{multirow,array}
+\usepackage{blindtext}
+\usepackage{multicol}
+\usepackage[utf8]{inputenc}		% In case accented letters are used
+\usepackage{ragged2e}
+\usepackage[letterpaper, left=2cm, right=2cm, top=3cm, bottom=3cm]{geometry}
+\usepackage{listings}
+\usepackage{tabularx}
+\usepackage[table,xcdraw,dvipsnames]{xcolor}
+\usepackage{float}
+\usepackage{longtable}
+\usepackage[spanish]{babel}
+\usepackage{subcaption}
+%\usepackage{minted}
+\usepackage{comment}
+\usepackage{dblfloatfix}
+\usepackage{listings}
+%\usepackage{stfloats}
+\usepackage[absolute,overlay]{textpos}
+\captionsetup{compatibility=false}
+
+\lstset{breaklines=true,
+	basicstyle=\footnotesize\ttfamily,
+	xleftmargin=.0in,
+	xrightmargin=.0in} 
+\usepackage{hyperref} 			% interactive link inside the document
+\hypersetup{
+	colorlinks=true,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+\urlstyle{same}
+%\usepackage{draftwatermark}
+%\usepackage[sorting=none]{biblatex}
+%\addbibresource{Biblinf2.bib}
+\usepackage[square,numbers,sectionbib]{natbib}
+\usepackage[sectionbib]{chapterbib}
+
+\renewcommand{\theequation}{\thechapter-\arabic{equation}}
+\renewcommand{\thefigure}{\textbf{\thechapter-\arabic{figure}}}
+\renewcommand{\thetable}{\textbf{\thechapter-\arabic{table}}}
+
+%\textheight 20.5cm \topmargin0cm \textwidth16.5cm
+\oddsidemargin  0cm 
+\evensidemargin 0cm
+\renewcommand{\chaptermark}[1]{\markboth{\thechapter\; #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\; #1}}
