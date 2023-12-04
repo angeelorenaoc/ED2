@@ -8,7 +8,7 @@ Para la práctica propuesta se tomó como base el procesador de un solo ciclo el
 
 Es importante resaltar, que también se propagó la señal $Brl$ creada en la práctica 6 desde la unidad de control, puesto que esta era necesaria para guardar la dirección de la memoria en el registro $R14$ en la quinta etapa del procesador, con el propósito de modificar el $Pc$ una vez terminada la ejecución de la función. Además, en la primera etapa, es decir en la etapa del $Fetch$, se propagó el Pc con el fin de que este estuviese adelantado 8 posiciones con respecto a la instrucción que se estaba ejecutando, también es relevante anotar que se decidió propagar la instrucción completa hasta la etapa del $Execute$, puesto que una parte de esta era necesaria para identificar el registro al cual le correspondía almacenar el $ResultW$ en la quinta etapa del procesador, y la otra parte es utilizada para el manejo del módulo $shifter$ construido en el procesador de un solo ciclo, debido a que con esta se identifica cuál es la operación que corresponde a realizar.\\
 
-Para concluir esta primera parte, se procedió con la implementación del $NOP$, con el fin de resolver los problemas de dependencia de datos que existen aún en este procesador debido a que aún no está construida la $Unidad de Hazards$, esta recibe la codificación $e320f000$; en este punto se debe indicar desde la unidad de control que el procesador se pare deshabilitando todas las señales que permiten la escritura en cada una de las etapas.\\
+Para concluir esta primera parte, se procedió con la implementación del $NOP$, con el fin de resolver los problemas de dependencia de datos que existen aún en este procesador debido a que aún no está construida la Unidad de Hazards, esta recibe la codificación $e320f000$; en este punto se debe indicar desde la unidad de control que el procesador se detenga, deshabilitando todas las señales que permiten la escritura en cada una de las etapas.\\
 
 Al llegar a este punto, se decide poner a prueba al procesador mediante dos códigos, el primero de ellos realizado por el equipo de estudiantes y el segundo brindado por la guía de este trabajo. A continuación se observa cada uno de los códigos con sus respectivas simulaciones:
   
@@ -49,7 +49,7 @@ En la memoria de datos se almacenó el valor hexadecimal $0xE3A00000$, por eso, 
 	\item $R14 o LR:0x00000044$
 \end{itemize}
 
-A esto se añade que la instrucción $STR$ escribe en la memoria el valor $R5:0x0003FFFE$ %%terminar de resolver esta pregunta
+A esto se añade que la instrucción $STR$ escribe en la memoria el valor $R5:0x0003FFFE$ en la cuarta posición de la memoria, esto básicamente permite comprobar que los datos obtenidos sean correctos, ya que si el valor escrito es diferente o la dirección es otra, se puede deducir que hubo un error de dependencia de datos.
 \subsubsection*{Segundo código elaborado:}
 \begin{lstlisting}
 	.global
@@ -86,10 +86,16 @@ Seguidamente, al realizar las pruebas con el código mostrado anteriormente y co
 	\item $R14 o LR:0x00000044$
 \end{itemize}
 
-A esto se añade que la instrucción $STR$ escribe en la memoria el valor $R5:0x0003FFFE$ %%terminar de resolver esta pregunta\\
 Cabe anotar que se agregaron 16 $NOPs$ a la memoria de instrucciones, los cuales fueron repartidos de la siguiente manera: 2 entre cada instrucción de procesamiento de datos y carga de datos desde la memoria a uno de los registros que corresponde a las 6 líneas de código; sin embargo, a la hora de ejecutar el $Bl$ se puede ver que esta no crea una dependencia de datos con la anterior, por los que la operación $ROR$ y el comando $BL$, quedan seguidas en ejecución; después se agrega tres más, ya que $STR$ depende del valor contenido en el registro $R5$, además de que es pertinente esperar la cantidad de ciclos suficientes que permitan al procesador almacenar en memoria; finalmente, se agregan otros tres $NOPs$ seguidos del salto incondicional para que no se carguen más instrucciones en el procesador y pueda mantenerse en este ciclo. Adviértase que, al final del cifrado de las operaciones, eran necesarios otros tres $NOPs$, porque el no agregarlos trae consigo que el procesador cargue otras instrucciones inexistentes en la memoria, que hubiesen dañado la ejecución del programa; no obstante, aparentemente se cargaron $0s$ los que impedía el daño en el primer registro del $Register File$.\\
 
-Para la segunda parte se implementa la unidad de $Hazards$ que se muestra en la imagen (referenciar), y explicada durante las sesiones de clase; esta unidad crea señales que controlan algunos registros del Pinelined, habilitando o deshabilitando el paso de los datos y realizando la limpieza de algunas de las etapas cuando es necesario, por ejemplo, cuando se decodifica una instrucción de salto y al evaluar las banderas en la etapa del $Execute$ esta se cumple, el procesador debe limpiar las operaciones cargadas en las dos etapas anteriores, mediante las señales $FlushE$ y $FlushD$ que manejan el clear de los registros; del mismo modo, este permite hacer llegar ciertos datos cuando son requeridos en el momento en el que estén listos, resolviendo así, los inconvenientes de dependencias de datos que se presentaban en el procesador desarrollado en la primera parte del presente trabajo, mejorando la eficiencia del mismo, puesto que no requiere de las 5 etapas o detenerlo durante varios ciclos para garantizar su correcto funcionamiento.\\ 
+Para la segunda parte se implementa la unidad de $Hazards$ que se muestra en la imagen \ref{fig:HazardUnit}, y explicada durante las sesiones de clase; esta unidad crea señales que controlan algunos registros del Pinelined, habilitando o deshabilitando el paso de los datos y realizando la limpieza de algunas de las etapas cuando es necesario, por ejemplo, cuando se decodifica una instrucción de salto y al evaluar las banderas en la etapa del $Execute$ esta se cumple, el procesador debe limpiar las operaciones cargadas en las dos etapas anteriores, mediante las señales $FlushE$ y $FlushD$ que manejan el clear de los registros; del mismo modo, este permite hacer llegar ciertos datos cuando son requeridos en el momento en el que estén listos, resolviendo así, los inconvenientes de dependencias de datos que se presentaban en el procesador desarrollado en la primera parte del presente trabajo, mejorando la eficiencia del mismo, puesto que no requiere de las 5 etapas o detenerlo durante varios ciclos para garantizar su correcto funcionamiento.\\ 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \linewidth]{images/Esquematico_Hazards.png}
+	\caption{Unidad de Hazards implementada}
+	\label{fig:HazardUnit}
+\end{figure}
 
 Nuevamente se carga la memoria de instrucciones que contiene el código proporcionado por la guía de manera inicial; al correr la simulación se puede notar que los registros conservan los mismos datos obtenidos en la primera parte, lo que corrobora que el procesador opera de la manera deseada puesto que, como se mencionó anteriormente, ya fueron resueltos los problemas de dependencia de datos.\\
 %%Imagen de la simulación 
@@ -193,6 +199,7 @@ Durante la presente practica se pudo apreciar la importancia que tiene recurrir 
 A pesar de las anotaciones anteriores, puede verse que el procesador no considera un caso en cuestión, que solo fue revelado en el montaje de la secuencia, este consiste en la escritura en los registros seguido de la modificación del $PC$ en una función y la razón por la cual hacía que el procesador no tuviese la conducta esperada, fue expuesta en la parte de la explicación de la secuencia.\\
 
 
-
-\bibliographystyle{unsrtnat}
-\bibliography{docs/bibliography}
+\begin{comment}
+	contenido\bibliographystyle{unsrtnat}
+	\bibliography{docs/bibliography}s...
+\end{comment}
